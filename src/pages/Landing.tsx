@@ -7,6 +7,14 @@ const LandingWrapper = styled.div`
   flex-direction: column;
 `;
 
+function ProjectPreview() {
+    return (
+        <div>
+            <image src="./assets/"/>
+        </div>
+    )
+}
+
 export function Landing() {
     return (
         <LandingWrapper>

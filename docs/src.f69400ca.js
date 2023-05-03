@@ -31075,6 +31075,11 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   return cooked;
 };
 var LandingWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n"], ["\n  display: flex;\n  flex-direction: column;\n"])));
+function ProjectPreview() {
+  return _react.default.createElement("div", null, _react.default.createElement("image", {
+    src: "./assets/"
+  }));
+}
 function Landing() {
   return _react.default.createElement(LandingWrapper, null, _react.default.createElement(_Header.Header, null), "Hello");
 }
