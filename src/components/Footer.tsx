@@ -1,9 +1,10 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
-import linkedin from "./../assets/icons/linkedin.svg"
-import email from "./../assets/icons/email.svg"
-import instagram from "./../assets/icons/instagram.svg"
-import vimeo from "./../assets/icons/vimeo.svg"
+import linkedin from "./../assets/icons/linkedin.svg";
+import email from "./../assets/icons/email.svg";
+import instagram from "./../assets/icons/instagram.svg";
+import vimeo from "./../assets/icons/vimeo.svg";
+import { contentWidth } from "../sharedStyles";
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -17,11 +18,9 @@ const FooterWrapper = styled.div`
 const FooterContent = styled.div`
   display: flex;
   background: green;
-  max-width: 1085px;
+  ${contentWidth};
   margin: auto;
-  width: 80vw;
   justify-content: end;
-
 `;
 
 const Links = styled.div`
@@ -34,17 +33,27 @@ const Links = styled.div`
   }
 `;
 
+const Link = styled.a``;
+
 export function Footer() {
-    return (
-        <FooterWrapper>
-          <FooterContent>
-            <Links>
-              <img src={instagram} />
-              <img src={vimeo} />
-              <img src={email} />
-              <img src={linkedin} />
-            </Links>
-          </FooterContent>
-        </FooterWrapper>
-    );
+  return (
+    <FooterWrapper>
+      <FooterContent>
+        <Links>
+          <Link href="https://www.instagram.com/dylanharness/" target="_blank">
+            <img src={instagram} />
+          </Link>
+          <Link href="https://vimeo.com/user126295858" target="_blank">
+            <img src={vimeo} />
+          </Link>
+          <Link href="mailto:dharness.engineer@gmail.com" target="_blank">
+            <img src={email} />
+          </Link>
+          <Link href="https://www.linkedin.com/in/dhsoftware/" target="_blank">
+            <img src={linkedin} />
+          </Link>
+        </Links>
+      </FooterContent>
+    </FooterWrapper>
+  );
 }
