@@ -38480,7 +38480,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.contentWidth = exports.ORANGE_DARK = void 0;
+exports.figureText = exports.contentWidth = exports.ORANGE_DARK = void 0;
 var _styledComponents = require("styled-components");
 var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
   if (Object.defineProperty) {
@@ -38494,9 +38494,11 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
 };
 var contentWidth = (0, _styledComponents.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  max-width: 1085px;\n  width: 80vw;\n"], ["\n  max-width: 1085px;\n  width: 80vw;\n"])));
 exports.contentWidth = contentWidth;
+var figureText = (0, _styledComponents.css)(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: 191.6%;\n  /* or 34px */\n\n  letter-spacing: 0.04em;\n"], ["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: 191.6%;\n  /* or 34px */\n\n  letter-spacing: 0.04em;\n"])));
+exports.figureText = figureText;
 var ORANGE_DARK = "#E75D1A";
 exports.ORANGE_DARK = ORANGE_DARK;
-var templateObject_1;
+var templateObject_1, templateObject_2;
 },{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/logo.gif":[function(require,module,exports) {
 module.exports = "/logo.9396945d.gif";
 },{}],"components/Header.tsx":[function(require,module,exports) {
@@ -38705,32 +38707,32 @@ module.exports = "/thumbnail.c611f4bd.png";
 module.exports = "/thumbnail.fad522b6.png";
 },{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.f8fd2210.png";
-},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.0f995fe7.png";
-},{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.fdf4fbb1.png";
-},{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.5abd4f28.png";
-},{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.5e7285e8.png";
-},{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.64dd70d9.png";
 },{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.3831ad93.png";
+},{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.fdf4fbb1.png";
+},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.0f995fe7.png";
+},{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.5abd4f28.png";
+},{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.64dd70d9.png";
+},{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.5e7285e8.png";
 },{}],"assets/projects/*/thumbnail.png":[function(require,module,exports) {
 module.exports = {
   "bronco-henry": require("./..\\bronco-henry\\thumbnail.png"),
   "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
   "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
   "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
-  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
+  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "over-eats": require("./..\\over-eats\\thumbnail.png"),
+  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
   "propmaker": require("./..\\propmaker\\thumbnail.png"),
-  "purple-business": require("./..\\purple-business\\thumbnail.png"),
   "ski-boots": require("./..\\ski-boots\\thumbnail.png"),
-  "gator-gum": require("./..\\gator-gum\\thumbnail.png")
+  "purple-business": require("./..\\purple-business\\thumbnail.png")
 };
-},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
+},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48068,28 +48070,74 @@ function SkiBoots() {
   }))), _react.default.createElement("p", null, "The credit card was a another simple DUIK rig to give it some perspective as it scales around its ethereal plane.")));
 }
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","../assets/projects/ski-boots/shoe-tilt-slider.mp4":"assets/projects/ski-boots/shoe-tilt-slider.mp4","../assets/projects/ski-boots/character-turn-slider.mp4":"assets/projects/ski-boots/character-turn-slider.mp4","../assets/projects/ski-boots/UI-receipt-demo.mp4":"assets/projects/ski-boots/UI-receipt-demo.mp4","../assets/projects/ski-boots/card-with-reflections.mp4":"assets/projects/ski-boots/card-with-reflections.mp4","../assets/projects/ski-boots/spin-drop-demo.mp4":"assets/projects/ski-boots/spin-drop-demo.mp4"}],"pages/BroncoHenry.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","../assets/projects/ski-boots/shoe-tilt-slider.mp4":"assets/projects/ski-boots/shoe-tilt-slider.mp4","../assets/projects/ski-boots/character-turn-slider.mp4":"assets/projects/ski-boots/character-turn-slider.mp4","../assets/projects/ski-boots/UI-receipt-demo.mp4":"assets/projects/ski-boots/UI-receipt-demo.mp4","../assets/projects/ski-boots/card-with-reflections.mp4":"assets/projects/ski-boots/card-with-reflections.mp4","../assets/projects/ski-boots/spin-drop-demo.mp4":"assets/projects/ski-boots/spin-drop-demo.mp4"}],"assets/projects/bronco-henry/cowboy-ruffs.mp4":[function(require,module,exports) {
+module.exports = "/cowboy-ruffs.ca2b90e1.mp4";
+},{}],"assets/projects/bronco-henry/cowboy_L_alpha.png":[function(require,module,exports) {
+module.exports = "/cowboy_L_alpha.d4f9e868.png";
+},{}],"assets/projects/bronco-henry/cowboy_R_alpha.png":[function(require,module,exports) {
+module.exports = "/cowboy_R_alpha.7498298a.png";
+},{}],"pages/BroncoHenry.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.BroncoHenry = BroncoHenry;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
 var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _Video = require("../components/Video");
+var _cowboyRuffs = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy-ruffs.mp4"));
+var _cowboy_L_alpha = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy_L_alpha.png"));
+var _cowboy_R_alpha = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy_R_alpha.png"));
+var _sharedStyles = require("../sharedStyles");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div.withConfig({
+  displayName: "BroncoHenry__MediaSection",
+  componentId: "sc-1pvqatn-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n"], ["\n  display: flex;\n  flex-direction: column;\n"])));
+var Images = _styledComponents.default.div.withConfig({
+  displayName: "BroncoHenry__Images",
+  componentId: "sc-1pvqatn-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  justify-content: space-between;\n  /* max-height: 385px; */\n\n  & > img {\n    max-width: 48%;\n  }\n"], ["\n  display: flex;\n  justify-content: space-between;\n  /* max-height: 385px; */\n\n  & > img {\n    max-width: 48%;\n  }\n"])));
+var FigureText = _styledComponents.default.div.withConfig({
+  displayName: "BroncoHenry__FigureText",
+  componentId: "sc-1pvqatn-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  ", "\n  margin: 25px auto 80px auto;\n"], ["\n  ", "\n  margin: 25px auto 80px auto;\n"])), _sharedStyles.figureText);
 function BroncoHenry() {
   var _a = (0, _utils.getProjectData)("bronco-henry"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This cowboy was animated frame by frame in Toon Boom and cleaned up in After Effects. I tried to push his noodley appendages to the extreme, making him somewhat of a glyph."), _react.default.createElement(MediaSection, null, _react.default.createElement(_Video.Video, {
+    style: {
+      maxHeight: 330
+    },
+    src: _cowboyRuffs.default
+  }), _react.default.createElement(FigureText, null, "Fig 1. Rough Animation in Toonboom"), _react.default.createElement(Images, null, _react.default.createElement("img", {
+    src: _cowboy_L_alpha.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cowboy_R_alpha.default,
+    alt: ""
+  })))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/FeeRanger.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","./../assets/projects/bronco-henry/cowboy-ruffs.mp4":"assets/projects/bronco-henry/cowboy-ruffs.mp4","./../assets/projects/bronco-henry/cowboy_L_alpha.png":"assets/projects/bronco-henry/cowboy_L_alpha.png","./../assets/projects/bronco-henry/cowboy_R_alpha.png":"assets/projects/bronco-henry/cowboy_R_alpha.png","../sharedStyles":"sharedStyles.tsx"}],"pages/FeeRanger.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48409,7 +48457,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53970" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53580" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
