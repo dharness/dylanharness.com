@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function DemoReel() {
+export function DemoReel() {
     return (
         <>
         I am the demo reel page

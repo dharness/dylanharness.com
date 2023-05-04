@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
   height: 260px;
+  max-height: 260px;
+  min-height: 260px;
   background: green;
 `;
 
@@ -14,7 +16,8 @@ const Subtext = styled.div`
   font-size: 16px;
 `;
 
-export function Header() {
+export function Header(props: any) {
+  const {lg} = props;
     return (
         <HeaderWrapper>
             <div>
@@ -24,7 +27,7 @@ export function Header() {
             <div>
                 links
             </div>
-
+            {lg && <>I am large</>}
 
             <div>
                 <div className="header-name">Dylan Har</div>
