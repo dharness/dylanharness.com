@@ -1,26 +1,26 @@
-import React, {  } from "react";
-import { createRoot } from 'react-dom/client';
-import { createGlobalStyle } from 'styled-components'
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { createGlobalStyle } from "styled-components";
 import { RouterProvider } from "react-router-dom";
-import { Normalize } from 'styled-normalize'
-import { router } from './router'
+import { Normalize } from "styled-normalize";
+import { router } from "./router";
 
 const GlobalStyle = createGlobalStyle`
-  * {
+  html {
     font-family: Arial, Helvetica, sans-serif;
   }
-`
-
+`;
 
 export function App() {
-    return (
+  return (
     <>
-      <Normalize/>
+      <Normalize />
       <GlobalStyle />
       <RouterProvider router={router} />
-    </>);
-  }
+    </>
+  );
+}
 
-const container = document.getElementById('app');
+const container = document.getElementById("app");
 const root = createRoot(container!);
-root.render(<App/>);
+root.render(<App />);
