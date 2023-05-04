@@ -57,9 +57,7 @@ export function ProjectThumbnail(props: any) {
   const { hoverColor, name } = props;
   const thumbnail = thumbnails[name];
   const navigate = useNavigate();
-  const onThumbnailClicked = () => {
-    navigate(name);
-  };
+  const onThumbnailClicked = () => navigate(name);
   return (
     <ProjectThumbnailWrapper onClick={onThumbnailClicked}>
       <ProjectTitle>

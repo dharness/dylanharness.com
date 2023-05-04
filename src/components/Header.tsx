@@ -67,6 +67,7 @@ const PageLink = styled.a`
 
 const Logo = styled.img`
   height: 70px;
+  margin-left: -30px;
 `;
 
 const ColorBar = styled.div`

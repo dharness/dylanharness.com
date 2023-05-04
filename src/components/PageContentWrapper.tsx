@@ -18,6 +18,13 @@ const PageContentWrapper = styled.div`
     background: yellow;
     min-height: 100px;
   }
+  & > p {
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
 `;
 
 export { PageContentWrapper };

@@ -1,20 +1,26 @@
 import React from "react";
-import Vimeo from "@u-wave/react-vimeo";
+import ReactPlayer from "react-player";
 
 export function Video(props: any) {
-  const { vimeoId } = props;
-  const vimeoSettings = {
-    video: vimeoId,
-    autoplay: false,
-    volume: 1,
-    autopause: true,
-    controls: true,
-    responsive: true,
-    playsInline: false,
+  const { width, height, style } = props;
+  const videoSettings = {
+    url: props.src,
+    playing: true,
+    loop: true,
+    volume: 0,
+    playsinline: true,
+    height,
+    width,
+    style,
   };
   return (
     <>
-      <Vimeo {...vimeoSettings} />
+      <ReactPlayer {...videoSettings} />
     </>
   );
 }
+
+Video.defaultProps = {
+  width: "",
+  height: "",
+};
