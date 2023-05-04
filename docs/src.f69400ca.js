@@ -38474,69 +38474,7 @@ var Normalize = (0, _styledComponents.createGlobalStyle)(normalize);
 exports.Normalize = Normalize;
 var _default = normalize;
 exports.default = _default;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"components/Header.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Header = Header;
-var _react = _interopRequireDefault(require("react"));
-var _styledComponents = _interopRequireDefault(require("styled-components"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
-  if (Object.defineProperty) {
-    Object.defineProperty(cooked, "raw", {
-      value: raw
-    });
-  } else {
-    cooked.raw = raw;
-  }
-  return cooked;
-};
-var HeaderWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  height: 260px;\n  background: green;\n"], ["\n  height: 260px;\n  background: green;\n"])));
-var NameDiv = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: 32px;\n"], ["\n  font-size: 32px;\n"])));
-var Subtext = _styledComponents.default.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 16px;\n"], ["\n  font-size: 16px;\n"])));
-function Header() {
-  return _react.default.createElement(HeaderWrapper, null, _react.default.createElement("div", null, _react.default.createElement(NameDiv, null, "Dylan Harness"), _react.default.createElement(Subtext, null, "Motion Designer")), _react.default.createElement("div", null, "links"), _react.default.createElement("div", null, _react.default.createElement("div", {
-    className: "header-name"
-  }, "Dylan Har"), _react.default.createElement("div", null, "dmkdj")));
-}
-var templateObject_1, templateObject_2, templateObject_3;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/projects/bronco-henry/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.750c3454.png";
-},{}],"assets/projects/demo-reel/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.fad522b6.png";
-},{}],"assets/projects/fee-ranger/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.c611f4bd.png";
-},{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.f8fd2210.png";
-},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.3831ad93.png";
-},{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.fdf4fbb1.png";
-},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.0f995fe7.png";
-},{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.5abd4f28.png";
-},{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.5e7285e8.png";
-},{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.64dd70d9.png";
-},{}],"assets/projects/*/thumbnail.png":[function(require,module,exports) {
-module.exports = {
-  "bronco-henry": require("./..\\bronco-henry\\thumbnail.png"),
-  "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
-  "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
-  "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
-  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
-  "over-eats": require("./..\\over-eats\\thumbnail.png"),
-  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
-  "propmaker": require("./..\\propmaker\\thumbnail.png"),
-  "purple-business": require("./..\\purple-business\\thumbnail.png"),
-  "ski-boots": require("./..\\ski-boots\\thumbnail.png")
-};
-},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"projects.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"projects.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38575,7 +38513,40 @@ var projectData = [{
   hoverColor: '#F0783E'
 }];
 exports.projectData = projectData;
-},{}],"utils.tsx":[function(require,module,exports) {
+},{}],"assets/projects/bronco-henry/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.750c3454.png";
+},{}],"assets/projects/demo-reel/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.fad522b6.png";
+},{}],"assets/projects/fee-ranger/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.c611f4bd.png";
+},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.3831ad93.png";
+},{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.f8fd2210.png";
+},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.0f995fe7.png";
+},{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.fdf4fbb1.png";
+},{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.5abd4f28.png";
+},{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.5e7285e8.png";
+},{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.64dd70d9.png";
+},{}],"assets/projects/*/thumbnail.png":[function(require,module,exports) {
+module.exports = {
+  "bronco-henry": require("./..\\bronco-henry\\thumbnail.png"),
+  "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
+  "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
+  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
+  "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
+  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
+  "over-eats": require("./..\\over-eats\\thumbnail.png"),
+  "propmaker": require("./..\\propmaker\\thumbnail.png"),
+  "purple-business": require("./..\\purple-business\\thumbnail.png"),
+  "ski-boots": require("./..\\ski-boots\\thumbnail.png")
+};
+},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38592,19 +38563,17 @@ function kebabToTitle(str) {
   }).join(' ');
   return titleCase;
 }
-},{}],"pages/Landing.tsx":[function(require,module,exports) {
+},{}],"components/ProjectThumbail.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Landing = Landing;
+exports.ProjectThumbnail = ProjectThumbnail;
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
 var _reactRouterDom = require("react-router-dom");
-var _Header = require("../components/Header");
 var _thumbnail = _interopRequireDefault(require("../assets/projects/*/thumbnail.png"));
-var _projects = require("../projects");
 var _utils = require("../utils");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
@@ -38617,57 +38586,80 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
-var LandingWrapper = _styledComponents.default.div.withConfig({
-  displayName: "Landing__LandingWrapper",
-  componentId: "sc-ec57pv-0"
-})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n"], ["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n"])));
-var LandingContent = _styledComponents.default.div.withConfig({
-  displayName: "Landing__LandingContent",
-  componentId: "sc-ec57pv-1"
-})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"], ["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"])));
-var ProjectsGrid = _styledComponents.default.div.withConfig({
-  displayName: "Landing__ProjectsGrid",
-  componentId: "sc-ec57pv-2"
-})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 22px;\n    justify-items: start;\n"], ["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 22px;\n    justify-items: start;\n"])));
-var ProjectThumbnail1 = _styledComponents.default.div.withConfig({
-  displayName: "Landing__ProjectThumbnail1",
-  componentId: "sc-ec57pv-3"
-})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    align-content: center;\n"], ["\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    align-content: center;\n"])));
 var ProjectThumbnailWrapper = _styledComponents.default.div.withConfig({
-  displayName: "Landing__ProjectThumbnailWrapper",
-  componentId: "sc-ec57pv-4"
-})(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n    background: blue;\n    position: relative;\n"], ["\n    background: blue;\n    position: relative;\n"])));
+  displayName: "ProjectThumbail__ProjectThumbnailWrapper",
+  componentId: "sc-7x9t2j-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background: blue;\n    position: relative;\n    &:hover {\n        cursor: pointer;\n    }\n"], ["\n    background: blue;\n    position: relative;\n    &:hover {\n        cursor: pointer;\n    }\n"])));
 var ProjectThumbnailImg = _styledComponents.default.img.withConfig({
-  displayName: "Landing__ProjectThumbnailImg",
-  componentId: "sc-ec57pv-5"
-})(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n"], ["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n"])));
+  displayName: "ProjectThumbail__ProjectThumbnailImg",
+  componentId: "sc-7x9t2j-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n    "], ["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n    "])));
 var ProjectThumbnailOverlay = _styledComponents.default.div.withConfig({
-  displayName: "Landing__ProjectThumbnailOverlay",
-  componentId: "sc-ec57pv-6"
-})(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    position: absolute;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    &:hover {\n        opacity: 70%;\n        cursor: pointer;\n    }\n"], ["\n    position: absolute;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    &:hover {\n        opacity: 70%;\n        cursor: pointer;\n    }\n"])), function (props) {
+  displayName: "ProjectThumbail__ProjectThumbnailOverlay",
+  componentId: "sc-7x9t2j-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    position: absolute;\n    z-index: 1;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    ", ":hover & {\n        opacity: 70%;\n    }\n"], ["\n    position: absolute;\n    z-index: 1;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    ", ":hover & {\n        opacity: 70%;\n    }\n"])), function (props) {
   return props.$hoverColor;
-});
+}, ProjectThumbnailWrapper);
+var ProjectTitle = _styledComponents.default.div.withConfig({
+  displayName: "ProjectThumbail__ProjectTitle",
+  componentId: "sc-7x9t2j-3"
+})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    position: absolute;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    ", ":hover & {\n        opacity: 100%;\n    }\n"], ["\n    position: absolute;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    ", ":hover & {\n        opacity: 100%;\n    }\n"])), ProjectThumbnailWrapper);
 function ProjectThumbnail(props) {
   var hoverColor = props.hoverColor,
     name = props.name;
   var thumbnail = _thumbnail.default[name];
   var navigate = (0, _reactRouterDom.useNavigate)();
   var onThumbnailClicked = function onThumbnailClicked() {
-    navigate("demo-reel");
+    navigate(name);
   };
-  return _react.default.createElement(ProjectThumbnail1, null, _react.default.createElement(ProjectThumbnailWrapper, {
+  return _react.default.createElement(ProjectThumbnailWrapper, {
     onClick: onThumbnailClicked
-  }, _react.default.createElement(ProjectThumbnailOverlay, {
+  }, _react.default.createElement(ProjectTitle, null, _react.default.createElement("p", null, (0, _utils.kebabToTitle)(name))), _react.default.createElement(ProjectThumbnailOverlay, {
     "$hoverColor": hoverColor
-  }, (0, _utils.kebabToTitle)(name)), _react.default.createElement(ProjectThumbnailImg, {
+  }), _react.default.createElement(ProjectThumbnailImg, {
     src: thumbnail
-  })));
+  }));
 }
-function Landing() {
-  return _react.default.createElement(LandingWrapper, null, _react.default.createElement(_Header.Header, null), _react.default.createElement(LandingContent, null, _react.default.createElement(ProjectsGrid, null, _projects.projectData.map(function (_a, i) {
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","../assets/projects/*/thumbnail.png":"assets/projects/*/thumbnail.png","../utils":"utils.tsx"}],"pages/Projects.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Projects = Projects;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _react = _interopRequireDefault(require("react"));
+var _projects = require("../projects");
+var _ProjectThumbail = require("../components/ProjectThumbail");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var ProjectsWrapper = _styledComponents.default.div.withConfig({
+  displayName: "Projects__ProjectsWrapper",
+  componentId: "sc-of3qv3-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n    &::before {\n      content: \" \";\n      background: yellow;\n      min-height: 65px;\n    }\n    &::after {\n      content: \" \";\n      background: yellow;\n      min-height: 100px;\n    }\n"], ["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n    &::before {\n      content: \" \";\n      background: yellow;\n      min-height: 65px;\n    }\n    &::after {\n      content: \" \";\n      background: yellow;\n      min-height: 100px;\n    }\n"])));
+var ProjectsContent = _styledComponents.default.div.withConfig({
+  displayName: "Projects__ProjectsContent",
+  componentId: "sc-of3qv3-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"], ["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"])));
+var ProjectsGrid = _styledComponents.default.div.withConfig({
+  displayName: "Projects__ProjectsGrid",
+  componentId: "sc-of3qv3-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 22px;\n    justify-items: start;\n"], ["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 22px;\n    justify-items: start;\n"])));
+function Projects() {
+  return _react.default.createElement(ProjectsWrapper, null, _react.default.createElement(ProjectsContent, null, _react.default.createElement(ProjectsGrid, null, _projects.projectData.map(function (_a, i) {
     var name = _a.name,
       hoverColor = _a.hoverColor;
-    return _react.default.createElement(ProjectThumbnail, {
+    return _react.default.createElement(_ProjectThumbail.ProjectThumbnail, {
       row: i,
       col: i % 3,
       name: name,
@@ -38676,33 +38668,110 @@ function Landing() {
     });
   }))));
 }
-var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","../components/Header":"components/Header.tsx","../assets/projects/*/thumbnail.png":"assets/projects/*/thumbnail.png","../projects":"projects.tsx","../utils":"utils.tsx"}],"pages/DemoReel.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../projects":"projects.tsx","../components/ProjectThumbail":"components/ProjectThumbail.tsx"}],"pages/DemoReel.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = DemoReel;
+exports.DemoReel = DemoReel;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function DemoReel() {
   return _react.default.createElement(_react.default.Fragment, null, "I am the demo reel page");
 }
-},{"react":"../node_modules/react/index.js"}],"index.tsx":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/Header.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.App = App;
+exports.Header = Header;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var HeaderWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  height: 260px;\n  max-height: 260px;\n  min-height: 260px;\n  background: green;\n"], ["\n  height: 260px;\n  max-height: 260px;\n  min-height: 260px;\n  background: green;\n"])));
+var NameDiv = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: 32px;\n"], ["\n  font-size: 32px;\n"])));
+var Subtext = _styledComponents.default.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 16px;\n"], ["\n  font-size: 16px;\n"])));
+function Header(props) {
+  var lg = props.lg;
+  return _react.default.createElement(HeaderWrapper, null, _react.default.createElement("div", null, _react.default.createElement(NameDiv, null, "Dylan Harness"), _react.default.createElement(Subtext, null, "Motion Designer")), _react.default.createElement("div", null, "links"), lg && _react.default.createElement(_react.default.Fragment, null, "I am large"), _react.default.createElement("div", null, _react.default.createElement("div", {
+    className: "header-name"
+  }, "Dylan Har"), _react.default.createElement("div", null, "dmkdj")));
+}
+var templateObject_1, templateObject_2, templateObject_3;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/icons/linkedin.svg":[function(require,module,exports) {
+module.exports = "/linkedin.15978cba.svg";
+},{}],"assets/icons/email.svg":[function(require,module,exports) {
+module.exports = "/email.b0f0adbd.svg";
+},{}],"assets/icons/instagram.svg":[function(require,module,exports) {
+module.exports = "/instagram.79162530.svg";
+},{}],"assets/icons/vimeo.svg":[function(require,module,exports) {
+module.exports = "/vimeo.06bff2d5.svg";
+},{}],"components/Footer.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Footer = Footer;
+var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _linkedin = _interopRequireDefault(require("./../assets/icons/linkedin.svg"));
+var _email = _interopRequireDefault(require("./../assets/icons/email.svg"));
+var _instagram = _interopRequireDefault(require("./../assets/icons/instagram.svg"));
+var _vimeo = _interopRequireDefault(require("./../assets/icons/vimeo.svg"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var FooterWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  height: 80px;\n  min-height: 80px;\n  background: blueviolet;\n  width: 100%;\n  margin-top: auto;\n"], ["\n  display: flex;\n  height: 80px;\n  min-height: 80px;\n  background: blueviolet;\n  width: 100%;\n  margin-top: auto;\n"])));
+var FooterContent = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  background: green;\n  max-width: 1085px;\n  margin: auto;\n  width: 80vw;\n  justify-content: end;\n\n"], ["\n  display: flex;\n  background: green;\n  max-width: 1085px;\n  margin: auto;\n  width: 80vw;\n  justify-content: end;\n\n"])));
+var Links = _styledComponents.default.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: flex;\n  gap: 20px;\n  align-items: flex-end;\n  background: orange;\n  & > img {\n    max-width: 30px;\n  }\n"], ["\n  display: flex;\n  gap: 20px;\n  align-items: flex-end;\n  background: orange;\n  & > img {\n    max-width: 30px;\n  }\n"])));
+function Footer() {
+  return _react.default.createElement(FooterWrapper, null, _react.default.createElement(FooterContent, null, _react.default.createElement(Links, null, _react.default.createElement("img", {
+    src: _instagram.default
+  }), _react.default.createElement("img", {
+    src: _vimeo.default
+  }), _react.default.createElement("img", {
+    src: _email.default
+  }), _react.default.createElement("img", {
+    src: _linkedin.default
+  }))));
+}
+var templateObject_1, templateObject_2, templateObject_3;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./../assets/icons/linkedin.svg":"assets/icons/linkedin.svg","./../assets/icons/email.svg":"assets/icons/email.svg","./../assets/icons/instagram.svg":"assets/icons/instagram.svg","./../assets/icons/vimeo.svg":"assets/icons/vimeo.svg"}],"router.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.router = void 0;
 var _react = _interopRequireWildcard(require("react"));
-var _client = require("react-dom/client");
-var _styledComponents = require("styled-components");
 var _reactRouterDom = require("react-router-dom");
-var _styledNormalize = require("styled-normalize");
-var _Landing = require("./pages/Landing");
-var _DemoReel = _interopRequireDefault(require("./pages/DemoReel"));
+var _Projects = require("./pages/Projects");
+var _DemoReel = require("./pages/DemoReel");
+var _Header = require("./components/Header");
+var _Footer = require("./components/Footer");
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -38716,6 +38785,7 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
+var PageWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n    height: 100%;\n    flex-direction: column;\n    background: tan;\n"], ["\n    display: flex;\n    height: 100%;\n    flex-direction: column;\n    background: tan;\n"])));
 function Err() {
   var navigate = (0, _reactRouterDom.useNavigate)();
   (0, _react.useEffect)(function () {
@@ -38725,25 +38795,63 @@ function Err() {
   }, []);
   return null;
 }
-var GlobalStyle = (0, _styledComponents.createGlobalStyle)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"], ["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"])));
+function Page(props) {
+  return _react.default.createElement(PageWrapper, null, _react.default.createElement(_Header.Header, {
+    lg: props.lg
+  }), props.content, _react.default.createElement(_Footer.Footer, null));
+}
+Page.defaultProps = {
+  lg: false
+};
 var router = (0, _reactRouterDom.createBrowserRouter)([{
   path: "/",
-  element: _react.default.createElement(_Landing.Landing, null),
+  element: _react.default.createElement(Page, {
+    content: _react.default.createElement(_Projects.Projects, null)
+  }),
   errorElement: _react.default.createElement(Err, null)
 }, {
   path: "demo-reel",
-  element: _react.default.createElement(_DemoReel.default, null)
+  element: _react.default.createElement(Page, {
+    content: _react.default.createElement(_DemoReel.DemoReel, null)
+  })
 }]);
+exports.router = router;
+var templateObject_1;
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./pages/Projects":"pages/Projects.tsx","./pages/DemoReel":"pages/DemoReel.tsx","./components/Header":"components/Header.tsx","./components/Footer":"components/Footer.tsx","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"index.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.App = App;
+var _react = _interopRequireDefault(require("react"));
+var _client = require("react-dom/client");
+var _styledComponents = require("styled-components");
+var _reactRouterDom = require("react-router-dom");
+var _styledNormalize = require("styled-normalize");
+var _router = require("./router");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"], ["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"])));
 function App() {
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_styledNormalize.Normalize, null), _react.default.createElement(GlobalStyle, null), _react.default.createElement(_reactRouterDom.RouterProvider, {
-    router: router
+    router: _router.router
   }));
 }
 var container = document.getElementById('app');
 var root = (0, _client.createRoot)(container);
 root.render(_react.default.createElement(App, null));
 var templateObject_1;
-},{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","styled-normalize":"../node_modules/styled-normalize/dist/index.js","./pages/Landing":"pages/Landing.tsx","./pages/DemoReel":"pages/DemoReel.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","styled-normalize":"../node_modules/styled-normalize/dist/index.js","./router":"router.tsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -38768,7 +38876,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50773" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57065" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
