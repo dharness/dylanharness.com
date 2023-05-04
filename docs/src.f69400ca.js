@@ -38474,7 +38474,7 @@ var Normalize = (0, _styledComponents.createGlobalStyle)(normalize);
 exports.Normalize = Normalize;
 var _default = normalize;
 exports.default = _default;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"projects.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"projectData.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38482,35 +38482,45 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.projectData = void 0;
 var projectData = [{
-  name: 'demo-reel',
-  hoverColor: '#F0783E'
+  name: "demo-reel",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'ski-boots',
-  hoverColor: '#F0783E'
+  name: "ski-boots",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'bronco-henry',
-  hoverColor: '#F0783E'
+  name: "bronco-henry",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'over-eats',
-  hoverColor: '#F0783E'
+  name: "over-eats",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'fresh-caught',
-  hoverColor: '#F0783E'
+  name: "fresh-caught",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'fee-ranger',
-  hoverColor: '#F0783E'
+  name: "fee-ranger",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'gator-gum',
-  hoverColor: '#F0783E'
+  name: "gator-gum",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'propmaker',
-  hoverColor: '#F0783E'
+  name: "propmaker",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'portrait-of-a-lady',
-  hoverColor: '#F0783E'
+  name: "portrait-of-a-lady",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }, {
-  name: 'purple-business',
-  hoverColor: '#F0783E'
+  name: "purple-business",
+  hoverColor: "#F0783E",
+  vimeoId: "823151596"
 }];
 exports.projectData = projectData;
 },{}],"assets/projects/bronco-henry/thumbnail.png":[function(require,module,exports) {
@@ -38519,14 +38529,14 @@ module.exports = "/thumbnail.750c3454.png";
 module.exports = "/thumbnail.fad522b6.png";
 },{}],"assets/projects/fee-ranger/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.c611f4bd.png";
-},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.f8fd2210.png";
-},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.0f995fe7.png";
 },{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.fdf4fbb1.png";
+},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.0f995fe7.png";
+},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.5abd4f28.png";
 },{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
@@ -38538,32 +38548,41 @@ module.exports = {
   "bronco-henry": require("./..\\bronco-henry\\thumbnail.png"),
   "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
   "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
-  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
-  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
   "over-eats": require("./..\\over-eats\\thumbnail.png"),
+  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
+  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "propmaker": require("./..\\propmaker\\thumbnail.png"),
   "purple-business": require("./..\\purple-business\\thumbnail.png"),
   "ski-boots": require("./..\\ski-boots\\thumbnail.png")
 };
-},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
+},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.getProjectData = getProjectData;
 exports.kebabToTitle = kebabToTitle;
+var _projectData = require("./projectData");
 // Takes an kebab-case-string, and converts it to a Title Case String
 function kebabToTitle(str) {
   // Split the string into an array of words
-  var words = str.split('-');
+  var words = str.split("-");
   // Capitalize the first letter of each word and join them together
   var titleCase = words.map(function (word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
-  }).join(' ');
+  }).join(" ");
   return titleCase;
 }
-},{}],"components/ProjectThumbail.tsx":[function(require,module,exports) {
+// Find the project data for a given project name
+function getProjectData(projectName) {
+  var project = _projectData.projectData.find(function (p) {
+    return p.name == projectName;
+  }) || {};
+  return project;
+}
+},{"./projectData":"projectData.tsx"}],"components/ProjectThumbail.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38589,21 +38608,21 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
 var ProjectThumbnailWrapper = _styledComponents.default.div.withConfig({
   displayName: "ProjectThumbail__ProjectThumbnailWrapper",
   componentId: "sc-7x9t2j-0"
-})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    background: blue;\n    position: relative;\n    &:hover {\n        cursor: pointer;\n    }\n"], ["\n    background: blue;\n    position: relative;\n    &:hover {\n        cursor: pointer;\n    }\n"])));
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background: blue;\n  position: relative;\n  &:hover {\n    cursor: pointer;\n  }\n"], ["\n  background: blue;\n  position: relative;\n  &:hover {\n    cursor: pointer;\n  }\n"])));
 var ProjectThumbnailImg = _styledComponents.default.img.withConfig({
   displayName: "ProjectThumbail__ProjectThumbnailImg",
   componentId: "sc-7x9t2j-1"
-})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n    "], ["\n    justify-self: start;\n    &:nth-of-type(2n) { justify-self: end; }\n    max-width: 100%;\n    background: tan;\n    "])));
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  justify-self: start;\n  &:nth-of-type(2n) {\n    justify-self: end;\n  }\n  max-width: 100%;\n  background: tan;\n"], ["\n  justify-self: start;\n  &:nth-of-type(2n) {\n    justify-self: end;\n  }\n  max-width: 100%;\n  background: tan;\n"])));
 var ProjectThumbnailOverlay = _styledComponents.default.div.withConfig({
   displayName: "ProjectThumbail__ProjectThumbnailOverlay",
   componentId: "sc-7x9t2j-2"
-})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    position: absolute;\n    z-index: 1;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    ", ":hover & {\n        opacity: 70%;\n    }\n"], ["\n    position: absolute;\n    z-index: 1;\n    background: ", ";\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    ", ":hover & {\n        opacity: 70%;\n    }\n"])), function (props) {
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: absolute;\n  z-index: 1;\n  background: ", ";\n  width: 100%;\n  height: 100%;\n  opacity: 0%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  user-select: none;\n  ", ":hover & {\n    opacity: 70%;\n  }\n"], ["\n  position: absolute;\n  z-index: 1;\n  background: ", ";\n  width: 100%;\n  height: 100%;\n  opacity: 0%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  user-select: none;\n  ", ":hover & {\n    opacity: 70%;\n  }\n"])), function (props) {
   return props.$hoverColor;
 }, ProjectThumbnailWrapper);
 var ProjectTitle = _styledComponents.default.div.withConfig({
   displayName: "ProjectThumbail__ProjectTitle",
   componentId: "sc-7x9t2j-3"
-})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    position: absolute;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    ", ":hover & {\n        opacity: 100%;\n    }\n"], ["\n    position: absolute;\n    z-index: 2;\n    width: 100%;\n    height: 100%;\n    opacity: 0%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    user-select: none;\n    color: white;\n    ", ":hover & {\n        opacity: 100%;\n    }\n"])), ProjectThumbnailWrapper);
+})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 100%;\n  opacity: 0%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  user-select: none;\n  color: white;\n  ", ":hover & {\n    opacity: 100%;\n  }\n"], ["\n  position: absolute;\n  z-index: 2;\n  width: 100%;\n  height: 100%;\n  opacity: 0%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  user-select: none;\n  color: white;\n  ", ":hover & {\n    opacity: 100%;\n  }\n"])), ProjectThumbnailWrapper);
 function ProjectThumbnail(props) {
   var hoverColor = props.hoverColor,
     name = props.name;
@@ -38621,7 +38640,30 @@ function ProjectThumbnail(props) {
   }));
 }
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","../assets/projects/*/thumbnail.png":"assets/projects/*/thumbnail.png","../utils":"utils.tsx"}],"pages/Projects.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","../assets/projects/*/thumbnail.png":"assets/projects/*/thumbnail.png","../utils":"utils.tsx"}],"sharedStyles.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.contentWidth = exports.ORANGE_DARK = void 0;
+var _styledComponents = require("styled-components");
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var contentWidth = (0, _styledComponents.css)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  max-width: 1085px;\n  width: 80vw;\n"], ["\n  max-width: 1085px;\n  width: 80vw;\n"])));
+exports.contentWidth = contentWidth;
+var ORANGE_DARK = "#E75D1A";
+exports.ORANGE_DARK = ORANGE_DARK;
+var templateObject_1;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"pages/Projects.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38630,8 +38672,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.Projects = Projects;
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
-var _projects = require("../projects");
+var _projectData = require("../projectData");
 var _ProjectThumbail = require("../components/ProjectThumbail");
+var _sharedStyles = require("../sharedStyles");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
   if (Object.defineProperty) {
@@ -38646,17 +38689,17 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
 var ProjectsWrapper = _styledComponents.default.div.withConfig({
   displayName: "Projects__ProjectsWrapper",
   componentId: "sc-of3qv3-0"
-})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n    &::before {\n      content: \" \";\n      background: yellow;\n      min-height: 65px;\n    }\n    &::after {\n      content: \" \";\n      background: yellow;\n      min-height: 100px;\n    }\n"], ["\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background: red;\n    &::before {\n      content: \" \";\n      background: yellow;\n      min-height: 65px;\n    }\n    &::after {\n      content: \" \";\n      background: yellow;\n      min-height: 100px;\n    }\n"])));
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  background: red;\n  &::before {\n    content: \" \";\n    background: yellow;\n    min-height: 65px;\n  }\n  &::after {\n    content: \" \";\n    background: yellow;\n    min-height: 100px;\n  }\n"], ["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  background: red;\n  &::before {\n    content: \" \";\n    background: yellow;\n    min-height: 65px;\n  }\n  &::after {\n    content: \" \";\n    background: yellow;\n    min-height: 100px;\n  }\n"])));
 var ProjectsContent = _styledComponents.default.div.withConfig({
   displayName: "Projects__ProjectsContent",
   componentId: "sc-of3qv3-1"
-})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"], ["\n    display: flex;\n    flex-direction: column;\n    margin: auto;\n    background: plum;\n    max-width: 1085px;\n    width: 80vw;\n"])));
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  background: plum;\n  ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  margin: auto;\n  background: plum;\n  ", ";\n"])), _sharedStyles.contentWidth);
 var ProjectsGrid = _styledComponents.default.div.withConfig({
   displayName: "Projects__ProjectsGrid",
   componentId: "sc-of3qv3-2"
-})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 22px;\n    justify-items: start;\n"], ["\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 22px;\n    justify-items: start;\n"])));
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 22px;\n  justify-items: start;\n"], ["\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 22px;\n  justify-items: start;\n"])));
 function Projects() {
-  return _react.default.createElement(ProjectsWrapper, null, _react.default.createElement(ProjectsContent, null, _react.default.createElement(ProjectsGrid, null, _projects.projectData.map(function (_a, i) {
+  return _react.default.createElement(ProjectsWrapper, null, _react.default.createElement(ProjectsContent, null, _react.default.createElement(ProjectsGrid, null, _projectData.projectData.map(function (_a, i) {
     var name = _a.name,
       hoverColor = _a.hoverColor;
     return _react.default.createElement(_ProjectThumbail.ProjectThumbnail, {
@@ -38669,7 +38712,3854 @@ function Projects() {
   }))));
 }
 var templateObject_1, templateObject_2, templateObject_3;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../projects":"projects.tsx","../components/ProjectThumbail":"components/ProjectThumbail.tsx"}],"pages/DemoReel.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../projectData":"projectData.tsx","../components/ProjectThumbail":"components/ProjectThumbail.tsx","../sharedStyles":"sharedStyles.tsx"}],"../node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+if ("development" !== "production") {
+  (function () {
+    'use strict';
+
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+    function isValidElementType(type) {
+      return typeof type === 'string' || typeof type === 'function' ||
+      // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+    function typeOf(object) {
+      if (typeof object === 'object' && object !== null) {
+        var $$typeof = object.$$typeof;
+        switch ($$typeof) {
+          case REACT_ELEMENT_TYPE:
+            var type = object.type;
+            switch (type) {
+              case REACT_ASYNC_MODE_TYPE:
+              case REACT_CONCURRENT_MODE_TYPE:
+              case REACT_FRAGMENT_TYPE:
+              case REACT_PROFILER_TYPE:
+              case REACT_STRICT_MODE_TYPE:
+              case REACT_SUSPENSE_TYPE:
+                return type;
+              default:
+                var $$typeofType = type && type.$$typeof;
+                switch ($$typeofType) {
+                  case REACT_CONTEXT_TYPE:
+                  case REACT_FORWARD_REF_TYPE:
+                  case REACT_LAZY_TYPE:
+                  case REACT_MEMO_TYPE:
+                  case REACT_PROVIDER_TYPE:
+                    return $$typeofType;
+                  default:
+                    return $$typeof;
+                }
+            }
+          case REACT_PORTAL_TYPE:
+            return $$typeof;
+        }
+      }
+      return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+    function isAsyncMode(object) {
+      {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+          hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+          console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+        }
+      }
+      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+    function isConcurrentMode(object) {
+      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+    function isContextConsumer(object) {
+      return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+    function isContextProvider(object) {
+      return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+    function isElement(object) {
+      return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function isForwardRef(object) {
+      return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+    function isFragment(object) {
+      return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+    function isLazy(object) {
+      return typeOf(object) === REACT_LAZY_TYPE;
+    }
+    function isMemo(object) {
+      return typeOf(object) === REACT_MEMO_TYPE;
+    }
+    function isPortal(object) {
+      return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+    function isProfiler(object) {
+      return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+    function isStrictMode(object) {
+      return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+    function isSuspense(object) {
+      return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+  })();
+}
+},{}],"../node_modules/prop-types/node_modules/react-is/index.js":[function(require,module,exports) {
+'use strict';
+
+if ("development" === 'production') {
+  module.exports = require('./cjs/react-is.production.min.js');
+} else {
+  module.exports = require('./cjs/react-is.development.js');
+}
+},{"./cjs/react-is.development.js":"../node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js"}],"../node_modules/object-assign/index.js":[function(require,module,exports) {
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+'use strict';
+
+/* eslint-disable no-unused-vars */
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+function toObject(val) {
+  if (val === null || val === undefined) {
+    throw new TypeError('Object.assign cannot be called with null or undefined');
+  }
+  return Object(val);
+}
+function shouldUseNative() {
+  try {
+    if (!Object.assign) {
+      return false;
+    }
+
+    // Detect buggy property enumeration order in older V8 versions.
+
+    // https://bugs.chromium.org/p/v8/issues/detail?id=4118
+    var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
+    test1[5] = 'de';
+    if (Object.getOwnPropertyNames(test1)[0] === '5') {
+      return false;
+    }
+
+    // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+    var test2 = {};
+    for (var i = 0; i < 10; i++) {
+      test2['_' + String.fromCharCode(i)] = i;
+    }
+    var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+      return test2[n];
+    });
+    if (order2.join('') !== '0123456789') {
+      return false;
+    }
+
+    // https://bugs.chromium.org/p/v8/issues/detail?id=3056
+    var test3 = {};
+    'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+      test3[letter] = letter;
+    });
+    if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
+      return false;
+    }
+    return true;
+  } catch (err) {
+    // We don't expect any of the above to throw, but better to be safe.
+    return false;
+  }
+}
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+  var from;
+  var to = toObject(target);
+  var symbols;
+  for (var s = 1; s < arguments.length; s++) {
+    from = Object(arguments[s]);
+    for (var key in from) {
+      if (hasOwnProperty.call(from, key)) {
+        to[key] = from[key];
+      }
+    }
+    if (getOwnPropertySymbols) {
+      symbols = getOwnPropertySymbols(from);
+      for (var i = 0; i < symbols.length; i++) {
+        if (propIsEnumerable.call(from, symbols[i])) {
+          to[symbols[i]] = from[symbols[i]];
+        }
+      }
+    }
+  }
+  return to;
+};
+},{}],"../node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+},{}],"../node_modules/prop-types/lib/has.js":[function(require,module,exports) {
+module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+},{}],"../node_modules/prop-types/checkPropTypes.js":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+var printWarning = function () {};
+if ("development" !== 'production') {
+  var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+  var loggedTypeFailures = {};
+  var has = require('./lib/has');
+  printWarning = function (text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {/**/}
+  };
+}
+
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if ("development" !== 'production') {
+    for (var typeSpecName in typeSpecs) {
+      if (has(typeSpecs, typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+        if (error && !(error instanceof Error)) {
+          printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + typeof error + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+        }
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+          var stack = getStack ? getStack() : '';
+          printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */
+checkPropTypes.resetWarningCache = function () {
+  if ("development" !== 'production') {
+    loggedTypeFailures = {};
+  }
+};
+module.exports = checkPropTypes;
+},{"./lib/ReactPropTypesSecret":"../node_modules/prop-types/lib/ReactPropTypesSecret.js","./lib/has":"../node_modules/prop-types/lib/has.js"}],"../node_modules/prop-types/factoryWithTypeCheckers.js":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+'use strict';
+
+var ReactIs = require('react-is');
+var assign = require('object-assign');
+var ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');
+var has = require('./lib/has');
+var checkPropTypes = require('./checkPropTypes');
+var printWarning = function () {};
+if ("development" !== 'production') {
+  printWarning = function (text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+module.exports = function (isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bigint: createPrimitiveTypeChecker('bigint'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message, data) {
+    this.message = message;
+    this.data = data && typeof data === 'object' ? data : {};
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+  function createChainableTypeChecker(validate) {
+    if ("development" !== 'production') {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ("development" !== 'production' && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (!manualPropTypeCallCache[cacheKey] &&
+          // Avoid spamming the console because they are often not actionable except for lib authors
+          manualPropTypeWarningCount < 3) {
+            printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+    return chainedCheckType;
+  }
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'), {
+          expectedType: expectedType
+        });
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if ("development" !== 'production') {
+        if (arguments.length > 1) {
+          printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+      return emptyFunctionThatReturnsNull;
+    }
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+        if (type === 'symbol') {
+          return String(value);
+        }
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+      "development" !== 'production' ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : void 0;
+      return emptyFunctionThatReturnsNull;
+    }
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+    function validate(props, propName, componentName, location, propFullName) {
+      var expectedTypes = [];
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        var checkerResult = checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+        if (checkerResult == null) {
+          return null;
+        }
+        if (checkerResult.data && has(checkerResult.data, 'expectedType')) {
+          expectedTypes.push(checkerResult.data.expectedType);
+        }
+      }
+      var expectedTypesMessage = expectedTypes.length > 0 ? ', expected one of type [' + expectedTypes.join(', ') + ']' : '';
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`' + expectedTypesMessage + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function invalidValidatorError(componentName, location, propFullName, key, type) {
+    return new PropTypeError((componentName || 'React class') + ': ' + location + ' type `' + propFullName + '.' + key + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + type + '`.');
+  }
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (typeof checker !== 'function') {
+          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (has(shapeTypes, key) && typeof checker !== 'function') {
+          return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+        }
+        if (!checker) {
+          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+        return true;
+      default:
+        return false;
+    }
+  }
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // falsy value can't be a Symbol
+    if (!propValue) {
+      return false;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+  return ReactPropTypes;
+};
+},{"react-is":"../node_modules/prop-types/node_modules/react-is/index.js","object-assign":"../node_modules/object-assign/index.js","./lib/ReactPropTypesSecret":"../node_modules/prop-types/lib/ReactPropTypesSecret.js","./lib/has":"../node_modules/prop-types/lib/has.js","./checkPropTypes":"../node_modules/prop-types/checkPropTypes.js"}],"../node_modules/prop-types/index.js":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if ("development" !== 'production') {
+  var ReactIs = require('react-is');
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = require('./factoryWithTypeCheckers')(ReactIs.isElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = require('./factoryWithThrowingShims')();
+}
+},{"react-is":"../node_modules/prop-types/node_modules/react-is/index.js","./factoryWithTypeCheckers":"../node_modules/prop-types/factoryWithTypeCheckers.js"}],"../node_modules/@vimeo/player/dist/player.es.js":[function(require,module,exports) {
+var global = arguments[3];
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*! @vimeo/player v2.19.0 | (c) 2023 Vimeo | MIT License | https://github.com/vimeo/player.js */
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/**
+ * @module lib/functions
+ */
+
+/**
+ * Check to see this is a node environment.
+ * @type {Boolean}
+ */
+
+/* global global */
+var isNode = typeof global !== 'undefined' && {}.toString.call(global) === '[object global]';
+/**
+ * Get the name of the method for a given getter or setter.
+ *
+ * @param {string} prop The name of the property.
+ * @param {string} type Either “get” or “set”.
+ * @return {string}
+ */
+
+function getMethodName(prop, type) {
+  if (prop.indexOf(type.toLowerCase()) === 0) {
+    return prop;
+  }
+  return "".concat(type.toLowerCase()).concat(prop.substr(0, 1).toUpperCase()).concat(prop.substr(1));
+}
+/**
+ * Check to see if the object is a DOM Element.
+ *
+ * @param {*} element The object to check.
+ * @return {boolean}
+ */
+
+function isDomElement(element) {
+  return Boolean(element && element.nodeType === 1 && 'nodeName' in element && element.ownerDocument && element.ownerDocument.defaultView);
+}
+/**
+ * Check to see whether the value is a number.
+ *
+ * @see http://dl.dropboxusercontent.com/u/35146/js/tests/isNumber.html
+ * @param {*} value The value to check.
+ * @param {boolean} integer Check if the value is an integer.
+ * @return {boolean}
+ */
+
+function isInteger(value) {
+  // eslint-disable-next-line eqeqeq
+  return !isNaN(parseFloat(value)) && isFinite(value) && Math.floor(value) == value;
+}
+/**
+ * Check to see if the URL is a Vimeo url.
+ *
+ * @param {string} url The url string.
+ * @return {boolean}
+ */
+
+function isVimeoUrl(url) {
+  return /^(https?:)?\/\/((player|www)\.)?vimeo\.com(?=$|\/)/.test(url);
+}
+/**
+ * Check to see if the URL is for a Vimeo embed.
+ *
+ * @param {string} url The url string.
+ * @return {boolean}
+ */
+
+function isVimeoEmbed(url) {
+  var expr = /^https:\/\/player\.vimeo\.com\/video\/\d+/;
+  return expr.test(url);
+}
+/**
+ * Get the Vimeo URL from an element.
+ * The element must have either a data-vimeo-id or data-vimeo-url attribute.
+ *
+ * @param {object} oEmbedParameters The oEmbed parameters.
+ * @return {string}
+ */
+
+function getVimeoUrl() {
+  var oEmbedParameters = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var id = oEmbedParameters.id;
+  var url = oEmbedParameters.url;
+  var idOrUrl = id || url;
+  if (!idOrUrl) {
+    throw new Error('An id or url must be passed, either in an options object or as a data-vimeo-id or data-vimeo-url attribute.');
+  }
+  if (isInteger(idOrUrl)) {
+    return "https://vimeo.com/".concat(idOrUrl);
+  }
+  if (isVimeoUrl(idOrUrl)) {
+    return idOrUrl.replace('http:', 'https:');
+  }
+  if (id) {
+    throw new TypeError("\u201C".concat(id, "\u201D is not a valid video id."));
+  }
+  throw new TypeError("\u201C".concat(idOrUrl, "\u201D is not a vimeo.com url."));
+}
+var arrayIndexOfSupport = typeof Array.prototype.indexOf !== 'undefined';
+var postMessageSupport = typeof window !== 'undefined' && typeof window.postMessage !== 'undefined';
+if (!isNode && (!arrayIndexOfSupport || !postMessageSupport)) {
+  throw new Error('Sorry, the Vimeo Player API is not available in this browser.');
+}
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+function createCommonjsModule(fn, module) {
+  return module = {
+    exports: {}
+  }, fn(module, module.exports), module.exports;
+}
+
+/*!
+ * weakmap-polyfill v2.0.4 - ECMAScript6 WeakMap polyfill
+ * https://github.com/polygonplanet/weakmap-polyfill
+ * Copyright (c) 2015-2021 polygonplanet <polygon.planet.aqua@gmail.com>
+ * @license MIT
+ */
+(function (self) {
+  if (self.WeakMap) {
+    return;
+  }
+  var hasOwnProperty = Object.prototype.hasOwnProperty;
+  var hasDefine = Object.defineProperty && function () {
+    try {
+      // Avoid IE8's broken Object.defineProperty
+      return Object.defineProperty({}, 'x', {
+        value: 1
+      }).x === 1;
+    } catch (e) {}
+  }();
+  var defineProperty = function (object, name, value) {
+    if (hasDefine) {
+      Object.defineProperty(object, name, {
+        configurable: true,
+        writable: true,
+        value: value
+      });
+    } else {
+      object[name] = value;
+    }
+  };
+  self.WeakMap = function () {
+    // ECMA-262 23.3 WeakMap Objects
+    function WeakMap() {
+      if (this === void 0) {
+        throw new TypeError("Constructor WeakMap requires 'new'");
+      }
+      defineProperty(this, '_id', genId('_WeakMap')); // ECMA-262 23.3.1.1 WeakMap([iterable])
+
+      if (arguments.length > 0) {
+        // Currently, WeakMap `iterable` argument is not supported
+        throw new TypeError('WeakMap iterable is not supported');
+      }
+    } // ECMA-262 23.3.3.2 WeakMap.prototype.delete(key)
+
+    defineProperty(WeakMap.prototype, 'delete', function (key) {
+      checkInstance(this, 'delete');
+      if (!isObject(key)) {
+        return false;
+      }
+      var entry = key[this._id];
+      if (entry && entry[0] === key) {
+        delete key[this._id];
+        return true;
+      }
+      return false;
+    }); // ECMA-262 23.3.3.3 WeakMap.prototype.get(key)
+
+    defineProperty(WeakMap.prototype, 'get', function (key) {
+      checkInstance(this, 'get');
+      if (!isObject(key)) {
+        return void 0;
+      }
+      var entry = key[this._id];
+      if (entry && entry[0] === key) {
+        return entry[1];
+      }
+      return void 0;
+    }); // ECMA-262 23.3.3.4 WeakMap.prototype.has(key)
+
+    defineProperty(WeakMap.prototype, 'has', function (key) {
+      checkInstance(this, 'has');
+      if (!isObject(key)) {
+        return false;
+      }
+      var entry = key[this._id];
+      if (entry && entry[0] === key) {
+        return true;
+      }
+      return false;
+    }); // ECMA-262 23.3.3.5 WeakMap.prototype.set(key, value)
+
+    defineProperty(WeakMap.prototype, 'set', function (key, value) {
+      checkInstance(this, 'set');
+      if (!isObject(key)) {
+        throw new TypeError('Invalid value used as weak map key');
+      }
+      var entry = key[this._id];
+      if (entry && entry[0] === key) {
+        entry[1] = value;
+        return this;
+      }
+      defineProperty(key, this._id, [key, value]);
+      return this;
+    });
+    function checkInstance(x, methodName) {
+      if (!isObject(x) || !hasOwnProperty.call(x, '_id')) {
+        throw new TypeError(methodName + ' method called on incompatible receiver ' + typeof x);
+      }
+    }
+    function genId(prefix) {
+      return prefix + '_' + rand() + '.' + rand();
+    }
+    function rand() {
+      return Math.random().toString().substring(2);
+    }
+    defineProperty(WeakMap, '_polyfill', true);
+    return WeakMap;
+  }();
+  function isObject(x) {
+    return Object(x) === x;
+  }
+})(typeof globalThis !== 'undefined' ? globalThis : typeof self !== 'undefined' ? self : typeof window !== 'undefined' ? window : typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : commonjsGlobal);
+var npo_src = createCommonjsModule(function (module) {
+  /*! Native Promise Only
+      v0.8.1 (c) Kyle Simpson
+      MIT License: http://getify.mit-license.org
+  */
+  (function UMD(name, context, definition) {
+    // special form of UMD for polyfilling across evironments
+    context[name] = context[name] || definition();
+    if (module.exports) {
+      module.exports = context[name];
+    }
+  })("Promise", typeof commonjsGlobal != "undefined" ? commonjsGlobal : commonjsGlobal, function DEF() {
+    var builtInProp,
+      cycle,
+      scheduling_queue,
+      ToString = Object.prototype.toString,
+      timer = typeof setImmediate != "undefined" ? function timer(fn) {
+        return setImmediate(fn);
+      } : setTimeout; // dammit, IE8.
+
+    try {
+      Object.defineProperty({}, "x", {});
+      builtInProp = function builtInProp(obj, name, val, config) {
+        return Object.defineProperty(obj, name, {
+          value: val,
+          writable: true,
+          configurable: config !== false
+        });
+      };
+    } catch (err) {
+      builtInProp = function builtInProp(obj, name, val) {
+        obj[name] = val;
+        return obj;
+      };
+    } // Note: using a queue instead of array for efficiency
+
+    scheduling_queue = function Queue() {
+      var first, last, item;
+      function Item(fn, self) {
+        this.fn = fn;
+        this.self = self;
+        this.next = void 0;
+      }
+      return {
+        add: function add(fn, self) {
+          item = new Item(fn, self);
+          if (last) {
+            last.next = item;
+          } else {
+            first = item;
+          }
+          last = item;
+          item = void 0;
+        },
+        drain: function drain() {
+          var f = first;
+          first = last = cycle = void 0;
+          while (f) {
+            f.fn.call(f.self);
+            f = f.next;
+          }
+        }
+      };
+    }();
+    function schedule(fn, self) {
+      scheduling_queue.add(fn, self);
+      if (!cycle) {
+        cycle = timer(scheduling_queue.drain);
+      }
+    } // promise duck typing
+
+    function isThenable(o) {
+      var _then,
+        o_type = typeof o;
+      if (o != null && (o_type == "object" || o_type == "function")) {
+        _then = o.then;
+      }
+      return typeof _then == "function" ? _then : false;
+    }
+    function notify() {
+      for (var i = 0; i < this.chain.length; i++) {
+        notifyIsolated(this, this.state === 1 ? this.chain[i].success : this.chain[i].failure, this.chain[i]);
+      }
+      this.chain.length = 0;
+    } // NOTE: This is a separate function to isolate
+    // the `try..catch` so that other code can be
+    // optimized better
+
+    function notifyIsolated(self, cb, chain) {
+      var ret, _then;
+      try {
+        if (cb === false) {
+          chain.reject(self.msg);
+        } else {
+          if (cb === true) {
+            ret = self.msg;
+          } else {
+            ret = cb.call(void 0, self.msg);
+          }
+          if (ret === chain.promise) {
+            chain.reject(TypeError("Promise-chain cycle"));
+          } else if (_then = isThenable(ret)) {
+            _then.call(ret, chain.resolve, chain.reject);
+          } else {
+            chain.resolve(ret);
+          }
+        }
+      } catch (err) {
+        chain.reject(err);
+      }
+    }
+    function resolve(msg) {
+      var _then,
+        self = this; // already triggered?
+
+      if (self.triggered) {
+        return;
+      }
+      self.triggered = true; // unwrap
+
+      if (self.def) {
+        self = self.def;
+      }
+      try {
+        if (_then = isThenable(msg)) {
+          schedule(function () {
+            var def_wrapper = new MakeDefWrapper(self);
+            try {
+              _then.call(msg, function $resolve$() {
+                resolve.apply(def_wrapper, arguments);
+              }, function $reject$() {
+                reject.apply(def_wrapper, arguments);
+              });
+            } catch (err) {
+              reject.call(def_wrapper, err);
+            }
+          });
+        } else {
+          self.msg = msg;
+          self.state = 1;
+          if (self.chain.length > 0) {
+            schedule(notify, self);
+          }
+        }
+      } catch (err) {
+        reject.call(new MakeDefWrapper(self), err);
+      }
+    }
+    function reject(msg) {
+      var self = this; // already triggered?
+
+      if (self.triggered) {
+        return;
+      }
+      self.triggered = true; // unwrap
+
+      if (self.def) {
+        self = self.def;
+      }
+      self.msg = msg;
+      self.state = 2;
+      if (self.chain.length > 0) {
+        schedule(notify, self);
+      }
+    }
+    function iteratePromises(Constructor, arr, resolver, rejecter) {
+      for (var idx = 0; idx < arr.length; idx++) {
+        (function IIFE(idx) {
+          Constructor.resolve(arr[idx]).then(function $resolver$(msg) {
+            resolver(idx, msg);
+          }, rejecter);
+        })(idx);
+      }
+    }
+    function MakeDefWrapper(self) {
+      this.def = self;
+      this.triggered = false;
+    }
+    function MakeDef(self) {
+      this.promise = self;
+      this.state = 0;
+      this.triggered = false;
+      this.chain = [];
+      this.msg = void 0;
+    }
+    function Promise(executor) {
+      if (typeof executor != "function") {
+        throw TypeError("Not a function");
+      }
+      if (this.__NPO__ !== 0) {
+        throw TypeError("Not a promise");
+      } // instance shadowing the inherited "brand"
+      // to signal an already "initialized" promise
+
+      this.__NPO__ = 1;
+      var def = new MakeDef(this);
+      this["then"] = function then(success, failure) {
+        var o = {
+          success: typeof success == "function" ? success : true,
+          failure: typeof failure == "function" ? failure : false
+        }; // Note: `then(..)` itself can be borrowed to be used against
+        // a different promise constructor for making the chained promise,
+        // by substituting a different `this` binding.
+
+        o.promise = new this.constructor(function extractChain(resolve, reject) {
+          if (typeof resolve != "function" || typeof reject != "function") {
+            throw TypeError("Not a function");
+          }
+          o.resolve = resolve;
+          o.reject = reject;
+        });
+        def.chain.push(o);
+        if (def.state !== 0) {
+          schedule(notify, def);
+        }
+        return o.promise;
+      };
+      this["catch"] = function $catch$(failure) {
+        return this.then(void 0, failure);
+      };
+      try {
+        executor.call(void 0, function publicResolve(msg) {
+          resolve.call(def, msg);
+        }, function publicReject(msg) {
+          reject.call(def, msg);
+        });
+      } catch (err) {
+        reject.call(def, err);
+      }
+    }
+    var PromisePrototype = builtInProp({}, "constructor", Promise, /*configurable=*/
+    false); // Note: Android 4 cannot use `Object.defineProperty(..)` here
+
+    Promise.prototype = PromisePrototype; // built-in "brand" to signal an "uninitialized" promise
+
+    builtInProp(PromisePrototype, "__NPO__", 0, /*configurable=*/
+    false);
+    builtInProp(Promise, "resolve", function Promise$resolve(msg) {
+      var Constructor = this; // spec mandated checks
+      // note: best "isPromise" check that's practical for now
+
+      if (msg && typeof msg == "object" && msg.__NPO__ === 1) {
+        return msg;
+      }
+      return new Constructor(function executor(resolve, reject) {
+        if (typeof resolve != "function" || typeof reject != "function") {
+          throw TypeError("Not a function");
+        }
+        resolve(msg);
+      });
+    });
+    builtInProp(Promise, "reject", function Promise$reject(msg) {
+      return new this(function executor(resolve, reject) {
+        if (typeof resolve != "function" || typeof reject != "function") {
+          throw TypeError("Not a function");
+        }
+        reject(msg);
+      });
+    });
+    builtInProp(Promise, "all", function Promise$all(arr) {
+      var Constructor = this; // spec mandated checks
+
+      if (ToString.call(arr) != "[object Array]") {
+        return Constructor.reject(TypeError("Not an array"));
+      }
+      if (arr.length === 0) {
+        return Constructor.resolve([]);
+      }
+      return new Constructor(function executor(resolve, reject) {
+        if (typeof resolve != "function" || typeof reject != "function") {
+          throw TypeError("Not a function");
+        }
+        var len = arr.length,
+          msgs = Array(len),
+          count = 0;
+        iteratePromises(Constructor, arr, function resolver(idx, msg) {
+          msgs[idx] = msg;
+          if (++count === len) {
+            resolve(msgs);
+          }
+        }, reject);
+      });
+    });
+    builtInProp(Promise, "race", function Promise$race(arr) {
+      var Constructor = this; // spec mandated checks
+
+      if (ToString.call(arr) != "[object Array]") {
+        return Constructor.reject(TypeError("Not an array"));
+      }
+      return new Constructor(function executor(resolve, reject) {
+        if (typeof resolve != "function" || typeof reject != "function") {
+          throw TypeError("Not a function");
+        }
+        iteratePromises(Constructor, arr, function resolver(idx, msg) {
+          resolve(msg);
+        }, reject);
+      });
+    });
+    return Promise;
+  });
+});
+
+/**
+ * @module lib/callbacks
+ */
+var callbackMap = new WeakMap();
+/**
+ * Store a callback for a method or event for a player.
+ *
+ * @param {Player} player The player object.
+ * @param {string} name The method or event name.
+ * @param {(function(this:Player, *): void|{resolve: function, reject: function})} callback
+ *        The callback to call or an object with resolve and reject functions for a promise.
+ * @return {void}
+ */
+
+function storeCallback(player, name, callback) {
+  var playerCallbacks = callbackMap.get(player.element) || {};
+  if (!(name in playerCallbacks)) {
+    playerCallbacks[name] = [];
+  }
+  playerCallbacks[name].push(callback);
+  callbackMap.set(player.element, playerCallbacks);
+}
+/**
+ * Get the callbacks for a player and event or method.
+ *
+ * @param {Player} player The player object.
+ * @param {string} name The method or event name
+ * @return {function[]}
+ */
+
+function getCallbacks(player, name) {
+  var playerCallbacks = callbackMap.get(player.element) || {};
+  return playerCallbacks[name] || [];
+}
+/**
+ * Remove a stored callback for a method or event for a player.
+ *
+ * @param {Player} player The player object.
+ * @param {string} name The method or event name
+ * @param {function} [callback] The specific callback to remove.
+ * @return {boolean} Was this the last callback?
+ */
+
+function removeCallback(player, name, callback) {
+  var playerCallbacks = callbackMap.get(player.element) || {};
+  if (!playerCallbacks[name]) {
+    return true;
+  } // If no callback is passed, remove all callbacks for the event
+
+  if (!callback) {
+    playerCallbacks[name] = [];
+    callbackMap.set(player.element, playerCallbacks);
+    return true;
+  }
+  var index = playerCallbacks[name].indexOf(callback);
+  if (index !== -1) {
+    playerCallbacks[name].splice(index, 1);
+  }
+  callbackMap.set(player.element, playerCallbacks);
+  return playerCallbacks[name] && playerCallbacks[name].length === 0;
+}
+/**
+ * Return the first stored callback for a player and event or method.
+ *
+ * @param {Player} player The player object.
+ * @param {string} name The method or event name.
+ * @return {function} The callback, or false if there were none
+ */
+
+function shiftCallbacks(player, name) {
+  var playerCallbacks = getCallbacks(player, name);
+  if (playerCallbacks.length < 1) {
+    return false;
+  }
+  var callback = playerCallbacks.shift();
+  removeCallback(player, name, callback);
+  return callback;
+}
+/**
+ * Move callbacks associated with an element to another element.
+ *
+ * @param {HTMLElement} oldElement The old element.
+ * @param {HTMLElement} newElement The new element.
+ * @return {void}
+ */
+
+function swapCallbacks(oldElement, newElement) {
+  var playerCallbacks = callbackMap.get(oldElement);
+  callbackMap.set(newElement, playerCallbacks);
+  callbackMap.delete(oldElement);
+}
+
+/**
+ * @module lib/postmessage
+ */
+/**
+ * Parse a message received from postMessage.
+ *
+ * @param {*} data The data received from postMessage.
+ * @return {object}
+ */
+
+function parseMessageData(data) {
+  if (typeof data === 'string') {
+    try {
+      data = JSON.parse(data);
+    } catch (error) {
+      // If the message cannot be parsed, throw the error as a warning
+      console.warn(error);
+      return {};
+    }
+  }
+  return data;
+}
+/**
+ * Post a message to the specified target.
+ *
+ * @param {Player} player The player object to use.
+ * @param {string} method The API method to call.
+ * @param {object} params The parameters to send to the player.
+ * @return {void}
+ */
+
+function postMessage(player, method, params) {
+  if (!player.element.contentWindow || !player.element.contentWindow.postMessage) {
+    return;
+  }
+  var message = {
+    method: method
+  };
+  if (params !== undefined) {
+    message.value = params;
+  } // IE 8 and 9 do not support passing messages, so stringify them
+
+  var ieVersion = parseFloat(navigator.userAgent.toLowerCase().replace(/^.*msie (\d+).*$/, '$1'));
+  if (ieVersion >= 8 && ieVersion < 10) {
+    message = JSON.stringify(message);
+  }
+  player.element.contentWindow.postMessage(message, player.origin);
+}
+/**
+ * Parse the data received from a message event.
+ *
+ * @param {Player} player The player that received the message.
+ * @param {(Object|string)} data The message data. Strings will be parsed into JSON.
+ * @return {void}
+ */
+
+function processData(player, data) {
+  data = parseMessageData(data);
+  var callbacks = [];
+  var param;
+  if (data.event) {
+    if (data.event === 'error') {
+      var promises = getCallbacks(player, data.data.method);
+      promises.forEach(function (promise) {
+        var error = new Error(data.data.message);
+        error.name = data.data.name;
+        promise.reject(error);
+        removeCallback(player, data.data.method, promise);
+      });
+    }
+    callbacks = getCallbacks(player, "event:".concat(data.event));
+    param = data.data;
+  } else if (data.method) {
+    var callback = shiftCallbacks(player, data.method);
+    if (callback) {
+      callbacks.push(callback);
+      param = data.value;
+    }
+  }
+  callbacks.forEach(function (callback) {
+    try {
+      if (typeof callback === 'function') {
+        callback.call(player, param);
+        return;
+      }
+      callback.resolve(param);
+    } catch (e) {// empty
+    }
+  });
+}
+
+/**
+ * @module lib/embed
+ */
+var oEmbedParameters = ['autopause', 'autoplay', 'background', 'byline', 'color', 'controls', 'dnt', 'height', 'id', 'interactive_params', 'keyboard', 'loop', 'maxheight', 'maxwidth', 'muted', 'playsinline', 'portrait', 'responsive', 'speed', 'texttrack', 'title', 'transparent', 'url', 'width'];
+/**
+ * Get the 'data-vimeo'-prefixed attributes from an element as an object.
+ *
+ * @param {HTMLElement} element The element.
+ * @param {Object} [defaults={}] The default values to use.
+ * @return {Object<string, string>}
+ */
+
+function getOEmbedParameters(element) {
+  var defaults = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return oEmbedParameters.reduce(function (params, param) {
+    var value = element.getAttribute("data-vimeo-".concat(param));
+    if (value || value === '') {
+      params[param] = value === '' ? 1 : value;
+    }
+    return params;
+  }, defaults);
+}
+/**
+ * Create an embed from oEmbed data inside an element.
+ *
+ * @param {object} data The oEmbed data.
+ * @param {HTMLElement} element The element to put the iframe in.
+ * @return {HTMLIFrameElement} The iframe embed.
+ */
+
+function createEmbed(_ref, element) {
+  var html = _ref.html;
+  if (!element) {
+    throw new TypeError('An element must be provided');
+  }
+  if (element.getAttribute('data-vimeo-initialized') !== null) {
+    return element.querySelector('iframe');
+  }
+  var div = document.createElement('div');
+  div.innerHTML = html;
+  element.appendChild(div.firstChild);
+  element.setAttribute('data-vimeo-initialized', 'true');
+  return element.querySelector('iframe');
+}
+/**
+ * Make an oEmbed call for the specified URL.
+ *
+ * @param {string} videoUrl The vimeo.com url for the video.
+ * @param {Object} [params] Parameters to pass to oEmbed.
+ * @param {HTMLElement} element The element.
+ * @return {Promise}
+ */
+
+function getOEmbedData(videoUrl) {
+  var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var element = arguments.length > 2 ? arguments[2] : undefined;
+  return new Promise(function (resolve, reject) {
+    if (!isVimeoUrl(videoUrl)) {
+      throw new TypeError("\u201C".concat(videoUrl, "\u201D is not a vimeo.com url."));
+    }
+    var url = "https://vimeo.com/api/oembed.json?url=".concat(encodeURIComponent(videoUrl));
+    for (var param in params) {
+      if (params.hasOwnProperty(param)) {
+        url += "&".concat(param, "=").concat(encodeURIComponent(params[param]));
+      }
+    }
+    var xhr = 'XDomainRequest' in window ? new XDomainRequest() : new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onload = function () {
+      if (xhr.status === 404) {
+        reject(new Error("\u201C".concat(videoUrl, "\u201D was not found.")));
+        return;
+      }
+      if (xhr.status === 403) {
+        reject(new Error("\u201C".concat(videoUrl, "\u201D is not embeddable.")));
+        return;
+      }
+      try {
+        var json = JSON.parse(xhr.responseText); // Check api response for 403 on oembed
+
+        if (json.domain_status_code === 403) {
+          // We still want to create the embed to give users visual feedback
+          createEmbed(json, element);
+          reject(new Error("\u201C".concat(videoUrl, "\u201D is not embeddable.")));
+          return;
+        }
+        resolve(json);
+      } catch (error) {
+        reject(error);
+      }
+    };
+    xhr.onerror = function () {
+      var status = xhr.status ? " (".concat(xhr.status, ")") : '';
+      reject(new Error("There was an error fetching the embed code from Vimeo".concat(status, ".")));
+    };
+    xhr.send();
+  });
+}
+/**
+ * Initialize all embeds within a specific element
+ *
+ * @param {HTMLElement} [parent=document] The parent element.
+ * @return {void}
+ */
+
+function initializeEmbeds() {
+  var parent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+  var elements = [].slice.call(parent.querySelectorAll('[data-vimeo-id], [data-vimeo-url]'));
+  var handleError = function handleError(error) {
+    if ('console' in window && console.error) {
+      console.error("There was an error creating an embed: ".concat(error));
+    }
+  };
+  elements.forEach(function (element) {
+    try {
+      // Skip any that have data-vimeo-defer
+      if (element.getAttribute('data-vimeo-defer') !== null) {
+        return;
+      }
+      var params = getOEmbedParameters(element);
+      var url = getVimeoUrl(params);
+      getOEmbedData(url, params, element).then(function (data) {
+        return createEmbed(data, element);
+      }).catch(handleError);
+    } catch (error) {
+      handleError(error);
+    }
+  });
+}
+/**
+ * Resize embeds when messaged by the player.
+ *
+ * @param {HTMLElement} [parent=document] The parent element.
+ * @return {void}
+ */
+
+function resizeEmbeds() {
+  var parent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+
+  // Prevent execution if users include the player.js script multiple times.
+  if (window.VimeoPlayerResizeEmbeds_) {
+    return;
+  }
+  window.VimeoPlayerResizeEmbeds_ = true;
+  var onMessage = function onMessage(event) {
+    if (!isVimeoUrl(event.origin)) {
+      return;
+    } // 'spacechange' is fired only on embeds with cards
+
+    if (!event.data || event.data.event !== 'spacechange') {
+      return;
+    }
+    var iframes = parent.querySelectorAll('iframe');
+    for (var i = 0; i < iframes.length; i++) {
+      if (iframes[i].contentWindow !== event.source) {
+        continue;
+      } // Change padding-bottom of the enclosing div to accommodate
+      // card carousel without distorting aspect ratio
+
+      var space = iframes[i].parentElement;
+      space.style.paddingBottom = "".concat(event.data.data[0].bottom, "px");
+      break;
+    }
+  };
+  window.addEventListener('message', onMessage);
+}
+/**
+ * Add chapters to existing metadata for Google SEO
+ *
+ * @param {HTMLElement} [parent=document] The parent element.
+ * @return {void}
+ */
+
+function initAppendVideoMetadata() {
+  var parent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+
+  //  Prevent execution if users include the player.js script multiple times.
+  if (window.VimeoSeoMetadataAppended) {
+    return;
+  }
+  window.VimeoSeoMetadataAppended = true;
+  var onMessage = function onMessage(event) {
+    if (!isVimeoUrl(event.origin)) {
+      return;
+    }
+    var data = parseMessageData(event.data);
+    if (!data || data.event !== 'ready') {
+      return;
+    }
+    var iframes = parent.querySelectorAll('iframe');
+    for (var i = 0; i < iframes.length; i++) {
+      var iframe = iframes[i]; // Initiate appendVideoMetadata if iframe is a Vimeo embed
+
+      var isValidMessageSource = iframe.contentWindow === event.source;
+      if (isVimeoEmbed(iframe.src) && isValidMessageSource) {
+        var player = new Player(iframe);
+        player.callMethod('appendVideoMetadata', window.location.href);
+      }
+    }
+  };
+  window.addEventListener('message', onMessage);
+}
+/**
+ * Seek to time indicated by vimeo_t query parameter if present in URL
+ *
+ * @param {HTMLElement} [parent=document] The parent element.
+ * @return {void}
+ */
+
+function checkUrlTimeParam() {
+  var parent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document;
+
+  //  Prevent execution if users include the player.js script multiple times.
+  if (window.VimeoCheckedUrlTimeParam) {
+    return;
+  }
+  window.VimeoCheckedUrlTimeParam = true;
+  var handleError = function handleError(error) {
+    if ('console' in window && console.error) {
+      console.error("There was an error getting video Id: ".concat(error));
+    }
+  };
+  var onMessage = function onMessage(event) {
+    if (!isVimeoUrl(event.origin)) {
+      return;
+    }
+    var data = parseMessageData(event.data);
+    if (!data || data.event !== 'ready') {
+      return;
+    }
+    var iframes = parent.querySelectorAll('iframe');
+    for (var i = 0; i < iframes.length; i++) {
+      var iframe = iframes[i];
+      var isValidMessageSource = iframe.contentWindow === event.source;
+      if (isVimeoEmbed(iframe.src) && isValidMessageSource) {
+        (function () {
+          var player = new Player(iframe);
+          player.getVideoId().then(function (videoId) {
+            var matches = new RegExp("[?&]vimeo_t_".concat(videoId, "=([^&#]*)")).exec(window.location.href);
+            if (matches && matches[1]) {
+              var sec = decodeURI(matches[1]);
+              player.setCurrentTime(sec);
+            }
+            return;
+          }).catch(handleError);
+        })();
+      }
+    }
+  };
+  window.addEventListener('message', onMessage);
+}
+
+/* MIT License
+
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Terms */
+function initializeScreenfull() {
+  var fn = function () {
+    var val;
+    var fnMap = [['requestFullscreen', 'exitFullscreen', 'fullscreenElement', 'fullscreenEnabled', 'fullscreenchange', 'fullscreenerror'],
+    // New WebKit
+    ['webkitRequestFullscreen', 'webkitExitFullscreen', 'webkitFullscreenElement', 'webkitFullscreenEnabled', 'webkitfullscreenchange', 'webkitfullscreenerror'],
+    // Old WebKit
+    ['webkitRequestFullScreen', 'webkitCancelFullScreen', 'webkitCurrentFullScreenElement', 'webkitCancelFullScreen', 'webkitfullscreenchange', 'webkitfullscreenerror'], ['mozRequestFullScreen', 'mozCancelFullScreen', 'mozFullScreenElement', 'mozFullScreenEnabled', 'mozfullscreenchange', 'mozfullscreenerror'], ['msRequestFullscreen', 'msExitFullscreen', 'msFullscreenElement', 'msFullscreenEnabled', 'MSFullscreenChange', 'MSFullscreenError']];
+    var i = 0;
+    var l = fnMap.length;
+    var ret = {};
+    for (; i < l; i++) {
+      val = fnMap[i];
+      if (val && val[1] in document) {
+        for (i = 0; i < val.length; i++) {
+          ret[fnMap[0][i]] = val[i];
+        }
+        return ret;
+      }
+    }
+    return false;
+  }();
+  var eventNameMap = {
+    fullscreenchange: fn.fullscreenchange,
+    fullscreenerror: fn.fullscreenerror
+  };
+  var screenfull = {
+    request: function request(element) {
+      return new Promise(function (resolve, reject) {
+        var onFullScreenEntered = function onFullScreenEntered() {
+          screenfull.off('fullscreenchange', onFullScreenEntered);
+          resolve();
+        };
+        screenfull.on('fullscreenchange', onFullScreenEntered);
+        element = element || document.documentElement;
+        var returnPromise = element[fn.requestFullscreen]();
+        if (returnPromise instanceof Promise) {
+          returnPromise.then(onFullScreenEntered).catch(reject);
+        }
+      });
+    },
+    exit: function exit() {
+      return new Promise(function (resolve, reject) {
+        if (!screenfull.isFullscreen) {
+          resolve();
+          return;
+        }
+        var onFullScreenExit = function onFullScreenExit() {
+          screenfull.off('fullscreenchange', onFullScreenExit);
+          resolve();
+        };
+        screenfull.on('fullscreenchange', onFullScreenExit);
+        var returnPromise = document[fn.exitFullscreen]();
+        if (returnPromise instanceof Promise) {
+          returnPromise.then(onFullScreenExit).catch(reject);
+        }
+      });
+    },
+    on: function on(event, callback) {
+      var eventName = eventNameMap[event];
+      if (eventName) {
+        document.addEventListener(eventName, callback);
+      }
+    },
+    off: function off(event, callback) {
+      var eventName = eventNameMap[event];
+      if (eventName) {
+        document.removeEventListener(eventName, callback);
+      }
+    }
+  };
+  Object.defineProperties(screenfull, {
+    isFullscreen: {
+      get: function get() {
+        return Boolean(document[fn.fullscreenElement]);
+      }
+    },
+    element: {
+      enumerable: true,
+      get: function get() {
+        return document[fn.fullscreenElement];
+      }
+    },
+    isEnabled: {
+      enumerable: true,
+      get: function get() {
+        // Coerce to boolean in case of old WebKit
+        return Boolean(document[fn.fullscreenEnabled]);
+      }
+    }
+  });
+  return screenfull;
+}
+var playerMap = new WeakMap();
+var readyMap = new WeakMap();
+var screenfull = {};
+var Player = /*#__PURE__*/function () {
+  /**
+   * Create a Player.
+   *
+   * @param {(HTMLIFrameElement|HTMLElement|string|jQuery)} element A reference to the Vimeo
+   *        player iframe, and id, or a jQuery object.
+   * @param {object} [options] oEmbed parameters to use when creating an embed in the element.
+   * @return {Player}
+   */
+  function Player(element) {
+    var _this = this;
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    _classCallCheck(this, Player);
+
+    /* global jQuery */
+    if (window.jQuery && element instanceof jQuery) {
+      if (element.length > 1 && window.console && console.warn) {
+        console.warn('A jQuery object with multiple elements was passed, using the first element.');
+      }
+      element = element[0];
+    } // Find an element by ID
+
+    if (typeof document !== 'undefined' && typeof element === 'string') {
+      element = document.getElementById(element);
+    } // Not an element!
+
+    if (!isDomElement(element)) {
+      throw new TypeError('You must pass either a valid element or a valid id.');
+    } // Already initialized an embed in this div, so grab the iframe
+
+    if (element.nodeName !== 'IFRAME') {
+      var iframe = element.querySelector('iframe');
+      if (iframe) {
+        element = iframe;
+      }
+    } // iframe url is not a Vimeo url
+
+    if (element.nodeName === 'IFRAME' && !isVimeoUrl(element.getAttribute('src') || '')) {
+      throw new Error('The player element passed isn’t a Vimeo embed.');
+    } // If there is already a player object in the map, return that
+
+    if (playerMap.has(element)) {
+      return playerMap.get(element);
+    }
+    this._window = element.ownerDocument.defaultView;
+    this.element = element;
+    this.origin = '*';
+    var readyPromise = new npo_src(function (resolve, reject) {
+      _this._onMessage = function (event) {
+        if (!isVimeoUrl(event.origin) || _this.element.contentWindow !== event.source) {
+          return;
+        }
+        if (_this.origin === '*') {
+          _this.origin = event.origin;
+        }
+        var data = parseMessageData(event.data);
+        var isError = data && data.event === 'error';
+        var isReadyError = isError && data.data && data.data.method === 'ready';
+        if (isReadyError) {
+          var error = new Error(data.data.message);
+          error.name = data.data.name;
+          reject(error);
+          return;
+        }
+        var isReadyEvent = data && data.event === 'ready';
+        var isPingResponse = data && data.method === 'ping';
+        if (isReadyEvent || isPingResponse) {
+          _this.element.setAttribute('data-ready', 'true');
+          resolve();
+          return;
+        }
+        processData(_this, data);
+      };
+      _this._window.addEventListener('message', _this._onMessage);
+      if (_this.element.nodeName !== 'IFRAME') {
+        var params = getOEmbedParameters(element, options);
+        var url = getVimeoUrl(params);
+        getOEmbedData(url, params, element).then(function (data) {
+          var iframe = createEmbed(data, element); // Overwrite element with the new iframe,
+          // but store reference to the original element
+
+          _this.element = iframe;
+          _this._originalElement = element;
+          swapCallbacks(element, iframe);
+          playerMap.set(_this.element, _this);
+          return data;
+        }).catch(reject);
+      }
+    }); // Store a copy of this Player in the map
+
+    readyMap.set(this, readyPromise);
+    playerMap.set(this.element, this); // Send a ping to the iframe so the ready promise will be resolved if
+    // the player is already ready.
+
+    if (this.element.nodeName === 'IFRAME') {
+      postMessage(this, 'ping');
+    }
+    if (screenfull.isEnabled) {
+      var exitFullscreen = function exitFullscreen() {
+        return screenfull.exit();
+      };
+      this.fullscreenchangeHandler = function () {
+        if (screenfull.isFullscreen) {
+          storeCallback(_this, 'event:exitFullscreen', exitFullscreen);
+        } else {
+          removeCallback(_this, 'event:exitFullscreen', exitFullscreen);
+        } // eslint-disable-next-line
+
+        _this.ready().then(function () {
+          postMessage(_this, 'fullscreenchange', screenfull.isFullscreen);
+        });
+      };
+      screenfull.on('fullscreenchange', this.fullscreenchangeHandler);
+    }
+    return this;
+  }
+  /**
+   * Get a promise for a method.
+   *
+   * @param {string} name The API method to call.
+   * @param {Object} [args={}] Arguments to send via postMessage.
+   * @return {Promise}
+   */
+
+  _createClass(Player, [{
+    key: "callMethod",
+    value: function callMethod(name) {
+      var _this2 = this;
+      var args = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      return new npo_src(function (resolve, reject) {
+        // We are storing the resolve/reject handlers to call later, so we
+        // can’t return here.
+        // eslint-disable-next-line promise/always-return
+        return _this2.ready().then(function () {
+          storeCallback(_this2, name, {
+            resolve: resolve,
+            reject: reject
+          });
+          postMessage(_this2, name, args);
+        }).catch(reject);
+      });
+    }
+    /**
+     * Get a promise for the value of a player property.
+     *
+     * @param {string} name The property name
+     * @return {Promise}
+     */
+  }, {
+    key: "get",
+    value: function get(name) {
+      var _this3 = this;
+      return new npo_src(function (resolve, reject) {
+        name = getMethodName(name, 'get'); // We are storing the resolve/reject handlers to call later, so we
+        // can’t return here.
+        // eslint-disable-next-line promise/always-return
+
+        return _this3.ready().then(function () {
+          storeCallback(_this3, name, {
+            resolve: resolve,
+            reject: reject
+          });
+          postMessage(_this3, name);
+        }).catch(reject);
+      });
+    }
+    /**
+     * Get a promise for setting the value of a player property.
+     *
+     * @param {string} name The API method to call.
+     * @param {mixed} value The value to set.
+     * @return {Promise}
+     */
+  }, {
+    key: "set",
+    value: function set(name, value) {
+      var _this4 = this;
+      return new npo_src(function (resolve, reject) {
+        name = getMethodName(name, 'set');
+        if (value === undefined || value === null) {
+          throw new TypeError('There must be a value to set.');
+        } // We are storing the resolve/reject handlers to call later, so we
+        // can’t return here.
+        // eslint-disable-next-line promise/always-return
+
+        return _this4.ready().then(function () {
+          storeCallback(_this4, name, {
+            resolve: resolve,
+            reject: reject
+          });
+          postMessage(_this4, name, value);
+        }).catch(reject);
+      });
+    }
+    /**
+     * Add an event listener for the specified event. Will call the
+     * callback with a single parameter, `data`, that contains the data for
+     * that event.
+     *
+     * @param {string} eventName The name of the event.
+     * @param {function(*)} callback The function to call when the event fires.
+     * @return {void}
+     */
+  }, {
+    key: "on",
+    value: function on(eventName, callback) {
+      if (!eventName) {
+        throw new TypeError('You must pass an event name.');
+      }
+      if (!callback) {
+        throw new TypeError('You must pass a callback function.');
+      }
+      if (typeof callback !== 'function') {
+        throw new TypeError('The callback must be a function.');
+      }
+      var callbacks = getCallbacks(this, "event:".concat(eventName));
+      if (callbacks.length === 0) {
+        this.callMethod('addEventListener', eventName).catch(function () {// Ignore the error. There will be an error event fired that
+          // will trigger the error callback if they are listening.
+        });
+      }
+      storeCallback(this, "event:".concat(eventName), callback);
+    }
+    /**
+     * Remove an event listener for the specified event. Will remove all
+     * listeners for that event if a `callback` isn’t passed, or only that
+     * specific callback if it is passed.
+     *
+     * @param {string} eventName The name of the event.
+     * @param {function} [callback] The specific callback to remove.
+     * @return {void}
+     */
+  }, {
+    key: "off",
+    value: function off(eventName, callback) {
+      if (!eventName) {
+        throw new TypeError('You must pass an event name.');
+      }
+      if (callback && typeof callback !== 'function') {
+        throw new TypeError('The callback must be a function.');
+      }
+      var lastCallback = removeCallback(this, "event:".concat(eventName), callback); // If there are no callbacks left, remove the listener
+
+      if (lastCallback) {
+        this.callMethod('removeEventListener', eventName).catch(function (e) {// Ignore the error. There will be an error event fired that
+          // will trigger the error callback if they are listening.
+        });
+      }
+    }
+    /**
+     * A promise to load a new video.
+     *
+     * @promise LoadVideoPromise
+     * @fulfill {number} The video with this id or url successfully loaded.
+     * @reject {TypeError} The id was not a number.
+     */
+
+    /**
+     * Load a new video into this embed. The promise will be resolved if
+     * the video is successfully loaded, or it will be rejected if it could
+     * not be loaded.
+     *
+     * @param {number|string|object} options The id of the video, the url of the video, or an object with embed options.
+     * @return {LoadVideoPromise}
+     */
+  }, {
+    key: "loadVideo",
+    value: function loadVideo(options) {
+      return this.callMethod('loadVideo', options);
+    }
+    /**
+     * A promise to perform an action when the Player is ready.
+     *
+     * @todo document errors
+     * @promise LoadVideoPromise
+     * @fulfill {void}
+     */
+
+    /**
+     * Trigger a function when the player iframe has initialized. You do not
+     * need to wait for `ready` to trigger to begin adding event listeners
+     * or calling other methods.
+     *
+     * @return {ReadyPromise}
+     */
+  }, {
+    key: "ready",
+    value: function ready() {
+      var readyPromise = readyMap.get(this) || new npo_src(function (resolve, reject) {
+        reject(new Error('Unknown player. Probably unloaded.'));
+      });
+      return npo_src.resolve(readyPromise);
+    }
+    /**
+     * A promise to add a cue point to the player.
+     *
+     * @promise AddCuePointPromise
+     * @fulfill {string} The id of the cue point to use for removeCuePoint.
+     * @reject {RangeError} the time was less than 0 or greater than the
+     *         video’s duration.
+     * @reject {UnsupportedError} Cue points are not supported with the current
+     *         player or browser.
+     */
+
+    /**
+     * Add a cue point to the player.
+     *
+     * @param {number} time The time for the cue point.
+     * @param {object} [data] Arbitrary data to be returned with the cue point.
+     * @return {AddCuePointPromise}
+     */
+  }, {
+    key: "addCuePoint",
+    value: function addCuePoint(time) {
+      var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      return this.callMethod('addCuePoint', {
+        time: time,
+        data: data
+      });
+    }
+    /**
+     * A promise to remove a cue point from the player.
+     *
+     * @promise AddCuePointPromise
+     * @fulfill {string} The id of the cue point that was removed.
+     * @reject {InvalidCuePoint} The cue point with the specified id was not
+     *         found.
+     * @reject {UnsupportedError} Cue points are not supported with the current
+     *         player or browser.
+     */
+
+    /**
+     * Remove a cue point from the video.
+     *
+     * @param {string} id The id of the cue point to remove.
+     * @return {RemoveCuePointPromise}
+     */
+  }, {
+    key: "removeCuePoint",
+    value: function removeCuePoint(id) {
+      return this.callMethod('removeCuePoint', id);
+    }
+    /**
+     * A representation of a text track on a video.
+     *
+     * @typedef {Object} VimeoTextTrack
+     * @property {string} language The ISO language code.
+     * @property {string} kind The kind of track it is (captions or subtitles).
+     * @property {string} label The human‐readable label for the track.
+     */
+
+    /**
+     * A promise to enable a text track.
+     *
+     * @promise EnableTextTrackPromise
+     * @fulfill {VimeoTextTrack} The text track that was enabled.
+     * @reject {InvalidTrackLanguageError} No track was available with the
+     *         specified language.
+     * @reject {InvalidTrackError} No track was available with the specified
+     *         language and kind.
+     */
+
+    /**
+     * Enable the text track with the specified language, and optionally the
+     * specified kind (captions or subtitles).
+     *
+     * When set via the API, the track language will not change the viewer’s
+     * stored preference.
+     *
+     * @param {string} language The two‐letter language code.
+     * @param {string} [kind] The kind of track to enable (captions or subtitles).
+     * @return {EnableTextTrackPromise}
+     */
+  }, {
+    key: "enableTextTrack",
+    value: function enableTextTrack(language, kind) {
+      if (!language) {
+        throw new TypeError('You must pass a language.');
+      }
+      return this.callMethod('enableTextTrack', {
+        language: language,
+        kind: kind
+      });
+    }
+    /**
+     * A promise to disable the active text track.
+     *
+     * @promise DisableTextTrackPromise
+     * @fulfill {void} The track was disabled.
+     */
+
+    /**
+     * Disable the currently-active text track.
+     *
+     * @return {DisableTextTrackPromise}
+     */
+  }, {
+    key: "disableTextTrack",
+    value: function disableTextTrack() {
+      return this.callMethod('disableTextTrack');
+    }
+    /**
+     * A promise to pause the video.
+     *
+     * @promise PausePromise
+     * @fulfill {void} The video was paused.
+     */
+
+    /**
+     * Pause the video if it’s playing.
+     *
+     * @return {PausePromise}
+     */
+  }, {
+    key: "pause",
+    value: function pause() {
+      return this.callMethod('pause');
+    }
+    /**
+     * A promise to play the video.
+     *
+     * @promise PlayPromise
+     * @fulfill {void} The video was played.
+     */
+
+    /**
+     * Play the video if it’s paused. **Note:** on iOS and some other
+     * mobile devices, you cannot programmatically trigger play. Once the
+     * viewer has tapped on the play button in the player, however, you
+     * will be able to use this function.
+     *
+     * @return {PlayPromise}
+     */
+  }, {
+    key: "play",
+    value: function play() {
+      return this.callMethod('play');
+    }
+    /**
+     * Request that the player enters fullscreen.
+     * @return {Promise}
+     */
+  }, {
+    key: "requestFullscreen",
+    value: function requestFullscreen() {
+      if (screenfull.isEnabled) {
+        return screenfull.request(this.element);
+      }
+      return this.callMethod('requestFullscreen');
+    }
+    /**
+     * Request that the player exits fullscreen.
+     * @return {Promise}
+     */
+  }, {
+    key: "exitFullscreen",
+    value: function exitFullscreen() {
+      if (screenfull.isEnabled) {
+        return screenfull.exit();
+      }
+      return this.callMethod('exitFullscreen');
+    }
+    /**
+     * Returns true if the player is currently fullscreen.
+     * @return {Promise}
+     */
+  }, {
+    key: "getFullscreen",
+    value: function getFullscreen() {
+      if (screenfull.isEnabled) {
+        return npo_src.resolve(screenfull.isFullscreen);
+      }
+      return this.get('fullscreen');
+    }
+    /**
+     * Request that the player enters picture-in-picture.
+     * @return {Promise}
+     */
+  }, {
+    key: "requestPictureInPicture",
+    value: function requestPictureInPicture() {
+      return this.callMethod('requestPictureInPicture');
+    }
+    /**
+     * Request that the player exits picture-in-picture.
+     * @return {Promise}
+     */
+  }, {
+    key: "exitPictureInPicture",
+    value: function exitPictureInPicture() {
+      return this.callMethod('exitPictureInPicture');
+    }
+    /**
+     * Returns true if the player is currently picture-in-picture.
+     * @return {Promise}
+     */
+  }, {
+    key: "getPictureInPicture",
+    value: function getPictureInPicture() {
+      return this.get('pictureInPicture');
+    }
+    /**
+     * A promise to prompt the viewer to initiate remote playback.
+     *
+     * @promise RemotePlaybackPromptPromise
+     * @fulfill {void}
+     * @reject {NotFoundError} No remote playback device is available.
+     */
+
+    /**
+     * Request to prompt the user to initiate remote playback.
+     *
+     * @return {RemotePlaybackPromptPromise}
+     */
+  }, {
+    key: "remotePlaybackPrompt",
+    value: function remotePlaybackPrompt() {
+      return this.callMethod('remotePlaybackPrompt');
+    }
+    /**
+     * A promise to unload the video.
+     *
+     * @promise UnloadPromise
+     * @fulfill {void} The video was unloaded.
+     */
+
+    /**
+     * Return the player to its initial state.
+     *
+     * @return {UnloadPromise}
+     */
+  }, {
+    key: "unload",
+    value: function unload() {
+      return this.callMethod('unload');
+    }
+    /**
+     * Cleanup the player and remove it from the DOM
+     *
+     * It won't be usable and a new one should be constructed
+     *  in order to do any operations.
+     *
+     * @return {Promise}
+     */
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      var _this5 = this;
+      return new npo_src(function (resolve) {
+        readyMap.delete(_this5);
+        playerMap.delete(_this5.element);
+        if (_this5._originalElement) {
+          playerMap.delete(_this5._originalElement);
+          _this5._originalElement.removeAttribute('data-vimeo-initialized');
+        }
+        if (_this5.element && _this5.element.nodeName === 'IFRAME' && _this5.element.parentNode) {
+          // If we've added an additional wrapper div, remove that from the DOM.
+          // If not, just remove the iframe element.
+          if (_this5.element.parentNode.parentNode && _this5._originalElement && _this5._originalElement !== _this5.element.parentNode) {
+            _this5.element.parentNode.parentNode.removeChild(_this5.element.parentNode);
+          } else {
+            _this5.element.parentNode.removeChild(_this5.element);
+          }
+        } // If the clip is private there is a case where the element stays the
+        // div element. Destroy should reset the div and remove the iframe child.
+
+        if (_this5.element && _this5.element.nodeName === 'DIV' && _this5.element.parentNode) {
+          _this5.element.removeAttribute('data-vimeo-initialized');
+          var iframe = _this5.element.querySelector('iframe');
+          if (iframe && iframe.parentNode) {
+            // If we've added an additional wrapper div, remove that from the DOM.
+            // If not, just remove the iframe element.
+            if (iframe.parentNode.parentNode && _this5._originalElement && _this5._originalElement !== iframe.parentNode) {
+              iframe.parentNode.parentNode.removeChild(iframe.parentNode);
+            } else {
+              iframe.parentNode.removeChild(iframe);
+            }
+          }
+        }
+        _this5._window.removeEventListener('message', _this5._onMessage);
+        if (screenfull.isEnabled) {
+          screenfull.off('fullscreenchange', _this5.fullscreenchangeHandler);
+        }
+        resolve();
+      });
+    }
+    /**
+     * A promise to get the autopause behavior of the video.
+     *
+     * @promise GetAutopausePromise
+     * @fulfill {boolean} Whether autopause is turned on or off.
+     * @reject {UnsupportedError} Autopause is not supported with the current
+     *         player or browser.
+     */
+
+    /**
+     * Get the autopause behavior for this player.
+     *
+     * @return {GetAutopausePromise}
+     */
+  }, {
+    key: "getAutopause",
+    value: function getAutopause() {
+      return this.get('autopause');
+    }
+    /**
+     * A promise to set the autopause behavior of the video.
+     *
+     * @promise SetAutopausePromise
+     * @fulfill {boolean} Whether autopause is turned on or off.
+     * @reject {UnsupportedError} Autopause is not supported with the current
+     *         player or browser.
+     */
+
+    /**
+     * Enable or disable the autopause behavior of this player.
+     *
+     * By default, when another video is played in the same browser, this
+     * player will automatically pause. Unless you have a specific reason
+     * for doing so, we recommend that you leave autopause set to the
+     * default (`true`).
+     *
+     * @param {boolean} autopause
+     * @return {SetAutopausePromise}
+     */
+  }, {
+    key: "setAutopause",
+    value: function setAutopause(autopause) {
+      return this.set('autopause', autopause);
+    }
+    /**
+     * A promise to get the buffered property of the video.
+     *
+     * @promise GetBufferedPromise
+     * @fulfill {Array} Buffered Timeranges converted to an Array.
+     */
+
+    /**
+     * Get the buffered property of the video.
+     *
+     * @return {GetBufferedPromise}
+     */
+  }, {
+    key: "getBuffered",
+    value: function getBuffered() {
+      return this.get('buffered');
+    }
+    /**
+     * @typedef {Object} CameraProperties
+     * @prop {number} props.yaw - Number between 0 and 360.
+     * @prop {number} props.pitch - Number between -90 and 90.
+     * @prop {number} props.roll - Number between -180 and 180.
+     * @prop {number} props.fov - The field of view in degrees.
+     */
+
+    /**
+     * A promise to get the camera properties of the player.
+     *
+     * @promise GetCameraPromise
+     * @fulfill {CameraProperties} The camera properties.
+     */
+
+    /**
+     * For 360° videos get the camera properties for this player.
+     *
+     * @return {GetCameraPromise}
+     */
+  }, {
+    key: "getCameraProps",
+    value: function getCameraProps() {
+      return this.get('cameraProps');
+    }
+    /**
+     * A promise to set the camera properties of the player.
+     *
+     * @promise SetCameraPromise
+     * @fulfill {Object} The camera was successfully set.
+     * @reject {RangeError} The range was out of bounds.
+     */
+
+    /**
+     * For 360° videos set the camera properties for this player.
+     *
+     * @param {CameraProperties} camera The camera properties
+     * @return {SetCameraPromise}
+     */
+  }, {
+    key: "setCameraProps",
+    value: function setCameraProps(camera) {
+      return this.set('cameraProps', camera);
+    }
+    /**
+     * A representation of a chapter.
+     *
+     * @typedef {Object} VimeoChapter
+     * @property {number} startTime The start time of the chapter.
+     * @property {object} title The title of the chapter.
+     * @property {number} index The place in the order of Chapters. Starts at 1.
+     */
+
+    /**
+     * A promise to get chapters for the video.
+     *
+     * @promise GetChaptersPromise
+     * @fulfill {VimeoChapter[]} The chapters for the video.
+     */
+
+    /**
+     * Get an array of all the chapters for the video.
+     *
+     * @return {GetChaptersPromise}
+     */
+  }, {
+    key: "getChapters",
+    value: function getChapters() {
+      return this.get('chapters');
+    }
+    /**
+     * A promise to get the currently active chapter.
+     *
+     * @promise GetCurrentChaptersPromise
+     * @fulfill {VimeoChapter|undefined} The current chapter for the video.
+     */
+
+    /**
+     * Get the currently active chapter for the video.
+     *
+     * @return {GetCurrentChaptersPromise}
+     */
+  }, {
+    key: "getCurrentChapter",
+    value: function getCurrentChapter() {
+      return this.get('currentChapter');
+    }
+    /**
+     * A promise to get the color of the player.
+     *
+     * @promise GetColorPromise
+     * @fulfill {string} The hex color of the player.
+     */
+
+    /**
+     * Get the color for this player.
+     *
+     * @return {GetColorPromise}
+     */
+  }, {
+    key: "getColor",
+    value: function getColor() {
+      return this.get('color');
+    }
+    /**
+     * A promise to set the color of the player.
+     *
+     * @promise SetColorPromise
+     * @fulfill {string} The color was successfully set.
+     * @reject {TypeError} The string was not a valid hex or rgb color.
+     * @reject {ContrastError} The color was set, but the contrast is
+     *         outside of the acceptable range.
+     * @reject {EmbedSettingsError} The owner of the player has chosen to
+     *         use a specific color.
+     */
+
+    /**
+     * Set the color of this player to a hex or rgb string. Setting the
+     * color may fail if the owner of the video has set their embed
+     * preferences to force a specific color.
+     *
+     * @param {string} color The hex or rgb color string to set.
+     * @return {SetColorPromise}
+     */
+  }, {
+    key: "setColor",
+    value: function setColor(color) {
+      return this.set('color', color);
+    }
+    /**
+     * A representation of a cue point.
+     *
+     * @typedef {Object} VimeoCuePoint
+     * @property {number} time The time of the cue point.
+     * @property {object} data The data passed when adding the cue point.
+     * @property {string} id The unique id for use with removeCuePoint.
+     */
+
+    /**
+     * A promise to get the cue points of a video.
+     *
+     * @promise GetCuePointsPromise
+     * @fulfill {VimeoCuePoint[]} The cue points added to the video.
+     * @reject {UnsupportedError} Cue points are not supported with the current
+     *         player or browser.
+     */
+
+    /**
+     * Get an array of the cue points added to the video.
+     *
+     * @return {GetCuePointsPromise}
+     */
+  }, {
+    key: "getCuePoints",
+    value: function getCuePoints() {
+      return this.get('cuePoints');
+    }
+    /**
+     * A promise to get the current time of the video.
+     *
+     * @promise GetCurrentTimePromise
+     * @fulfill {number} The current time in seconds.
+     */
+
+    /**
+     * Get the current playback position in seconds.
+     *
+     * @return {GetCurrentTimePromise}
+     */
+  }, {
+    key: "getCurrentTime",
+    value: function getCurrentTime() {
+      return this.get('currentTime');
+    }
+    /**
+     * A promise to set the current time of the video.
+     *
+     * @promise SetCurrentTimePromise
+     * @fulfill {number} The actual current time that was set.
+     * @reject {RangeError} the time was less than 0 or greater than the
+     *         video’s duration.
+     */
+
+    /**
+     * Set the current playback position in seconds. If the player was
+     * paused, it will remain paused. Likewise, if the player was playing,
+     * it will resume playing once the video has buffered.
+     *
+     * You can provide an accurate time and the player will attempt to seek
+     * to as close to that time as possible. The exact time will be the
+     * fulfilled value of the promise.
+     *
+     * @param {number} currentTime
+     * @return {SetCurrentTimePromise}
+     */
+  }, {
+    key: "setCurrentTime",
+    value: function setCurrentTime(currentTime) {
+      return this.set('currentTime', currentTime);
+    }
+    /**
+     * A promise to get the duration of the video.
+     *
+     * @promise GetDurationPromise
+     * @fulfill {number} The duration in seconds.
+     */
+
+    /**
+     * Get the duration of the video in seconds. It will be rounded to the
+     * nearest second before playback begins, and to the nearest thousandth
+     * of a second after playback begins.
+     *
+     * @return {GetDurationPromise}
+     */
+  }, {
+    key: "getDuration",
+    value: function getDuration() {
+      return this.get('duration');
+    }
+    /**
+     * A promise to get the ended state of the video.
+     *
+     * @promise GetEndedPromise
+     * @fulfill {boolean} Whether or not the video has ended.
+     */
+
+    /**
+     * Get the ended state of the video. The video has ended if
+     * `currentTime === duration`.
+     *
+     * @return {GetEndedPromise}
+     */
+  }, {
+    key: "getEnded",
+    value: function getEnded() {
+      return this.get('ended');
+    }
+    /**
+     * A promise to get the loop state of the player.
+     *
+     * @promise GetLoopPromise
+     * @fulfill {boolean} Whether or not the player is set to loop.
+     */
+
+    /**
+     * Get the loop state of the player.
+     *
+     * @return {GetLoopPromise}
+     */
+  }, {
+    key: "getLoop",
+    value: function getLoop() {
+      return this.get('loop');
+    }
+    /**
+     * A promise to set the loop state of the player.
+     *
+     * @promise SetLoopPromise
+     * @fulfill {boolean} The loop state that was set.
+     */
+
+    /**
+     * Set the loop state of the player. When set to `true`, the player
+     * will start over immediately once playback ends.
+     *
+     * @param {boolean} loop
+     * @return {SetLoopPromise}
+     */
+  }, {
+    key: "setLoop",
+    value: function setLoop(loop) {
+      return this.set('loop', loop);
+    }
+    /**
+     * A promise to set the muted state of the player.
+     *
+     * @promise SetMutedPromise
+     * @fulfill {boolean} The muted state that was set.
+     */
+
+    /**
+     * Set the muted state of the player. When set to `true`, the player
+     * volume will be muted.
+     *
+     * @param {boolean} muted
+     * @return {SetMutedPromise}
+     */
+  }, {
+    key: "setMuted",
+    value: function setMuted(muted) {
+      return this.set('muted', muted);
+    }
+    /**
+     * A promise to get the muted state of the player.
+     *
+     * @promise GetMutedPromise
+     * @fulfill {boolean} Whether or not the player is muted.
+     */
+
+    /**
+     * Get the muted state of the player.
+     *
+     * @return {GetMutedPromise}
+     */
+  }, {
+    key: "getMuted",
+    value: function getMuted() {
+      return this.get('muted');
+    }
+    /**
+     * A promise to get the paused state of the player.
+     *
+     * @promise GetLoopPromise
+     * @fulfill {boolean} Whether or not the video is paused.
+     */
+
+    /**
+     * Get the paused state of the player.
+     *
+     * @return {GetLoopPromise}
+     */
+  }, {
+    key: "getPaused",
+    value: function getPaused() {
+      return this.get('paused');
+    }
+    /**
+     * A promise to get the playback rate of the player.
+     *
+     * @promise GetPlaybackRatePromise
+     * @fulfill {number} The playback rate of the player on a scale from 0 to 2.
+     */
+
+    /**
+     * Get the playback rate of the player on a scale from `0` to `2`.
+     *
+     * @return {GetPlaybackRatePromise}
+     */
+  }, {
+    key: "getPlaybackRate",
+    value: function getPlaybackRate() {
+      return this.get('playbackRate');
+    }
+    /**
+     * A promise to set the playbackrate of the player.
+     *
+     * @promise SetPlaybackRatePromise
+     * @fulfill {number} The playback rate was set.
+     * @reject {RangeError} The playback rate was less than 0 or greater than 2.
+     */
+
+    /**
+     * Set the playback rate of the player on a scale from `0` to `2`. When set
+     * via the API, the playback rate will not be synchronized to other
+     * players or stored as the viewer's preference.
+     *
+     * @param {number} playbackRate
+     * @return {SetPlaybackRatePromise}
+     */
+  }, {
+    key: "setPlaybackRate",
+    value: function setPlaybackRate(playbackRate) {
+      return this.set('playbackRate', playbackRate);
+    }
+    /**
+     * A promise to get the played property of the video.
+     *
+     * @promise GetPlayedPromise
+     * @fulfill {Array} Played Timeranges converted to an Array.
+     */
+
+    /**
+     * Get the played property of the video.
+     *
+     * @return {GetPlayedPromise}
+     */
+  }, {
+    key: "getPlayed",
+    value: function getPlayed() {
+      return this.get('played');
+    }
+    /**
+     * A promise to get the qualities available of the current video.
+     *
+     * @promise GetQualitiesPromise
+     * @fulfill {Array} The qualities of the video.
+     */
+
+    /**
+     * Get the qualities of the current video.
+     *
+     * @return {GetQualitiesPromise}
+     */
+  }, {
+    key: "getQualities",
+    value: function getQualities() {
+      return this.get('qualities');
+    }
+    /**
+     * A promise to get the current set quality of the video.
+     *
+     * @promise GetQualityPromise
+     * @fulfill {string} The current set quality.
+     */
+
+    /**
+     * Get the current set quality of the video.
+     *
+     * @return {GetQualityPromise}
+     */
+  }, {
+    key: "getQuality",
+    value: function getQuality() {
+      return this.get('quality');
+    }
+    /**
+     * A promise to set the video quality.
+     *
+     * @promise SetQualityPromise
+     * @fulfill {number} The quality was set.
+     * @reject {RangeError} The quality is not available.
+     */
+
+    /**
+     * Set a video quality.
+     *
+     * @param {string} quality
+     * @return {SetQualityPromise}
+     */
+  }, {
+    key: "setQuality",
+    value: function setQuality(quality) {
+      return this.set('quality', quality);
+    }
+    /**
+     * A promise to get the remote playback availability.
+     *
+     * @promise RemotePlaybackAvailabilityPromise
+     * @fulfill {boolean} Whether remote playback is available.
+     */
+
+    /**
+     * Get the availability of remote playback.
+     *
+     * @return {RemotePlaybackAvailabilityPromise}
+     */
+  }, {
+    key: "getRemotePlaybackAvailability",
+    value: function getRemotePlaybackAvailability() {
+      return this.get('remotePlaybackAvailability');
+    }
+    /**
+     * A promise to get the current remote playback state.
+     *
+     * @promise RemotePlaybackStatePromise
+     * @fulfill {string} The state of the remote playback: connecting, connected, or disconnected.
+     */
+
+    /**
+     * Get the current remote playback state.
+     *
+     * @return {RemotePlaybackStatePromise}
+     */
+  }, {
+    key: "getRemotePlaybackState",
+    value: function getRemotePlaybackState() {
+      return this.get('remotePlaybackState');
+    }
+    /**
+     * A promise to get the seekable property of the video.
+     *
+     * @promise GetSeekablePromise
+     * @fulfill {Array} Seekable Timeranges converted to an Array.
+     */
+
+    /**
+     * Get the seekable property of the video.
+     *
+     * @return {GetSeekablePromise}
+     */
+  }, {
+    key: "getSeekable",
+    value: function getSeekable() {
+      return this.get('seekable');
+    }
+    /**
+     * A promise to get the seeking property of the player.
+     *
+     * @promise GetSeekingPromise
+     * @fulfill {boolean} Whether or not the player is currently seeking.
+     */
+
+    /**
+     * Get if the player is currently seeking.
+     *
+     * @return {GetSeekingPromise}
+     */
+  }, {
+    key: "getSeeking",
+    value: function getSeeking() {
+      return this.get('seeking');
+    }
+    /**
+     * A promise to get the text tracks of a video.
+     *
+     * @promise GetTextTracksPromise
+     * @fulfill {VimeoTextTrack[]} The text tracks associated with the video.
+     */
+
+    /**
+     * Get an array of the text tracks that exist for the video.
+     *
+     * @return {GetTextTracksPromise}
+     */
+  }, {
+    key: "getTextTracks",
+    value: function getTextTracks() {
+      return this.get('textTracks');
+    }
+    /**
+     * A promise to get the embed code for the video.
+     *
+     * @promise GetVideoEmbedCodePromise
+     * @fulfill {string} The `<iframe>` embed code for the video.
+     */
+
+    /**
+     * Get the `<iframe>` embed code for the video.
+     *
+     * @return {GetVideoEmbedCodePromise}
+     */
+  }, {
+    key: "getVideoEmbedCode",
+    value: function getVideoEmbedCode() {
+      return this.get('videoEmbedCode');
+    }
+    /**
+     * A promise to get the id of the video.
+     *
+     * @promise GetVideoIdPromise
+     * @fulfill {number} The id of the video.
+     */
+
+    /**
+     * Get the id of the video.
+     *
+     * @return {GetVideoIdPromise}
+     */
+  }, {
+    key: "getVideoId",
+    value: function getVideoId() {
+      return this.get('videoId');
+    }
+    /**
+     * A promise to get the title of the video.
+     *
+     * @promise GetVideoTitlePromise
+     * @fulfill {number} The title of the video.
+     */
+
+    /**
+     * Get the title of the video.
+     *
+     * @return {GetVideoTitlePromise}
+     */
+  }, {
+    key: "getVideoTitle",
+    value: function getVideoTitle() {
+      return this.get('videoTitle');
+    }
+    /**
+     * A promise to get the native width of the video.
+     *
+     * @promise GetVideoWidthPromise
+     * @fulfill {number} The native width of the video.
+     */
+
+    /**
+     * Get the native width of the currently‐playing video. The width of
+     * the highest‐resolution available will be used before playback begins.
+     *
+     * @return {GetVideoWidthPromise}
+     */
+  }, {
+    key: "getVideoWidth",
+    value: function getVideoWidth() {
+      return this.get('videoWidth');
+    }
+    /**
+     * A promise to get the native height of the video.
+     *
+     * @promise GetVideoHeightPromise
+     * @fulfill {number} The native height of the video.
+     */
+
+    /**
+     * Get the native height of the currently‐playing video. The height of
+     * the highest‐resolution available will be used before playback begins.
+     *
+     * @return {GetVideoHeightPromise}
+     */
+  }, {
+    key: "getVideoHeight",
+    value: function getVideoHeight() {
+      return this.get('videoHeight');
+    }
+    /**
+     * A promise to get the vimeo.com url for the video.
+     *
+     * @promise GetVideoUrlPromise
+     * @fulfill {number} The vimeo.com url for the video.
+     * @reject {PrivacyError} The url isn’t available because of the video’s privacy setting.
+     */
+
+    /**
+     * Get the vimeo.com url for the video.
+     *
+     * @return {GetVideoUrlPromise}
+     */
+  }, {
+    key: "getVideoUrl",
+    value: function getVideoUrl() {
+      return this.get('videoUrl');
+    }
+    /**
+     * A promise to get the volume level of the player.
+     *
+     * @promise GetVolumePromise
+     * @fulfill {number} The volume level of the player on a scale from 0 to 1.
+     */
+
+    /**
+     * Get the current volume level of the player on a scale from `0` to `1`.
+     *
+     * Most mobile devices do not support an independent volume from the
+     * system volume. In those cases, this method will always return `1`.
+     *
+     * @return {GetVolumePromise}
+     */
+  }, {
+    key: "getVolume",
+    value: function getVolume() {
+      return this.get('volume');
+    }
+    /**
+     * A promise to set the volume level of the player.
+     *
+     * @promise SetVolumePromise
+     * @fulfill {number} The volume was set.
+     * @reject {RangeError} The volume was less than 0 or greater than 1.
+     */
+
+    /**
+     * Set the volume of the player on a scale from `0` to `1`. When set
+     * via the API, the volume level will not be synchronized to other
+     * players or stored as the viewer’s preference.
+     *
+     * Most mobile devices do not support setting the volume. An error will
+     * *not* be triggered in that situation.
+     *
+     * @param {number} volume
+     * @return {SetVolumePromise}
+     */
+  }, {
+    key: "setVolume",
+    value: function setVolume(volume) {
+      return this.set('volume', volume);
+    }
+  }]);
+  return Player;
+}(); // Setup embed only if this is not a node environment
+
+if (!isNode) {
+  screenfull = initializeScreenfull();
+  initializeEmbeds();
+  resizeEmbeds();
+  initAppendVideoMetadata();
+  checkUrlTimeParam();
+}
+var _default = Player;
+exports.default = _default;
+},{}],"../node_modules/@u-wave/react-vimeo/dist/react-vimeo.es.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _player = _interopRequireDefault(require("@vimeo/player"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+  return _setPrototypeOf(o, p);
+}
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+  return self;
+}
+var eventNames = {
+  play: 'onPlay',
+  playing: 'onPlaying',
+  pause: 'onPause',
+  ended: 'onEnd',
+  timeupdate: 'onTimeUpdate',
+  progress: 'onProgress',
+  seeked: 'onSeeked',
+  texttrackchange: 'onTextTrackChange',
+  cuechange: 'onCueChange',
+  cuepoint: 'onCuePoint',
+  volumechange: 'onVolumeChange',
+  playbackratechange: 'onPlaybackRateChange',
+  error: 'onError',
+  loaded: 'onLoaded'
+};
+var Vimeo = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose(Vimeo, _React$Component);
+  function Vimeo(props) {
+    var _this;
+    _this = _React$Component.call(this, props) || this;
+    _this.refContainer = _this.refContainer.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+  var _proto = Vimeo.prototype;
+  _proto.componentDidMount = function componentDidMount() {
+    this.createPlayer();
+  };
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+    var _this2 = this;
+    // eslint-disable-next-line react/destructuring-assignment
+    var changes = Object.keys(this.props).filter(function (name) {
+      return _this2.props[name] !== prevProps[name];
+    });
+    this.updateProps(changes);
+  };
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.player.destroy();
+  }
+
+  /**
+   * @private
+   */;
+  _proto.getInitialOptions = function getInitialOptions() {
+    var _ref;
+    var video = this.props.video;
+    var videoType = /^https?:/i.test(video) ? 'url' : 'id';
+    /* eslint-disable react/destructuring-assignment */
+    return _ref = {}, _ref[videoType] = video, _ref.width = this.props.width, _ref.height = this.props.height, _ref.autopause = this.props.autopause, _ref.autoplay = this.props.autoplay, _ref.byline = this.props.showByline, _ref.color = this.props.color, _ref.controls = this.props.controls, _ref.loop = this.props.loop, _ref.portrait = this.props.showPortrait, _ref.title = this.props.showTitle, _ref.muted = this.props.muted, _ref.background = this.props.background, _ref.responsive = this.props.responsive, _ref.dnt = this.props.dnt, _ref.speed = this.props.speed, _ref.keyboard = this.props.keyboard, _ref.pip = this.props.pip, _ref.playsinline = this.props.playsInline, _ref.quality = this.props.quality, _ref.texttrack = this.props.textTrack, _ref.transparent = this.props.transparent, _ref;
+    /* eslint-enable react/destructuring-assignment */
+  }
+
+  /**
+   * @private
+   */;
+  _proto.updateProps = function updateProps(propNames) {
+    var _this3 = this;
+    var player = this.player;
+    propNames.forEach(function (name) {
+      // eslint-disable-next-line react/destructuring-assignment
+      var value = _this3.props[name];
+      switch (name) {
+        case 'autopause':
+          player.setAutopause(value);
+          break;
+        case 'color':
+          player.setColor(value);
+          break;
+        case 'loop':
+          player.setLoop(value);
+          break;
+        case 'volume':
+          player.setVolume(value);
+          break;
+        case 'paused':
+          player.getPaused().then(function (paused) {
+            if (value && !paused) {
+              return player.pause();
+            }
+            if (!value && paused) {
+              return player.play();
+            }
+            return null;
+          });
+          break;
+        case 'width':
+        case 'height':
+          player.element[name] = value;
+          break;
+        case 'video':
+          if (value) {
+            var start = _this3.props.start;
+            var loaded = player.loadVideo(value);
+            // Set the start time only when loading a new video.
+            // It seems like this has to be done after the video has loaded, else it just starts at
+            // the beginning!
+            if (typeof start === 'number') {
+              loaded.then(function () {
+                player.setCurrentTime(start);
+              });
+            }
+          } else {
+            player.unload();
+          }
+          break;
+        case 'playbackRate':
+          player.setPlaybackRate(value);
+          break;
+        case 'quality':
+          player.setQuality(value);
+          break;
+        // Nothing
+      }
+    });
+  }
+
+  /**
+   * @private
+   */;
+  _proto.createPlayer = function createPlayer() {
+    var _this4 = this;
+    var _this$props = this.props,
+      start = _this$props.start,
+      volume = _this$props.volume,
+      playbackRate = _this$props.playbackRate;
+    this.player = new _player.default(this.container, this.getInitialOptions());
+    Object.keys(eventNames).forEach(function (dmName) {
+      var reactName = eventNames[dmName];
+      _this4.player.on(dmName, function (event) {
+        // eslint-disable-next-line react/destructuring-assignment
+        var handler = _this4.props[reactName];
+        if (handler) {
+          handler(event);
+        }
+      });
+    });
+    var _this$props2 = this.props,
+      onError = _this$props2.onError,
+      onReady = _this$props2.onReady;
+    this.player.ready().then(function () {
+      if (onReady) {
+        onReady(_this4.player);
+      }
+    }, function (err) {
+      if (onError) {
+        onError(err);
+      } else {
+        throw err;
+      }
+    });
+    if (typeof start === 'number') {
+      this.player.setCurrentTime(start);
+    }
+    if (typeof volume === 'number') {
+      this.updateProps(['volume']);
+    }
+    if (typeof playbackRate === 'number') {
+      this.updateProps(['playbackRate']);
+    }
+  }
+
+  /**
+   * @private
+   */;
+  _proto.refContainer = function refContainer(container) {
+    this.container = container;
+  };
+  _proto.render = function render() {
+    var _this$props3 = this.props,
+      id = _this$props3.id,
+      className = _this$props3.className,
+      style = _this$props3.style;
+    return /*#__PURE__*/_react.default.createElement("div", {
+      id: id,
+      className: className,
+      style: style,
+      ref: this.refContainer
+    });
+  };
+  return Vimeo;
+}(_react.default.Component);
+exports.default = Vimeo;
+if ("development" !== 'production') {
+  Vimeo.propTypes = {
+    /**
+     * A Vimeo video ID or URL.
+     */
+    video: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
+    /**
+     * DOM ID for the player element.
+     */
+    id: _propTypes.default.string,
+    /**
+     * CSS className for the player element.
+     */
+    className: _propTypes.default.string,
+    /**
+     * Inline style for container element.
+     */
+    style: _propTypes.default.object,
+    // eslint-disable-line react/forbid-prop-types
+    /**
+     * Width of the player element.
+     */
+    width: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
+    /**
+     * Height of the player element.
+     */
+    height: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
+    /**
+     * Pause the video.
+     */
+    paused: _propTypes.default.bool,
+    // eslint-disable-line react/no-unused-prop-types
+
+    /**
+     * The playback volume as a number between 0 and 1.
+     */
+    volume: _propTypes.default.number,
+    /**
+     * The time in seconds at which to start playing the video.
+     */
+    start: _propTypes.default.number,
+    // Player parameters
+    /**
+     * Pause this video automatically when another one plays.
+     */
+    autopause: _propTypes.default.bool,
+    /**
+     * Automatically start playback of the video. Note that this won’t work on
+     * some devices.
+     */
+    autoplay: _propTypes.default.bool,
+    /**
+     * Show the byline on the video.
+     */
+    showByline: _propTypes.default.bool,
+    /**
+     * Specify the color of the video controls. Colors may be overridden by the
+     * embed settings of the video. _(Ex: "ef2f9f")_
+     */
+    color: _propTypes.default.string,
+    /**
+     * Blocks the player from tracking any session data, including all cookies and analytics.
+     */
+    dnt: _propTypes.default.bool,
+    // Player controls
+    /**
+     * Hide all elements in the player, such as the progress bar, sharing buttons, etc.
+     * (requires Vimeo PRO / Business account)
+     */
+    controls: _propTypes.default.bool,
+    /**
+     * Play the video again when it reaches the end.
+     */
+    loop: _propTypes.default.bool,
+    /**
+     * Show the portrait on the video.
+     */
+    showPortrait: _propTypes.default.bool,
+    /**
+     * Show the title on the video.
+     */
+    showTitle: _propTypes.default.bool,
+    /**
+     * Starts in a muted state to help with autoplay
+     */
+    muted: _propTypes.default.bool,
+    /**
+     * Starts in a background state with no controls to help with autoplay
+     */
+    background: _propTypes.default.bool,
+    /**
+     * Enable responsive mode and resize according to parent element (experimental)
+     */
+    responsive: _propTypes.default.bool,
+    /**
+     * Specify playback rate (requires Vimeo PRO / Business account)
+     */
+    playbackRate: _propTypes.default.number,
+    /**
+     * Enable playback rate controls (requires Vimeo PRO / Business account)
+     */
+    speed: _propTypes.default.bool,
+    /**
+     * Allows for keyboard input to trigger player events.
+     */
+    keyboard: _propTypes.default.bool,
+    /**
+     * Show the picture-in-picture button in the controlbar
+     * and enable the picture-in-picture API.
+     */
+    pip: _propTypes.default.bool,
+    /**
+     * Play video inline on mobile devices, to automatically
+     * go fullscreen on playback set this parameter to false.
+     */
+    playsInline: _propTypes.default.bool,
+    /**
+     * Vimeo Plus, PRO, and Business members can default
+     * an embedded video to a specific quality on desktop.
+     */
+    quality: _propTypes.default.string,
+    /**
+     * Turn captions/subtitles on for a specific language by default.
+     */
+    textTrack: _propTypes.default.string,
+    /**
+     * The responsive player and transparent background are enabled
+     * by default, to disable set this parameter to false.
+     */
+    transparent: _propTypes.default.bool,
+    // Events
+    /* eslint-disable react/no-unused-prop-types */
+
+    /**
+     * Sent when the Vimeo player API has loaded.
+     * Receives the Vimeo player object in the first parameter.
+     */
+    onReady: _propTypes.default.func,
+    /**
+     * Sent when the player triggers an error.
+     */
+    onError: _propTypes.default.func,
+    /**
+     * Triggered when video playback is initiated.
+     */
+    onPlay: _propTypes.default.func,
+    /**
+     * Triggered when the video starts playing.
+     */
+    onPlaying: _propTypes.default.func,
+    /**
+     * Triggered when the video pauses.
+     */
+    onPause: _propTypes.default.func,
+    /**
+     * Triggered any time the video playback reaches the end.
+     * Note: when `loop` is turned on, the ended event will not fire.
+     */
+    onEnd: _propTypes.default.func,
+    /**
+     * Triggered as the `currentTime` of the video updates. It generally fires
+     * every 250ms, but it may vary depending on the browser.
+     */
+    onTimeUpdate: _propTypes.default.func,
+    /**
+     * Triggered as the video is loaded. Reports back the amount of the video
+     * that has been buffered.
+     */
+    onProgress: _propTypes.default.func,
+    /**
+     * Triggered when the player seeks to a specific time. An `onTimeUpdate`
+     * event will also be fired at the same time.
+     */
+    onSeeked: _propTypes.default.func,
+    /**
+     * Triggered when the active text track (captions/subtitles) changes. The
+     * values will be `null` if text tracks are turned off.
+     */
+    onTextTrackChange: _propTypes.default.func,
+    /**
+     * Triggered when the active cue for the current text track changes. It also
+     * fires when the active text track changes. There may be multiple cues
+     * active.
+     */
+    onCueChange: _propTypes.default.func,
+    /**
+     * Triggered when the current time hits a registered cue point.
+     */
+    onCuePoint: _propTypes.default.func,
+    /**
+     * Triggered when the volume in the player changes. Some devices do not
+     * support setting the volume of the video independently from the system
+     * volume, so this event will never fire on those devices.
+     */
+    onVolumeChange: _propTypes.default.func,
+    /**
+     * Triggered when the playback rate changes.
+     */
+    onPlaybackRateChange: _propTypes.default.func,
+    /**
+     * Triggered when a new video is loaded in the player.
+     */
+    onLoaded: _propTypes.default.func
+
+    /* eslint-enable react/no-unused-prop-types */
+  };
+}
+
+Vimeo.defaultProps = {
+  autopause: true,
+  autoplay: false,
+  showByline: true,
+  controls: true,
+  loop: false,
+  showPortrait: true,
+  showTitle: true,
+  muted: false,
+  background: false,
+  responsive: false,
+  dnt: false,
+  speed: false,
+  keyboard: true,
+  pip: false,
+  playsInline: true,
+  transparent: true
+};
+},{"react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","@vimeo/player":"../node_modules/@vimeo/player/dist/player.es.js"}],"components/Video.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Video = Video;
+var _react = _interopRequireDefault(require("react"));
+var _reactVimeo = _interopRequireDefault(require("@u-wave/react-vimeo"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __assign = void 0 && (void 0).__assign || function () {
+  __assign = Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+      s = arguments[i];
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+    }
+    return t;
+  };
+  return __assign.apply(this, arguments);
+};
+function Video(props) {
+  var vimeoId = props.vimeoId;
+  var vimeoSettings = {
+    video: vimeoId,
+    autoplay: false,
+    volume: 1,
+    autopause: true,
+    controls: true,
+    responsive: true,
+    playsInline: false
+  };
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactVimeo.default, __assign({}, vimeoSettings)));
+}
+},{"react":"../node_modules/react/index.js","@u-wave/react-vimeo":"../node_modules/@u-wave/react-vimeo/dist/react-vimeo.es.js"}],"components/PageContentWrapper.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.PageContentWrapper = void 0;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _sharedStyles = require("../sharedStyles");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var PageContentWrapper = _styledComponents.default.div.withConfig({
+  displayName: "PageContentWrapper",
+  componentId: "sc-1wxx9nf-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  ", ";\n  max-width: 900px;\n  margin: 0px auto 0px auto;\n  background: aquamarine;\n  &::before {\n    content: \" \";\n    background: yellow;\n    min-height: 65px;\n  }\n  &::after {\n    content: \" \";\n    background: yellow;\n    min-height: 100px;\n  }\n"], ["\n  display: flex;\n  flex-direction: column;\n  ", ";\n  max-width: 900px;\n  margin: 0px auto 0px auto;\n  background: aquamarine;\n  &::before {\n    content: \" \";\n    background: yellow;\n    min-height: 65px;\n  }\n  &::after {\n    content: \" \";\n    background: yellow;\n    min-height: 100px;\n  }\n"])), _sharedStyles.contentWidth);
+exports.PageContentWrapper = PageContentWrapper;
+var templateObject_1;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../sharedStyles":"sharedStyles.tsx"}],"pages/DemoReel.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38677,18 +42567,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.DemoReel = DemoReel;
 var _react = _interopRequireDefault(require("react"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-function DemoReel() {
-  return _react.default.createElement(_react.default.Fragment, null, "I am the demo reel page");
-}
-},{"react":"../node_modules/react/index.js"}],"components/Header.tsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Header = Header;
-var _react = _interopRequireDefault(require("react"));
+var _Video = require("../components/Video");
+var _PageContentWrapper = require("../components/PageContentWrapper");
+var _utils = require("../utils");
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
@@ -38701,17 +42582,105 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
-var HeaderWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  height: 260px;\n  max-height: 260px;\n  min-height: 260px;\n  background: green;\n"], ["\n  height: 260px;\n  max-height: 260px;\n  min-height: 260px;\n  background: green;\n"])));
-var NameDiv = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  font-size: 32px;\n"], ["\n  font-size: 32px;\n"])));
-var Subtext = _styledComponents.default.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 16px;\n"], ["\n  font-size: 16px;\n"])));
+var VideoTitle = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 35px;\n  margin: auto;\n  margin-top: 40px;\n\n  color: black;\n"], ["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 35px;\n  margin: auto;\n  margin-top: 40px;\n\n  color: black;\n"])));
+function DemoReel() {
+  var vimeoId = (0, _utils.getProjectData)("demo-reel").vimeoId;
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_Video.Video, {
+    vimeoId: vimeoId
+  }), _react.default.createElement(VideoTitle, null, "Motion Reel 2023")));
+}
+var templateObject_1;
+},{"react":"../node_modules/react/index.js","../components/Video":"components/Video.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/logo.gif":[function(require,module,exports) {
+module.exports = "/logo.9396945d.gif";
+},{}],"components/Header.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Header = Header;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _react = _interopRequireDefault(require("react"));
+var _sharedStyles = require("../sharedStyles");
+var _logo = _interopRequireDefault(require("./../assets/logo.gif"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var HeaderWrapper = _styledComponents.default.div.withConfig({
+  displayName: "Header__HeaderWrapper",
+  componentId: "sc-y63yqk-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  height: ", ";\n  max-height: ", ";\n  min-height: ", ";\n  background: green;\n"], ["\n  height: ", ";\n  max-height: ", ";\n  min-height: ", ";\n  background: green;\n"])), function (props) {
+  return props.$lg ? "260px" : "100px";
+}, function (props) {
+  return props.$lg ? "260px" : "100px";
+}, function (props) {
+  return props.$lg ? "260px" : "100px";
+});
+var HeaderContent = _styledComponents.default.div.withConfig({
+  displayName: "Header__HeaderContent",
+  componentId: "sc-y63yqk-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  ", ";\n  margin: 0px auto 0px auto;\n  display: flex;\n"], ["\n  ", ";\n  margin: 0px auto 0px auto;\n  display: flex;\n"])), _sharedStyles.contentWidth);
+var Name = _styledComponents.default.a.withConfig({
+  displayName: "Header__Name",
+  componentId: "sc-y63yqk-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  font-size: 32px;\n  align-self: end;\n  font-family: \"Rubik Mono One\", sans-serif;\n  font-style: normal;\n  font-weight: 400;\n  text-decoration: none;\n  color: ", ";\n  display: flex;\n  flex-direction: column;\n  > * {\n    &:first-child {\n      font-size: 32px;\n      margin-bottom: -6px;\n    }\n  }\n  &:nth-child(2) {\n    font-size: 23px;\n  }\n"], ["\n  font-size: 32px;\n  align-self: end;\n  font-family: \"Rubik Mono One\", sans-serif;\n  font-style: normal;\n  font-weight: 400;\n  text-decoration: none;\n  color: ", ";\n  display: flex;\n  flex-direction: column;\n  > * {\n    &:first-child {\n      font-size: 32px;\n      margin-bottom: -6px;\n    }\n  }\n  &:nth-child(2) {\n    font-size: 23px;\n  }\n"])), _sharedStyles.ORANGE_DARK);
+var Subtext = _styledComponents.default.div.withConfig({
+  displayName: "Header__Subtext",
+  componentId: "sc-y63yqk-3"
+})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  font-size: 16px;\n"], ["\n  font-size: 16px;\n"])));
+var PageLinks = _styledComponents.default.div.withConfig({
+  displayName: "Header__PageLinks",
+  componentId: "sc-y63yqk-4"
+})(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  display: flex;\n  margin-left: auto;\n  background: white;\n"], ["\n  display: flex;\n  margin-left: auto;\n  background: white;\n"])));
+var PageLink = _styledComponents.default.a.withConfig({
+  displayName: "Header__PageLink",
+  componentId: "sc-y63yqk-5"
+})(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  margin-left: 40px;\n  margin-bottom: 20px;\n  align-self: end;\n  font-family: futura-pt, sans-serif;\n  font-weight: 500;\n  font-size: 20px;\n  font-style: normal;\n  color: black;\n  text-decoration: none;\n  &:first-of-type {\n    color: ", ";\n  }\n  &:hover {\n    color: ", ";\n  }\n"], ["\n  margin-left: 40px;\n  margin-bottom: 20px;\n  align-self: end;\n  font-family: futura-pt, sans-serif;\n  font-weight: 500;\n  font-size: 20px;\n  font-style: normal;\n  color: black;\n  text-decoration: none;\n  &:first-of-type {\n    color: ", ";\n  }\n  &:hover {\n    color: ", ";\n  }\n"])), _sharedStyles.ORANGE_DARK, _sharedStyles.ORANGE_DARK);
+var Logo = _styledComponents.default.img.withConfig({
+  displayName: "Header__Logo",
+  componentId: "sc-y63yqk-6"
+})(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  height: 70px;\n"], ["\n  height: 70px;\n"])));
+var ColorBar = _styledComponents.default.div.withConfig({
+  displayName: "Header__ColorBar",
+  componentId: "sc-y63yqk-7"
+})(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  height: 30px;\n  background: plum;\n"], ["\n  height: 30px;\n  background: plum;\n"])));
+function HeaderSmall() {
+  return _react.default.createElement(HeaderWrapper, {
+    "$lg": false
+  }, _react.default.createElement(ColorBar, null), _react.default.createElement(HeaderContent, null, _react.default.createElement(Logo, {
+    src: _logo.default,
+    alt: ""
+  }), _react.default.createElement(Name, {
+    href: "/"
+  }, _react.default.createElement("div", null, "Dylan"), _react.default.createElement("div", null, "Harness")), _react.default.createElement(PageLinks, null, _react.default.createElement(PageLink, {
+    href: "/demo-reel"
+  }, "Reel"), _react.default.createElement(PageLink, {
+    href: "/"
+  }, "Projects"), _react.default.createElement(PageLink, {
+    href: "/about"
+  }, "About"))));
+}
 function Header(props) {
   var lg = props.lg;
-  return _react.default.createElement(HeaderWrapper, null, _react.default.createElement("div", null, _react.default.createElement(NameDiv, null, "Dylan Harness"), _react.default.createElement(Subtext, null, "Motion Designer")), _react.default.createElement("div", null, "links"), lg && _react.default.createElement(_react.default.Fragment, null, "I am large"), _react.default.createElement("div", null, _react.default.createElement("div", {
+  if (!lg) {
+    return _react.default.createElement(HeaderSmall, null);
+  }
+  return _react.default.createElement(HeaderWrapper, {
+    "$lg": true
+  }, _react.default.createElement("div", null, _react.default.createElement(Name, null, "Dylan Harness"), _react.default.createElement(Subtext, null, "Motion Designer")), _react.default.createElement("div", null, "links"), lg && _react.default.createElement(_react.default.Fragment, null, "I am large"), _react.default.createElement("div", null, _react.default.createElement("div", {
     className: "header-name"
   }, "Dylan Har"), _react.default.createElement("div", null, "dmkdj")));
 }
-var templateObject_1, templateObject_2, templateObject_3;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/icons/linkedin.svg":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../sharedStyles":"sharedStyles.tsx","./../assets/logo.gif":"assets/logo.gif"}],"assets/icons/linkedin.svg":[function(require,module,exports) {
 module.exports = "/linkedin.15978cba.svg";
 },{}],"assets/icons/email.svg":[function(require,module,exports) {
 module.exports = "/email.b0f0adbd.svg";
@@ -38732,6 +42701,7 @@ var _linkedin = _interopRequireDefault(require("./../assets/icons/linkedin.svg")
 var _email = _interopRequireDefault(require("./../assets/icons/email.svg"));
 var _instagram = _interopRequireDefault(require("./../assets/icons/instagram.svg"));
 var _vimeo = _interopRequireDefault(require("./../assets/icons/vimeo.svg"));
+var _sharedStyles = require("../sharedStyles");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
   if (Object.defineProperty) {
@@ -38744,21 +42714,34 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   return cooked;
 };
 var FooterWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  height: 80px;\n  min-height: 80px;\n  background: blueviolet;\n  width: 100%;\n  margin-top: auto;\n"], ["\n  display: flex;\n  height: 80px;\n  min-height: 80px;\n  background: blueviolet;\n  width: 100%;\n  margin-top: auto;\n"])));
-var FooterContent = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  background: green;\n  max-width: 1085px;\n  margin: auto;\n  width: 80vw;\n  justify-content: end;\n\n"], ["\n  display: flex;\n  background: green;\n  max-width: 1085px;\n  margin: auto;\n  width: 80vw;\n  justify-content: end;\n\n"])));
+var FooterContent = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  background: green;\n  ", ";\n  margin: auto;\n  justify-content: end;\n"], ["\n  display: flex;\n  background: green;\n  ", ";\n  margin: auto;\n  justify-content: end;\n"])), _sharedStyles.contentWidth);
 var Links = _styledComponents.default.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: flex;\n  gap: 20px;\n  align-items: flex-end;\n  background: orange;\n  & > img {\n    max-width: 30px;\n  }\n"], ["\n  display: flex;\n  gap: 20px;\n  align-items: flex-end;\n  background: orange;\n  & > img {\n    max-width: 30px;\n  }\n"])));
+var Link = _styledComponents.default.a(templateObject_4 || (templateObject_4 = __makeTemplateObject([""], [""])));
 function Footer() {
-  return _react.default.createElement(FooterWrapper, null, _react.default.createElement(FooterContent, null, _react.default.createElement(Links, null, _react.default.createElement("img", {
+  return _react.default.createElement(FooterWrapper, null, _react.default.createElement(FooterContent, null, _react.default.createElement(Links, null, _react.default.createElement(Link, {
+    href: "https://www.instagram.com/dylanharness/",
+    target: "_blank"
+  }, _react.default.createElement("img", {
     src: _instagram.default
-  }), _react.default.createElement("img", {
+  })), _react.default.createElement(Link, {
+    href: "https://vimeo.com/user126295858",
+    target: "_blank"
+  }, _react.default.createElement("img", {
     src: _vimeo.default
-  }), _react.default.createElement("img", {
+  })), _react.default.createElement(Link, {
+    href: "mailto:dharness.engineer@gmail.com",
+    target: "_blank"
+  }, _react.default.createElement("img", {
     src: _email.default
-  }), _react.default.createElement("img", {
+  })), _react.default.createElement(Link, {
+    href: "https://www.linkedin.com/in/dhsoftware/",
+    target: "_blank"
+  }, _react.default.createElement("img", {
     src: _linkedin.default
-  }))));
+  })))));
 }
-var templateObject_1, templateObject_2, templateObject_3;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./../assets/icons/linkedin.svg":"assets/icons/linkedin.svg","./../assets/icons/email.svg":"assets/icons/email.svg","./../assets/icons/instagram.svg":"assets/icons/instagram.svg","./../assets/icons/vimeo.svg":"assets/icons/vimeo.svg"}],"router.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./../assets/icons/linkedin.svg":"assets/icons/linkedin.svg","./../assets/icons/email.svg":"assets/icons/email.svg","./../assets/icons/instagram.svg":"assets/icons/instagram.svg","./../assets/icons/vimeo.svg":"assets/icons/vimeo.svg","../sharedStyles":"sharedStyles.tsx"}],"router.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38785,11 +42768,11 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
-var PageWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n    height: 100%;\n    flex-direction: column;\n    background: tan;\n"], ["\n    display: flex;\n    height: 100%;\n    flex-direction: column;\n    background: tan;\n"])));
+var PageWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  height: 100%;\n  flex-direction: column;\n  background: tan;\n"], ["\n  display: flex;\n  height: 100%;\n  flex-direction: column;\n  background: tan;\n"])));
 function Err() {
   var navigate = (0, _reactRouterDom.useNavigate)();
   (0, _react.useEffect)(function () {
-    // If somehow we end up on an error page, 
+    // If somehow we end up on an error page,
     // just redirect to the landing page
     navigate("/");
   }, []);
@@ -38806,7 +42789,8 @@ Page.defaultProps = {
 var router = (0, _reactRouterDom.createBrowserRouter)([{
   path: "/",
   element: _react.default.createElement(Page, {
-    content: _react.default.createElement(_Projects.Projects, null)
+    content: _react.default.createElement(_Projects.Projects, null),
+    lg: true
   }),
   errorElement: _react.default.createElement(Err, null)
 }, {
@@ -38841,13 +42825,13 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
-var GlobalStyle = (0, _styledComponents.createGlobalStyle)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"], ["\n  * {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"])));
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  html {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"], ["\n  html {\n    font-family: Arial, Helvetica, sans-serif;\n  }\n"])));
 function App() {
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_styledNormalize.Normalize, null), _react.default.createElement(GlobalStyle, null), _react.default.createElement(_reactRouterDom.RouterProvider, {
     router: _router.router
   }));
 }
-var container = document.getElementById('app');
+var container = document.getElementById("app");
 var root = (0, _client.createRoot)(container);
 root.render(_react.default.createElement(App, null));
 var templateObject_1;
@@ -38876,7 +42860,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57065" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53400" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
