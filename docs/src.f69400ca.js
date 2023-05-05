@@ -38705,14 +38705,14 @@ module.exports = "/thumbnail.fad522b6.png";
 module.exports = "/thumbnail.c611f4bd.png";
 },{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.f8fd2210.png";
-},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.fdf4fbb1.png";
 },{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.0f995fe7.png";
 },{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.5abd4f28.png";
+},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.5e7285e8.png";
 },{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
@@ -38723,14 +38723,14 @@ module.exports = {
   "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
   "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
   "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
-  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "over-eats": require("./..\\over-eats\\thumbnail.png"),
   "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
   "propmaker": require("./..\\propmaker\\thumbnail.png"),
+  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "purple-business": require("./..\\purple-business\\thumbnail.png"),
   "ski-boots": require("./..\\ski-boots\\thumbnail.png")
 };
-},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
+},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48761,7 +48761,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57322" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58687" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
