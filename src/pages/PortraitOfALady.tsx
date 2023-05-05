@@ -7,7 +7,7 @@ import { VideoTitle } from "../components/VideoTitle";
 import { FigureText } from "../components/FigureText";
 import { Video } from "../components/Video";
 import ruffs from "../assets/projects/portrait-of-a-lady/ruffs.webm";
-import colors from "../assets/projects/portrait-of-a-lady/color-study.png";
+import colors from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
 
 const MediaSection = styled.div`
   display: flex;
@@ -25,11 +25,11 @@ const MediaColumn = styled.div`
 `;
 
 export function PortraitOfALady() {
-  const { vimeoId, name } = getProjectData("portrait-of-a-lady");
+  const { vimeoId, name, aspectRatio } = getProjectData("portrait-of-a-lady");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This sequence was roughed in Toon Boom, with some cleanup done in

@@ -37,12 +37,12 @@ const BottomGridCol = styled.div`
 `;
 
 export function SkiBoots() {
-  const { vimeoId, name } = getProjectData("ski-boots");
+  const { vimeoId, name, aspectRatio } = getProjectData("ski-boots");
   const bottomGridHeight = 700;
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This sequence shows how quick and easy purchasing boots can be online

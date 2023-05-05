@@ -5,9 +5,9 @@ import { VimeoVideo } from "../components/VimeoVideo";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import endCard from "../assets/projects/fresh-caught/end-card.png";
+import endCard from "../assets/projects/fresh-caught/end-card.png?as=webp";
 import featherDemo from "../assets/projects/fresh-caught/feather-demo-02.mp4";
-import poses from "../assets/projects/fresh-caught/fish-poses-combined.png";
+import poses from "../assets/projects/fresh-caught/fish-poses-combined.png?as=webp";
 import fishRig from "../assets/projects/fresh-caught/fish-rig-demo.mp4";
 import { FigureText } from "../components/FigureText";
 
@@ -41,11 +41,11 @@ const FeathersWrapper = styled.div`
 `;
 
 export function FreshCaught() {
-  const { vimeoId, name } = getProjectData("fresh-caught");
+  const { vimeoId, name, aspectRatio } = getProjectData("fresh-caught");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This speculative ad spot was made mostly in After Effects. The

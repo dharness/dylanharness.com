@@ -1,8 +1,14 @@
 import React, { useEffect } from "react";
-import { createBrowserRouter, useNavigate } from "react-router-dom";
+import {
+  HashRouter,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Projects } from "./pages/Projects";
 import { DemoReel } from "./pages/DemoReel";
 import { SkiBoots } from "./pages/SkiBoots";
@@ -14,6 +20,7 @@ import { OverEats } from "./pages/OverEats";
 import { PortraitOfALady } from "./pages/PortraitOfALady";
 import { Propmaker } from "./pages/Propmaker";
 import { PurpleBusiness } from "./pages/PurpleBusiness";
+import { Normalize } from "styled-normalize";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -48,50 +55,44 @@ Page.defaultProps = {
   lg: false,
 };
 
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Page content={<Projects />} lg={true} />,
-    errorElement: <Err />,
-  },
-  {
-    path: "demo-reel",
-    element: <Page content={<DemoReel />} />,
-  },
-  {
-    path: "ski-boots",
-    element: <Page content={<SkiBoots />} />,
-  },
-  {
-    path: "bronco-henry",
-    element: <Page content={<BroncoHenry />} />,
-  },
-  {
-    path: "fee-ranger",
-    element: <Page content={<FeeRanger />} />,
-  },
-  {
-    path: "fresh-caught",
-    element: <Page content={<FreshCaught />} />,
-  },
-  {
-    path: "gator-gum",
-    element: <Page content={<GatorGum />} />,
-  },
-  {
-    path: "over-eats",
-    element: <Page content={<OverEats />} />,
-  },
-  {
-    path: "portrait-of-a-lady",
-    element: <Page content={<PortraitOfALady />} />,
-  },
-  {
-    path: "propmaker",
-    element: <Page content={<Propmaker />} />,
-  },
-  {
-    path: "purple-business",
-    element: <Page content={<PurpleBusiness />} />,
-  },
-]);
+const GlobalStyle = createGlobalStyle`
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+`;
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+// prettier-ignore
+export function Router() {
+  return (
+    <>
+      <Normalize />
+      <GlobalStyle />
+      <HashRouter>
+          <ScrollToTop/>
+          <Routes>
+            <Route path="/" element={<Page content={<Projects />} lg={true} />} />
+            <Route path="/demo-reel" element={<Page content={<DemoReel />} />} />
+            <Route path="/ski-boots" element={<Page content={<SkiBoots />} />} />
+            <Route path="/bronco-henry" element={<Page content={<BroncoHenry />} />} />
+            <Route path="/fee-ranger" element={<Page content={<FeeRanger />} />} />
+            <Route path="/fresh-caught" element={<Page content={<FreshCaught />} />} />
+            <Route path="/gator-gum" element={<Page content={<GatorGum />} />} />
+            <Route path="/over-eats" element={<Page content={<OverEats />} />} />
+            <Route path="/portrait-of-a-lady" element={<Page content={<PortraitOfALady />} />} />
+            <Route path="/propmaker" element={<Page content={<Propmaker />} />} />
+            <Route path="/purple-business" element={<Page content={<PurpleBusiness />} />} />
+          </Routes>
+      </HashRouter>
+    </>
+  );
+}

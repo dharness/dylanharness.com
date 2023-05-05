@@ -5,7 +5,7 @@ import { FigureText } from "../components/FigureText";
 import { VideoTitle } from "../components/VideoTitle";
 import { getProjectData, kebabToTitle } from "../utils";
 import { PageContentWrapper } from "../components/PageContentWrapper";
-import packageDesign from "./../assets/projects/gator-gum/package-design.png";
+import packageDesign from "./../assets/projects/gator-gum/package-design.png?as=webp";
 import blender from "./../assets/projects/gator-gum/blender_package_wide.webm";
 import styled from "styled-components";
 
@@ -18,11 +18,11 @@ const MediaSection = styled.div`
 `;
 
 export function GatorGum() {
-  const { vimeoId, name } = getProjectData("gator-gum");
+  const { vimeoId, name, aspectRatio } = getProjectData("gator-gum");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           Gator gum is inspired by fun, bold color palettes and vintage

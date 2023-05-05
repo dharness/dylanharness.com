@@ -41,9 +41,10 @@ export function Projects() {
     <ProjectsWrapper>
       <ProjectsContent>
         <ProjectsGrid>
-          {projectData.map(({ name, hoverColor }) => {
+          {projectData.map(({ name, hoverColor, thumbnail }) => {
             return (
               <ProjectThumbnail
+                thumbnail={thumbnail}
                 name={name}
                 hoverColor={hoverColor}
                 key={name}

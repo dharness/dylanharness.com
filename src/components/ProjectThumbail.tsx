@@ -54,8 +54,7 @@ const ProjectTitle = styled.div`
 `;
 
 export function ProjectThumbnail(props: any) {
-  const { hoverColor, name } = props;
-  const thumbnail = thumbnails[name];
+  const { hoverColor, name, thumbnail } = props;
   const navigate = useNavigate();
   const onThumbnailClicked = () => navigate(name);
   return (

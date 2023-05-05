@@ -6,8 +6,8 @@ import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
 import { Video } from "../components/Video";
 import ruffs from "./../assets/projects/bronco-henry/cowboy-ruffs.mp4";
-import cowboyLeft from "./../assets/projects/bronco-henry/cowboy_L_alpha.png";
-import cowboyRight from "./../assets/projects/bronco-henry/cowboy_R_alpha.png";
+import cowboyLeft from "./../assets/projects/bronco-henry/cowboy_L_alpha.png?as=webp";
+import cowboyRight from "./../assets/projects/bronco-henry/cowboy_R_alpha.png?as=webp";
 import { FigureText } from "../components/FigureText";
 
 const MediaSection = styled.div`
@@ -26,11 +26,11 @@ const Images = styled.div`
 `;
 
 export function BroncoHenry() {
-  const { vimeoId, name } = getProjectData("bronco-henry");
+  const { vimeoId, name, aspectRatio } = getProjectData("bronco-henry");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This cowboy was animated frame by frame in Toon Boom and cleaned up in
