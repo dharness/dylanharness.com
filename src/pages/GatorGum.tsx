@@ -18,11 +18,11 @@ const MediaSection = styled.div`
 `;
 
 export function GatorGum() {
-  const { vimeoId, name } = getProjectData("gator-gum");
+  const { vimeoId, name, aspectRatio } = getProjectData("gator-gum");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           Gator gum is inspired by fun, bold color palettes and vintage

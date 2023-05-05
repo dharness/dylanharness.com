@@ -5,7 +5,7 @@ import { Video } from "../components/Video";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import styleframe1 from "./../assets/projects/over-eats/overEats_sf_01.png";
+import styleframe1 from "../assets/projects/over-eats/overEats_sf_01.png";
 import styleframe2 from "./../assets/projects/over-eats/overEats_sf_02.png";
 import longHands from "./../assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4";
 import handRig from "./../assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4";
@@ -23,6 +23,7 @@ const Styleframes = styled.div`
   & > img {
     box-sizing: border-box;
     width: calc(50% - 20px);
+    min-height: calc(50% - 20px);
   }
 `;
 const C4dVideos = styled.div`
@@ -31,11 +32,13 @@ const C4dVideos = styled.div`
 `;
 
 export function OverEats() {
-  const { vimeoId, name } = getProjectData("over-eats");
+  console.log(styleframe1);
+  const { vimeoId, name, aspectRatio } = getProjectData("over-eats");
+
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This speculative ad spot would be part of a social media awareness

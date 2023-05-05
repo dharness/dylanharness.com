@@ -15,11 +15,11 @@ const MediaSection = styled.div`
 `;
 
 export function Propmaker() {
-  const { vimeoId, name } = getProjectData("propmaker");
+  const { vimeoId, name, aspectRatio } = getProjectData("propmaker");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This short walk-cycle was made entirely in Toon Boom, providing a

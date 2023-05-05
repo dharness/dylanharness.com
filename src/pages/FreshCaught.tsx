@@ -41,11 +41,11 @@ const FeathersWrapper = styled.div`
 `;
 
 export function FreshCaught() {
-  const { vimeoId, name } = getProjectData("fresh-caught");
+  const { vimeoId, name, aspectRatio } = getProjectData("fresh-caught");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This speculative ad spot was made mostly in After Effects. The

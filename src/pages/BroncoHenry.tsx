@@ -26,11 +26,11 @@ const Images = styled.div`
 `;
 
 export function BroncoHenry() {
-  const { vimeoId, name } = getProjectData("bronco-henry");
+  const { vimeoId, name, aspectRatio } = getProjectData("bronco-henry");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This cowboy was animated frame by frame in Toon Boom and cleaned up in

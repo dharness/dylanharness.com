@@ -23,11 +23,11 @@ const MediaSection = styled.div`
 `;
 
 export function PurpleBusiness() {
-  const { vimeoId, name } = getProjectData("purple-business");
+  const { vimeoId, name, aspectRatio } = getProjectData("purple-business");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           A small project in After Effects focused on delivering an animation on

@@ -25,11 +25,11 @@ const MediaColumn = styled.div`
 `;
 
 export function PortraitOfALady() {
-  const { vimeoId, name } = getProjectData("portrait-of-a-lady");
+  const { vimeoId, name, aspectRatio } = getProjectData("portrait-of-a-lady");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This sequence was roughed in Toon Boom, with some cleanup done in

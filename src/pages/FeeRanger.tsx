@@ -38,11 +38,11 @@ const CharacterSpreadWrapper = styled.div`
 `;
 
 export function FeeRanger() {
-  const { vimeoId, name } = getProjectData("fee-ranger");
+  const { vimeoId, name, aspectRatio } = getProjectData("fee-ranger");
   return (
     <>
       <PageContentWrapper>
-        <VimeoVideo vimeoId={vimeoId}></VimeoVideo>
+        <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This project takes a character all the way from concept, through
