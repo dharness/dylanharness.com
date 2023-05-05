@@ -8,7 +8,7 @@ import { Video } from "../components/Video";
 import ruffs from "./../assets/projects/bronco-henry/cowboy-ruffs.mp4";
 import cowboyLeft from "./../assets/projects/bronco-henry/cowboy_L_alpha.png";
 import cowboyRight from "./../assets/projects/bronco-henry/cowboy_R_alpha.png";
-import { figureText } from "../sharedStyles";
+import { FigureText } from "../components/FigureText";
 
 const MediaSection = styled.div`
   display: flex;
@@ -23,11 +23,6 @@ const Images = styled.div`
   & > img {
     max-width: 48%;
   }
-`;
-
-const FigureText = styled.div`
-  ${figureText}
-  margin: 25px auto 80px auto;
 `;
 
 export function BroncoHenry() {
