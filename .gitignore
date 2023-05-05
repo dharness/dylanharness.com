@@ -3,4 +3,3 @@ node_modules
 .cache
 .desktop.ini
 build
-.parcel-cache
