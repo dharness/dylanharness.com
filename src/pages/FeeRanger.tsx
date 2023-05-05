@@ -6,11 +6,11 @@ import { FigureText } from "../components/FigureText";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import turnaround from "./../assets/projects/fee-ranger/turnaround_4x.png";
-import objectsLeft from "./../assets/projects/fee-ranger/objects_left.png";
-import objectsRight from "./../assets/projects/fee-ranger/objects_right.png";
+import turnaround from "./../assets/projects/fee-ranger/turnaround_4x.png?as=webp";
+import objectsLeft from "./../assets/projects/fee-ranger/objects_left.png?as=webp";
+import objectsRight from "./../assets/projects/fee-ranger/objects_right.png?as=webp";
 import digWide from "./../assets/projects/fee-ranger/dig-wide.mp4";
-import characterSpread from "./../assets/projects/fee-ranger/characte-concept-spread.png";
+import characterSpread from "./../assets/projects/fee-ranger/characte-concept-spread.png?as=webp";
 
 const MediaSection = styled.div`
   display: flex;

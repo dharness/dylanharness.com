@@ -3,12 +3,12 @@ import { VimeoVideo } from "../components/VimeoVideo";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import concept1 from "../assets/projects/purple-business/concept-01.png";
-import concept2 from "../assets/projects/purple-business/concept-02.png";
-import concept3 from "../assets/projects/purple-business/concept-03.png";
-import concept4 from "../assets/projects/purple-business/concept-04.png";
-import concept5 from "../assets/projects/purple-business/concept-05.png";
-import concept6 from "../assets/projects/purple-business/concept-06.png";
+import concept1 from "../assets/projects/purple-business/concept-01.png?as=webp";
+import concept2 from "../assets/projects/purple-business/concept-02.png?as=webp";
+import concept3 from "../assets/projects/purple-business/concept-03.png?as=webp";
+import concept4 from "../assets/projects/purple-business/concept-04.png?as=webp";
+import concept5 from "../assets/projects/purple-business/concept-05.png?as=webp";
+import concept6 from "../assets/projects/purple-business/concept-06.png?as=webp";
 import styled from "styled-components";
 
 const MediaSection = styled.div`

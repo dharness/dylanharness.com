@@ -7,7 +7,7 @@ import { VideoTitle } from "../components/VideoTitle";
 import { FigureText } from "../components/FigureText";
 import { Video } from "../components/Video";
 import ruffs from "../assets/projects/portrait-of-a-lady/ruffs.webm";
-import colors from "../assets/projects/portrait-of-a-lady/color-study.png";
+import colors from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
 
 const MediaSection = styled.div`
   display: flex;
