@@ -38699,38 +38699,38 @@ var projectData = [{
 exports.projectData = projectData;
 },{}],"assets/projects/bronco-henry/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.750c3454.png";
-},{}],"assets/projects/fee-ranger/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.c611f4bd.png";
 },{}],"assets/projects/demo-reel/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.fad522b6.png";
+},{}],"assets/projects/fee-ranger/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.c611f4bd.png";
 },{}],"assets/projects/fresh-caught/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.f8fd2210.png";
-},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.0f995fe7.png";
+},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/over-eats/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.fdf4fbb1.png";
+},{}],"assets/projects/portrait-of-a-lady/thumbnail.png":[function(require,module,exports) {
+module.exports = "/thumbnail.0f995fe7.png";
 },{}],"assets/projects/propmaker/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.5abd4f28.png";
 },{}],"assets/projects/purple-business/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.5e7285e8.png";
 },{}],"assets/projects/ski-boots/thumbnail.png":[function(require,module,exports) {
 module.exports = "/thumbnail.64dd70d9.png";
-},{}],"assets/projects/gator-gum/thumbnail.png":[function(require,module,exports) {
-module.exports = "/thumbnail.3831ad93.png";
 },{}],"assets/projects/*/thumbnail.png":[function(require,module,exports) {
 module.exports = {
   "bronco-henry": require("./..\\bronco-henry\\thumbnail.png"),
-  "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
   "demo-reel": require("./..\\demo-reel\\thumbnail.png"),
+  "fee-ranger": require("./..\\fee-ranger\\thumbnail.png"),
   "fresh-caught": require("./..\\fresh-caught\\thumbnail.png"),
-  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
+  "gator-gum": require("./..\\gator-gum\\thumbnail.png"),
   "over-eats": require("./..\\over-eats\\thumbnail.png"),
+  "portrait-of-a-lady": require("./..\\portrait-of-a-lady\\thumbnail.png"),
   "propmaker": require("./..\\propmaker\\thumbnail.png"),
   "purple-business": require("./..\\purple-business\\thumbnail.png"),
-  "ski-boots": require("./..\\ski-boots\\thumbnail.png"),
-  "gator-gum": require("./..\\gator-gum\\thumbnail.png")
+  "ski-boots": require("./..\\ski-boots\\thumbnail.png")
 };
-},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
+},{"./..\\bronco-henry\\thumbnail.png":"assets/projects/bronco-henry/thumbnail.png","./..\\demo-reel\\thumbnail.png":"assets/projects/demo-reel/thumbnail.png","./..\\fee-ranger\\thumbnail.png":"assets/projects/fee-ranger/thumbnail.png","./..\\fresh-caught\\thumbnail.png":"assets/projects/fresh-caught/thumbnail.png","./..\\gator-gum\\thumbnail.png":"assets/projects/gator-gum/thumbnail.png","./..\\over-eats\\thumbnail.png":"assets/projects/over-eats/thumbnail.png","./..\\portrait-of-a-lady\\thumbnail.png":"assets/projects/portrait-of-a-lady/thumbnail.png","./..\\propmaker\\thumbnail.png":"assets/projects/propmaker/thumbnail.png","./..\\purple-business\\thumbnail.png":"assets/projects/purple-business/thumbnail.png","./..\\ski-boots\\thumbnail.png":"assets/projects/ski-boots/thumbnail.png"}],"utils.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48068,70 +48068,248 @@ function SkiBoots() {
   }))), _react.default.createElement("p", null, "The credit card was a another simple DUIK rig to give it some perspective as it scales around its ethereal plane.")));
 }
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
-},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","../assets/projects/ski-boots/shoe-tilt-slider.mp4":"assets/projects/ski-boots/shoe-tilt-slider.mp4","../assets/projects/ski-boots/character-turn-slider.mp4":"assets/projects/ski-boots/character-turn-slider.mp4","../assets/projects/ski-boots/UI-receipt-demo.mp4":"assets/projects/ski-boots/UI-receipt-demo.mp4","../assets/projects/ski-boots/card-with-reflections.mp4":"assets/projects/ski-boots/card-with-reflections.mp4","../assets/projects/ski-boots/spin-drop-demo.mp4":"assets/projects/ski-boots/spin-drop-demo.mp4"}],"pages/BroncoHenry.tsx":[function(require,module,exports) {
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","../assets/projects/ski-boots/shoe-tilt-slider.mp4":"assets/projects/ski-boots/shoe-tilt-slider.mp4","../assets/projects/ski-boots/character-turn-slider.mp4":"assets/projects/ski-boots/character-turn-slider.mp4","../assets/projects/ski-boots/UI-receipt-demo.mp4":"assets/projects/ski-boots/UI-receipt-demo.mp4","../assets/projects/ski-boots/card-with-reflections.mp4":"assets/projects/ski-boots/card-with-reflections.mp4","../assets/projects/ski-boots/spin-drop-demo.mp4":"assets/projects/ski-boots/spin-drop-demo.mp4"}],"assets/projects/bronco-henry/cowboy-ruffs.mp4":[function(require,module,exports) {
+module.exports = "/cowboy-ruffs.ca2b90e1.mp4";
+},{}],"assets/projects/bronco-henry/cowboy_L_alpha.png":[function(require,module,exports) {
+module.exports = "/cowboy_L_alpha.d4f9e868.png";
+},{}],"assets/projects/bronco-henry/cowboy_R_alpha.png":[function(require,module,exports) {
+module.exports = "/cowboy_R_alpha.7498298a.png";
+},{}],"components/FigureText.tsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.FigureText = void 0;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var FigureText = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: 191.6%;\n  letter-spacing: 0.04em;\n  margin: 25px auto 80px auto;\n"], ["\n  font-family: \"Futura PT\";\n  font-style: normal;\n  font-weight: 500;\n  font-size: 18px;\n  line-height: 191.6%;\n  letter-spacing: 0.04em;\n  margin: 25px auto 80px auto;\n"])));
+exports.FigureText = FigureText;
+var templateObject_1;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"pages/BroncoHenry.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.BroncoHenry = BroncoHenry;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
 var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _Video = require("../components/Video");
+var _cowboyRuffs = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy-ruffs.mp4"));
+var _cowboy_L_alpha = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy_L_alpha.png"));
+var _cowboy_R_alpha = _interopRequireDefault(require("./../assets/projects/bronco-henry/cowboy_R_alpha.png"));
+var _FigureText = require("../components/FigureText");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div.withConfig({
+  displayName: "BroncoHenry__MediaSection",
+  componentId: "sc-1pvqatn-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n"], ["\n  display: flex;\n  flex-direction: column;\n"])));
+var Images = _styledComponents.default.div.withConfig({
+  displayName: "BroncoHenry__Images",
+  componentId: "sc-1pvqatn-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  justify-content: space-between;\n  /* max-height: 385px; */\n\n  & > img {\n    max-width: 48%;\n  }\n"], ["\n  display: flex;\n  justify-content: space-between;\n  /* max-height: 385px; */\n\n  & > img {\n    max-width: 48%;\n  }\n"])));
 function BroncoHenry() {
   var _a = (0, _utils.getProjectData)("bronco-henry"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This cowboy was animated frame by frame in Toon Boom and cleaned up in After Effects. I tried to push his noodley appendages to the extreme, making him somewhat of a glyph."), _react.default.createElement(MediaSection, null, _react.default.createElement(_Video.Video, {
+    style: {
+      maxHeight: 330
+    },
+    src: _cowboyRuffs.default
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Rough Animation in Toonboom"), _react.default.createElement(Images, null, _react.default.createElement("img", {
+    src: _cowboy_L_alpha.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cowboy_R_alpha.default,
+    alt: ""
+  })))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/FeeRanger.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/Video":"components/Video.tsx","./../assets/projects/bronco-henry/cowboy-ruffs.mp4":"assets/projects/bronco-henry/cowboy-ruffs.mp4","./../assets/projects/bronco-henry/cowboy_L_alpha.png":"assets/projects/bronco-henry/cowboy_L_alpha.png","./../assets/projects/bronco-henry/cowboy_R_alpha.png":"assets/projects/bronco-henry/cowboy_R_alpha.png","../components/FigureText":"components/FigureText.tsx"}],"assets/projects/fee-ranger/turnaround_4x.png":[function(require,module,exports) {
+module.exports = "/turnaround_4x.bc42cf28.png";
+},{}],"assets/projects/fee-ranger/objects_left.png":[function(require,module,exports) {
+module.exports = "/objects_left.4cb4fd3f.png";
+},{}],"assets/projects/fee-ranger/objects_right.png":[function(require,module,exports) {
+module.exports = "/objects_right.fe1ba690.png";
+},{}],"assets/projects/fee-ranger/dig-wide.mp4":[function(require,module,exports) {
+module.exports = "/dig-wide.b36ea77d.mp4";
+},{}],"assets/projects/fee-ranger/characte-concept-spread.png":[function(require,module,exports) {
+module.exports = "/characte-concept-spread.d87129df.png";
+},{}],"pages/FeeRanger.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.FeeRanger = FeeRanger;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
 var _VimeoVideo = require("../components/VimeoVideo");
+var _Video = require("../components/Video");
+var _FigureText = require("../components/FigureText");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _turnaround_4x = _interopRequireDefault(require("./../assets/projects/fee-ranger/turnaround_4x.png"));
+var _objects_left = _interopRequireDefault(require("./../assets/projects/fee-ranger/objects_left.png"));
+var _objects_right = _interopRequireDefault(require("./../assets/projects/fee-ranger/objects_right.png"));
+var _digWide = _interopRequireDefault(require("./../assets/projects/fee-ranger/dig-wide.mp4"));
+var _characteConceptSpread = _interopRequireDefault(require("./../assets/projects/fee-ranger/characte-concept-spread.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div.withConfig({
+  displayName: "FeeRanger__MediaSection",
+  componentId: "sc-1gnaigw-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n"], ["\n  display: flex;\n  flex-direction: column;\n"])));
+var TurnaroundWrapper = _styledComponents.default.div.withConfig({
+  displayName: "FeeRanger__TurnaroundWrapper",
+  componentId: "sc-1gnaigw-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  & > img {\n    width: 120%;\n    margin-left: -10%;\n  }\n"], ["\n  & > img {\n    width: 120%;\n    margin-left: -10%;\n  }\n"])));
+var ObjectsRow = _styledComponents.default.div.withConfig({
+  displayName: "FeeRanger__ObjectsRow",
+  componentId: "sc-1gnaigw-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: flex;\n  & > img {\n    width: 59.5%;\n    margin-left: -6.3%;\n  }\n"], ["\n  display: flex;\n  & > img {\n    width: 59.5%;\n    margin-left: -6.3%;\n  }\n"])));
+var CharacterSpreadWrapper = _styledComponents.default.div.withConfig({
+  displayName: "FeeRanger__CharacterSpreadWrapper",
+  componentId: "sc-1gnaigw-3"
+})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  & > img {\n    width: 110%;\n    margin-left: -5%;\n  }\n"], ["\n  & > img {\n    width: 110%;\n    margin-left: -5%;\n  }\n"])));
 function FeeRanger() {
   var _a = (0, _utils.getProjectData)("fee-ranger"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This project takes a character all the way from concept, through sculpting, retopo, rigging, and animating. The character was made in ZBrush and rigged and animated in C4D, and finally, rendered with Redshift."), _react.default.createElement(MediaSection, null, _react.default.createElement(TurnaroundWrapper, null, _react.default.createElement("img", {
+    src: _turnaround_4x.default
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Ranger turnaround"), _react.default.createElement(ObjectsRow, null, _react.default.createElement("img", {
+    src: _objects_left.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _objects_right.default,
+    alt: ""
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 2. Ranger accessories"), _react.default.createElement(_Video.Video, {
+    src: _digWide.default
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 3. Scrapped dig animation"), _react.default.createElement(CharacterSpreadWrapper, null, _react.default.createElement("img", {
+    src: _characteConceptSpread.default,
+    alt: ""
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 4. Rough sketch and color study"))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/FreshCaught.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/Video":"components/Video.tsx","../components/FigureText":"components/FigureText.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","./../assets/projects/fee-ranger/turnaround_4x.png":"assets/projects/fee-ranger/turnaround_4x.png","./../assets/projects/fee-ranger/objects_left.png":"assets/projects/fee-ranger/objects_left.png","./../assets/projects/fee-ranger/objects_right.png":"assets/projects/fee-ranger/objects_right.png","./../assets/projects/fee-ranger/dig-wide.mp4":"assets/projects/fee-ranger/dig-wide.mp4","./../assets/projects/fee-ranger/characte-concept-spread.png":"assets/projects/fee-ranger/characte-concept-spread.png"}],"assets/projects/fresh-caught/end-card.png":[function(require,module,exports) {
+module.exports = "/end-card.6c3f4b37.png";
+},{}],"assets/projects/fresh-caught/feather-demo-02.mp4":[function(require,module,exports) {
+module.exports = "/feather-demo-02.5cc339e3.mp4";
+},{}],"assets/projects/fresh-caught/fish-poses-combined.png":[function(require,module,exports) {
+module.exports = "/fish-poses-combined.95a725a5.png";
+},{}],"assets/projects/fresh-caught/fish-rig-demo.mp4":[function(require,module,exports) {
+module.exports = "/fish-rig-demo.a099755e.mp4";
+},{}],"pages/FreshCaught.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.FreshCaught = FreshCaught;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
+var _Video = require("../components/Video");
 var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _endCard = _interopRequireDefault(require("../assets/projects/fresh-caught/end-card.png"));
+var _featherDemo = _interopRequireDefault(require("../assets/projects/fresh-caught/feather-demo-02.mp4"));
+var _fishPosesCombined = _interopRequireDefault(require("../assets/projects/fresh-caught/fish-poses-combined.png"));
+var _fishRigDemo = _interopRequireDefault(require("../assets/projects/fresh-caught/fish-rig-demo.mp4"));
+var _FigureText = require("../components/FigureText");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div.withConfig({
+  displayName: "FreshCaught__MediaSection",
+  componentId: "sc-1gui9v-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  margin-top: 80px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  margin-top: 80px;\n"])));
+var PosesWrapper = _styledComponents.default.div.withConfig({
+  displayName: "FreshCaught__PosesWrapper",
+  componentId: "sc-1gui9v-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  width: 110%;\n  margin-left: -5%;\n  & > img {\n    width: 100%;\n  }\n"], ["\n  width: 110%;\n  margin-left: -5%;\n  & > img {\n    width: 100%;\n  }\n"])));
+var EndCardWrapper = _styledComponents.default.div.withConfig({
+  displayName: "FreshCaught__EndCardWrapper",
+  componentId: "sc-1gui9v-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  width: 90%;\n  margin: auto;\n  & > img {\n    width: 100%;\n  }\n"], ["\n  width: 90%;\n  margin: auto;\n  & > img {\n    width: 100%;\n  }\n"])));
+var FeathersWrapper = _styledComponents.default.div.withConfig({
+  displayName: "FreshCaught__FeathersWrapper",
+  componentId: "sc-1gui9v-3"
+})(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  width: 90%;\n  margin: auto;\n  border-radius: 10px;\n  overflow: clip;\n"], ["\n  width: 90%;\n  margin: auto;\n  border-radius: 10px;\n  overflow: clip;\n"])));
 function FreshCaught() {
   var _a = (0, _utils.getProjectData)("fresh-caught"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This speculative ad spot was made mostly in After Effects. The character and leaf systems were rigged with DUIK for a smooth and easy to control animation."), _react.default.createElement(MediaSection, null, _react.default.createElement(_Video.Video, {
+    src: _fishRigDemo.default
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Fish controls"), _react.default.createElement(FeathersWrapper, null, _react.default.createElement(_Video.Video, {
+    src: _featherDemo.default
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 2. Feather controls"), _react.default.createElement(PosesWrapper, null, _react.default.createElement("img", {
+    src: _fishPosesCombined.default,
+    alt: ""
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 3. Fish shapes during transformation"), _react.default.createElement(EndCardWrapper, null, _react.default.createElement("img", {
+    src: _endCard.default,
+    alt: ""
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 4. End card design"))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/GatorGum.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/Video":"components/Video.tsx","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../assets/projects/fresh-caught/end-card.png":"assets/projects/fresh-caught/end-card.png","../assets/projects/fresh-caught/feather-demo-02.mp4":"assets/projects/fresh-caught/feather-demo-02.mp4","../assets/projects/fresh-caught/fish-poses-combined.png":"assets/projects/fresh-caught/fish-poses-combined.png","../assets/projects/fresh-caught/fish-rig-demo.mp4":"assets/projects/fresh-caught/fish-rig-demo.mp4","../components/FigureText":"components/FigureText.tsx"}],"assets/projects/gator-gum/package-design.png":[function(require,module,exports) {
+module.exports = "/package-design.e41a01f5.png";
+},{}],"assets/projects/gator-gum/blender_package_wide.webm":[function(require,module,exports) {
+module.exports = "/blender_package_wide.1b8e1d06.webm";
+},{}],"pages/GatorGum.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48140,40 +48318,118 @@ Object.defineProperty(exports, "__esModule", {
 exports.GatorGum = GatorGum;
 var _react = _interopRequireDefault(require("react"));
 var _VimeoVideo = require("../components/VimeoVideo");
-var _PageContentWrapper = require("../components/PageContentWrapper");
-var _utils = require("../utils");
+var _Video = require("../components/Video");
+var _FigureText = require("../components/FigureText");
 var _VideoTitle = require("../components/VideoTitle");
+var _utils = require("../utils");
+var _PageContentWrapper = require("../components/PageContentWrapper");
+var _packageDesign = _interopRequireDefault(require("./../assets/projects/gator-gum/package-design.png"));
+var _blender_package_wide = _interopRequireDefault(require("./../assets/projects/gator-gum/blender_package_wide.webm"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  margin: auto;\n  margin-top: 40px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  width: 80%;\n  margin: auto;\n  margin-top: 40px;\n"])));
 function GatorGum() {
   var _a = (0, _utils.getProjectData)("gator-gum"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "Gator gum is inspired by fun, bold color palettes and vintage packaging design. The frame by frame animation was done in Toon Boom Harmony, and cleaned up in After Effects. The gum package was made in blender and composited for a seamless loop."), _react.default.createElement(MediaSection, null, _react.default.createElement("img", {
+    src: _packageDesign.default,
+    alt: ""
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Gum package illustration"), _react.default.createElement(_Video.Video, {
+    src: _blender_package_wide.default
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 2. Gum package in Blender"))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/OverEats.tsx":[function(require,module,exports) {
+var templateObject_1;
+},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/Video":"components/Video.tsx","../components/FigureText":"components/FigureText.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../utils":"utils.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","./../assets/projects/gator-gum/package-design.png":"assets/projects/gator-gum/package-design.png","./../assets/projects/gator-gum/blender_package_wide.webm":"assets/projects/gator-gum/blender_package_wide.webm","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"assets/projects/over-eats/overEats_sf_01.png":[function(require,module,exports) {
+module.exports = "/overEats_sf_01.a099c231.png";
+},{}],"assets/projects/over-eats/overEats_sf_02.png":[function(require,module,exports) {
+module.exports = "/overEats_sf_02.ecec6f60.png";
+},{}],"assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4":[function(require,module,exports) {
+module.exports = "/overEats_zoomed-out-hands_wide.9926bc01.mp4";
+},{}],"assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4":[function(require,module,exports) {
+module.exports = "/overEats_hand-rig-demo_tall.c8148f20.mp4";
+},{}],"pages/OverEats.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.OverEats = OverEats;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _react = _interopRequireDefault(require("react"));
 var _VimeoVideo = require("../components/VimeoVideo");
+var _Video = require("../components/Video");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _overEats_sf_ = _interopRequireDefault(require("./../assets/projects/over-eats/overEats_sf_01.png"));
+var _overEats_sf_2 = _interopRequireDefault(require("./../assets/projects/over-eats/overEats_sf_02.png"));
+var _overEats_zoomedOutHands_wide = _interopRequireDefault(require("./../assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4"));
+var _overEats_handRigDemo_tall = _interopRequireDefault(require("./../assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4"));
+var _FigureText = require("../components/FigureText");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div.withConfig({
+  displayName: "OverEats__MediaSection",
+  componentId: "sc-efsiyy-0"
+})(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n"], ["\n  display: flex;\n  flex-direction: column;\n"])));
+var Styleframes = _styledComponents.default.div.withConfig({
+  displayName: "OverEats__Styleframes",
+  componentId: "sc-efsiyy-1"
+})(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  max-width: 100%;\n  justify-content: space-between;\n  & > img {\n    box-sizing: border-box;\n    width: calc(50% - 20px);\n  }\n"], ["\n  display: flex;\n  max-width: 100%;\n  justify-content: space-between;\n  & > img {\n    box-sizing: border-box;\n    width: calc(50% - 20px);\n  }\n"])));
+var C4dVideos = _styledComponents.default.div.withConfig({
+  displayName: "OverEats__C4dVideos",
+  componentId: "sc-efsiyy-2"
+})(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: flex;\n  max-height: 500px;\n"], ["\n  display: flex;\n  max-height: 500px;\n"])));
 function OverEats() {
   var _a = (0, _utils.getProjectData)("over-eats"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This speculative ad spot would be part of a social media awareness campaign for a food delivery app. It was made in C4D and rendered with Redshift. The fire is a a few planes with some extrusion applied - animated in a choppy, stop motion way!"), _react.default.createElement(MediaSection, null, _react.default.createElement(Styleframes, null, _react.default.createElement("img", {
+    src: _overEats_sf_.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _overEats_sf_2.default,
+    alt: ""
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Concept illustrations"), _react.default.createElement(C4dVideos, null, _react.default.createElement(_Video.Video, {
+    style: {
+      paddingRight: 30
+    },
+    width: "",
+    src: _overEats_zoomedOutHands_wide.default
+  }), _react.default.createElement(_Video.Video, {
+    src: _overEats_handRigDemo_tall.default
+  })), _react.default.createElement(_FigureText.FigureText, null, "Fig 2. Behind the scenes in C4D"))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/PortraitOfALady.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2, templateObject_3;
+},{"styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/Video":"components/Video.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","./../assets/projects/over-eats/overEats_sf_01.png":"assets/projects/over-eats/overEats_sf_01.png","./../assets/projects/over-eats/overEats_sf_02.png":"assets/projects/over-eats/overEats_sf_02.png","./../assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4":"assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4","./../assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4":"assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4","../components/FigureText":"components/FigureText.tsx"}],"assets/projects/portrait-of-a-lady/ruffs.webm":[function(require,module,exports) {
+module.exports = "/ruffs.31d8c06d.webm";
+},{}],"assets/projects/portrait-of-a-lady/color-study.png":[function(require,module,exports) {
+module.exports = "/color-study.96cea1c7.png";
+},{}],"pages/PortraitOfALady.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48181,20 +48437,45 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.PortraitOfALady = PortraitOfALady;
 var _react = _interopRequireDefault(require("react"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _FigureText = require("../components/FigureText");
+var _Video = require("../components/Video");
+var _ruffs = _interopRequireDefault(require("../assets/projects/portrait-of-a-lady/ruffs.webm"));
+var _colorStudy = _interopRequireDefault(require("../assets/projects/portrait-of-a-lady/color-study.png"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: row;\n  margin-top: 80px;\n  align-items: flex-end;\n"], ["\n  display: flex;\n  flex-direction: row;\n  margin-top: 80px;\n  align-items: flex-end;\n"])));
+var MediaColumn = _styledComponents.default.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  max-width: 50%;\n  & > img {\n    margin-bottom: 7.9%;\n  }\n"], ["\n  display: flex;\n  flex-direction: column;\n  max-width: 50%;\n  & > img {\n    margin-bottom: 7.9%;\n  }\n"])));
 function PortraitOfALady() {
   var _a = (0, _utils.getProjectData)("portrait-of-a-lady"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This sequence was roughed in Toon Boom, with some cleanup done in After Effects. It focuses on showing the facial expression and emotion of a character as they react to an annoying fly."), _react.default.createElement(MediaSection, null, _react.default.createElement(MediaColumn, null, _react.default.createElement(_Video.Video, {
+    src: _ruffs.default
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Rough animation")), _react.default.createElement(MediaColumn, null, _react.default.createElement("img", {
+    src: _colorStudy.default,
+    alt: ""
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 2. Thumbnails and color study ")))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/Propmaker.tsx":[function(require,module,exports) {
+var templateObject_1, templateObject_2;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../components/FigureText":"components/FigureText.tsx","../components/Video":"components/Video.tsx","../assets/projects/portrait-of-a-lady/ruffs.webm":"assets/projects/portrait-of-a-lady/ruffs.webm","../assets/projects/portrait-of-a-lady/color-study.png":"assets/projects/portrait-of-a-lady/color-study.png"}],"assets/projects/propmaker/fanman-ruffs.mp4":[function(require,module,exports) {
+module.exports = "/fanman-ruffs.3309a300.mp4";
+},{}],"pages/Propmaker.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48206,16 +48487,50 @@ var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+var _FigureText = require("../components/FigureText");
+var _Video = require("../components/Video");
+var _fanmanRuffs = _interopRequireDefault(require("../assets/projects/propmaker/fanman-ruffs.mp4"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  margin-top: 80px;\n"], ["\n  display: flex;\n  flex-direction: column;\n  margin-top: 80px;\n"])));
 function Propmaker() {
   var _a = (0, _utils.getProjectData)("propmaker"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "This short walk-cycle was made entirely in Toon Boom, providing a natural boil to the drawings. It depicts a prop maker going home after a long day on the set."), _react.default.createElement(MediaSection, null, _react.default.createElement(_Video.Video, {
+    src: _fanmanRuffs.default,
+    width: "65%",
+    style: {
+      margin: "auto"
+    }
+  }), _react.default.createElement(_FigureText.FigureText, null, "Fig 1. Frame by frame animation in Toonboom"))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"pages/PurpleBusiness.tsx":[function(require,module,exports) {
+var templateObject_1;
+},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../components/FigureText":"components/FigureText.tsx","../components/Video":"components/Video.tsx","../assets/projects/propmaker/fanman-ruffs.mp4":"assets/projects/propmaker/fanman-ruffs.mp4"}],"assets/projects/purple-business/concept-01.png":[function(require,module,exports) {
+module.exports = "/concept-01.7ea33e6a.png";
+},{}],"assets/projects/purple-business/concept-02.png":[function(require,module,exports) {
+module.exports = "/concept-02.8b44eb08.png";
+},{}],"assets/projects/purple-business/concept-03.png":[function(require,module,exports) {
+module.exports = "/concept-03.30296d49.png";
+},{}],"assets/projects/purple-business/concept-04.png":[function(require,module,exports) {
+module.exports = "/concept-04.298def08.png";
+},{}],"assets/projects/purple-business/concept-05.png":[function(require,module,exports) {
+module.exports = "/concept-05.7ca3f842.png";
+},{}],"assets/projects/purple-business/concept-06.png":[function(require,module,exports) {
+module.exports = "/concept-06.40156c57.png";
+},{}],"pages/PurpleBusiness.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48227,16 +48542,53 @@ var _VimeoVideo = require("../components/VimeoVideo");
 var _PageContentWrapper = require("../components/PageContentWrapper");
 var _utils = require("../utils");
 var _VideoTitle = require("../components/VideoTitle");
+var _concept = _interopRequireDefault(require("../assets/projects/purple-business/concept-01.png"));
+var _concept2 = _interopRequireDefault(require("../assets/projects/purple-business/concept-02.png"));
+var _concept3 = _interopRequireDefault(require("../assets/projects/purple-business/concept-03.png"));
+var _concept4 = _interopRequireDefault(require("../assets/projects/purple-business/concept-04.png"));
+var _concept5 = _interopRequireDefault(require("../assets/projects/purple-business/concept-05.png"));
+var _concept6 = _interopRequireDefault(require("../assets/projects/purple-business/concept-06.png"));
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (cooked, raw) {
+  if (Object.defineProperty) {
+    Object.defineProperty(cooked, "raw", {
+      value: raw
+    });
+  } else {
+    cooked.raw = raw;
+  }
+  return cooked;
+};
+var MediaSection = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  margin-top: 40px;\n  gap: 2%;\n  & > img {\n    max-width: 100%;\n    margin: auto;\n  }\n"], ["\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  margin-top: 40px;\n  gap: 2%;\n  & > img {\n    max-width: 100%;\n    margin: auto;\n  }\n"])));
 function PurpleBusiness() {
   var _a = (0, _utils.getProjectData)("purple-business"),
     vimeoId = _a.vimeoId,
     name = _a.name;
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_PageContentWrapper.PageContentWrapper, null, _react.default.createElement(_VimeoVideo.VimeoVideo, {
     vimeoId: vimeoId
-  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name))));
+  }), _react.default.createElement(_VideoTitle.VideoTitle, null, (0, _utils.kebabToTitle)(name)), _react.default.createElement("p", null, "A small project in After Effects focused on delivering an animation on a short time frame, and with a minimal shape-centric design. Below are some explorations for different compositions and color schemes:"), _react.default.createElement(MediaSection, null, _react.default.createElement("img", {
+    src: _concept.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _concept2.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _concept3.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _concept4.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _concept5.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _concept6.default,
+    alt: ""
+  }))));
 }
-},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx"}],"router.tsx":[function(require,module,exports) {
+var templateObject_1;
+},{"react":"../node_modules/react/index.js","../components/VimeoVideo":"components/VimeoVideo.tsx","../components/PageContentWrapper":"components/PageContentWrapper.tsx","../utils":"utils.tsx","../components/VideoTitle":"components/VideoTitle.tsx","../assets/projects/purple-business/concept-01.png":"assets/projects/purple-business/concept-01.png","../assets/projects/purple-business/concept-02.png":"assets/projects/purple-business/concept-02.png","../assets/projects/purple-business/concept-03.png":"assets/projects/purple-business/concept-03.png","../assets/projects/purple-business/concept-04.png":"assets/projects/purple-business/concept-04.png","../assets/projects/purple-business/concept-05.png":"assets/projects/purple-business/concept-05.png","../assets/projects/purple-business/concept-06.png":"assets/projects/purple-business/concept-06.png","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"router.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -48272,7 +48624,7 @@ var __makeTemplateObject = void 0 && (void 0).__makeTemplateObject || function (
   }
   return cooked;
 };
-var PageWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  height: 100%;\n  flex-direction: column;\n  background: tan;\n"], ["\n  display: flex;\n  height: 100%;\n  flex-direction: column;\n  background: tan;\n"])));
+var PageWrapper = _styledComponents.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  min-height: 100%;\n  flex-direction: column;\n  background: tan;\n"], ["\n  display: flex;\n  min-height: 100%;\n  flex-direction: column;\n  background: tan;\n"])));
 function Err() {
   var navigate = (0, _reactRouterDom.useNavigate)();
   (0, _react.useEffect)(function () {
@@ -48409,7 +48761,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53970" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57322" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

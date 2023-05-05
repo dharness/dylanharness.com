@@ -17,7 +17,7 @@ import { PurpleBusiness } from "./pages/PurpleBusiness";
 
 const PageWrapper = styled.div`
   display: flex;
-  height: 100%;
+  min-height: 100%;
   flex-direction: column;
   background: tan;
 `;
