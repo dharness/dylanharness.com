@@ -37,6 +37,10 @@ const CharacterSpreadWrapper = styled.div`
   }
 `;
 
+const StyledFigureText = styled(FigureText)`
+  margin-top: -10px;
+`;
+
 export function FeeRanger() {
   const { vimeoId, name, aspectRatio } = getProjectData("fee-ranger");
   return (
@@ -54,13 +58,13 @@ export function FeeRanger() {
           <TurnaroundWrapper>
             <img src={turnaround} />
           </TurnaroundWrapper>
-          <FigureText>Fig 1. Ranger turnaround</FigureText>
+          <StyledFigureText>Fig 1. Ranger turnaround</StyledFigureText>
 
           <ObjectsRow>
             <img src={objectsLeft} alt="" />
             <img src={objectsRight} alt="" />
           </ObjectsRow>
-          <FigureText>Fig 2. Ranger accessories</FigureText>
+          <StyledFigureText>Fig 2. Ranger accessories</StyledFigureText>
 
           <Video src={digWide}></Video>
           <FigureText>Fig 3. Scrapped dig animation</FigureText>

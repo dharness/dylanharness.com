@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { projectData } from "../projectData";
 import { ProjectThumbnail } from "../components/ProjectThumbail";
-import { contentWidth } from "../sharedStyles";
+import { contentWidthStyle, projectGridGap } from "../sharedStyles";
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ const ProjectsWrapper = styled.div`
   &::before {
     content: " ";
     background: yellow;
-    min-height: 65px;
+    min-height: 55px;
   }
   &::after {
     content: " ";
@@ -26,13 +26,13 @@ const ProjectsContent = styled.div`
   flex-direction: column;
   margin: auto;
   background: plum;
-  ${contentWidth};
+  ${contentWidthStyle};
 `;
 
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 22px;
+  gap: ${projectGridGap};
   justify-items: start;
 `;
 

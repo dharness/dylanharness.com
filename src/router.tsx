@@ -58,6 +58,7 @@ Page.defaultProps = {
 const GlobalStyle = createGlobalStyle`
   html {
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
   }
 `;
 

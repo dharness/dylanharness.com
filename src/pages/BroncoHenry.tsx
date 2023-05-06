@@ -25,6 +25,11 @@ const Images = styled.div`
   }
 `;
 
+const StyledVideoDiv = styled.div`
+  max-height: 330px;
+  display: flex;
+`;
+
 export function BroncoHenry() {
   const { vimeoId, name, aspectRatio } = getProjectData("bronco-henry");
   return (
@@ -38,7 +43,9 @@ export function BroncoHenry() {
           making him somewhat of a glyph.
         </p>
         <MediaSection>
-          <Video style={{ maxHeight: 330 }} src={ruffs}></Video>
+          <StyledVideoDiv>
+            <Video src={ruffs}></Video>
+          </StyledVideoDiv>
           <FigureText>Fig 1. Rough Animation in Toonboom</FigureText>
           <Images>
             <img src={cowboyLeft} alt="" />

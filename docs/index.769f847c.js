@@ -27213,6 +27213,7 @@ Page.defaultProps = {
 const GlobalStyle = (0, _styledComponents.createGlobalStyle)`
   html {
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
   }
 `;
 _c3 = GlobalStyle;
@@ -27237,19 +27238,19 @@ function Router() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _styledNormalize.Normalize), {}, void 0, false, {
                 fileName: "src/router.tsx",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(GlobalStyle, {}, void 0, false, {
                 fileName: "src/router.tsx",
-                lineNumber: 62,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ScrollToTop, {}, void 0, false, {
                         fileName: "src/router.tsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
@@ -27262,7 +27263,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27272,7 +27273,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 67,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27282,7 +27283,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 68,
+                                lineNumber: 69,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27292,7 +27293,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 69,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27302,7 +27303,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 70,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27312,7 +27313,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 71,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27322,7 +27323,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 72,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27332,7 +27333,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 73,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27342,7 +27343,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 74,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27352,7 +27353,7 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 75,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27362,19 +27363,19 @@ function Router() {
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/router.tsx",
-                                lineNumber: 76,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/router.tsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/router.tsx",
-                lineNumber: 63,
+                lineNumber: 64,
                 columnNumber: 7
             }, this)
         ]
@@ -32662,240 +32663,232 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sharedStyles = require("../sharedStyles");
 var _logoGif = require("./../assets/logo.gif");
 var _logoGifDefault = parcelHelpers.interopDefault(_logoGif);
+var _hamburgerSvg = require("./../assets/icons/hamburger.svg");
+var _hamburgerSvgDefault = parcelHelpers.interopDefault(_hamburgerSvg);
+var _s = $RefreshSig$();
 const HeaderWrapper = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Header__HeaderWrapper",
     componentId: "sc-trmo90-0"
 })([
     "height:",
-    ";max-height:",
-    ";min-height:",
-    ";background:green;"
-], (props)=>props.$lg ? "260px" : "100px", (props)=>props.$lg ? "260px" : "100px", (props)=>props.$lg ? "260px" : "100px");
+    "px;max-height:",
+    "px;min-height:",
+    "px;background:green;"
+], (props)=>props.$lg ? 200 : 100, (props)=>props.$lg ? 200 : 100, (props)=>props.$lg ? 200 : 100);
 _c = HeaderWrapper;
 const HeaderContent = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Header__HeaderContent",
     componentId: "sc-trmo90-1"
 })([
     "",
-    ";margin:0px auto 0px auto;display:flex;"
-], (0, _sharedStyles.contentWidth));
+    ";margin:0px auto 0px auto;display:flex;flex-direction:",
+    ";"
+], (0, _sharedStyles.contentWidthStyle), (p)=>p.$lg ? "column" : "row");
 _c1 = HeaderContent;
 const Name = (0, _styledComponentsDefault.default).a.withConfig({
     displayName: "Header__Name",
     componentId: "sc-trmo90-2"
 })([
     'font-size:32px;align-self:end;font-family:"Rubik Mono One",sans-serif;font-style:normal;font-weight:400;text-decoration:none;color:',
-    ";display:flex;flex-direction:column;> *{&:first-child{font-size:32px;margin-bottom:-6px;}}&:nth-child(2){font-size:23px;}"
-], (0, _sharedStyles.ORANGE_DARK));
+    ";display:flex;flex-direction:",
+    ";align-self:",
+    ";> *{&:first-child{font-size:",
+    "px;margin-bottom:-6px;",
+    "}}&:nth-child(2){font-size:",
+    "px;}"
+], (0, _sharedStyles.ORANGE_DARK), (p)=>p.$lg ? "row" : "column", (p)=>p.$lg ? "center" : "end", (p)=>p.$lg ? 35 : 32, ({ $lg  })=>$lg && `&::after {
+          content: ".";
+        }`, (p)=>p.$lg ? 35 : 23);
 _c2 = Name;
-const Subtext = (0, _styledComponentsDefault.default).div.withConfig({
-    displayName: "Header__Subtext",
-    componentId: "sc-trmo90-3"
-})([
-    "font-size:16px;"
-]);
-_c3 = Subtext;
 const PageLinks = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Header__PageLinks",
-    componentId: "sc-trmo90-4"
+    componentId: "sc-trmo90-3"
 })([
-    "display:flex;margin-left:auto;background:white;"
-]);
-_c4 = PageLinks;
+    "display:flex;margin-left:auto;background:white;margin:",
+    ";@media (max-width:660px){display:none;}"
+], (p)=>p.$lg ? "auto" : "");
+_c3 = PageLinks;
 const PageLink = (0, _styledComponentsDefault.default).a.withConfig({
     displayName: "Header__PageLink",
-    componentId: "sc-trmo90-5"
+    componentId: "sc-trmo90-4"
 })([
-    "margin-left:40px;margin-bottom:20px;align-self:end;font-family:futura-pt,sans-serif;font-weight:500;font-size:20px;font-style:normal;color:black;text-decoration:none;&:first-of-type{color:",
+    "margin-left:40px;margin-bottom:20px;margin:",
+    ";align-self:end;font-family:futura-pt,sans-serif;font-weight:500;font-size:20px;font-style:normal;color:black;text-decoration:none;&:first-of-type{color:",
     ";}&:hover{color:",
     ";}"
-], (0, _sharedStyles.ORANGE_DARK), (0, _sharedStyles.ORANGE_DARK));
-_c5 = PageLink;
+], (p)=>p.$lg ? "10px 30px 0px 30px" : "", (0, _sharedStyles.ORANGE_DARK), (0, _sharedStyles.ORANGE_DARK));
+_c4 = PageLink;
 const Logo = (0, _styledComponentsDefault.default).img.withConfig({
     displayName: "Header__Logo",
+    componentId: "sc-trmo90-5"
+})([
+    "height:",
+    ";margin-left:-30px;margin:",
+    ";"
+], (p)=>p.$lg ? "95px" : "70px", (p)=>p.$lg ? "auto" : "");
+_c5 = Logo;
+const Hamburger = (0, _styledComponentsDefault.default).button.withConfig({
+    displayName: "Header__Hamburger",
     componentId: "sc-trmo90-6"
 })([
-    "height:70px;margin-left:-30px;"
+    "z-index:1000;margin-left:auto;background:red;align-self:center;height:50px;width:50px;display:flex;cursor:pointer;border:none;@media (min-width:660px){display:none;}& > img{height:100%;margin:auto;margin-left:-4px;}"
 ]);
-_c6 = Logo;
+_c6 = Hamburger;
+const MobileNav = (0, _styledComponentsDefault.default).div.withConfig({
+    displayName: "Header__MobileNav",
+    componentId: "sc-trmo90-7"
+})([
+    "opacity:1;background-color:#ccc;position:fixed;width:100%;height:100%;top:0px;left:0px;z-index:999;@media (min-width:660px){display:none;}"
+]);
+_c7 = MobileNav;
 const ColorBar = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Header__ColorBar",
-    componentId: "sc-trmo90-7"
+    componentId: "sc-trmo90-8"
 })([
     "height:30px;background:plum;"
 ]);
-_c7 = ColorBar;
-function HeaderSmall() {
+_c8 = ColorBar;
+function Header(props) {
+    _s();
+    const [showOverlay, setshowOverlay] = (0, _react.useState)(false);
+    const [windowWidth, setwindowWidth] = (0, _react.useState)(window.innerWidth);
+    (0, _react.useEffect)(()=>{
+        const handleResize = ()=>{
+            const delta = window.innerWidth - windowWidth;
+            console.log(windowWidth);
+            setwindowWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    // console.log(windowWidth);
+    const { lg  } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderWrapper, {
-        $lg: false,
+        $lg: lg,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ColorBar, {}, void 0, false, {
                 fileName: "src/components/Header.tsx",
-                lineNumber: 39,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
+            !lg && showOverlay && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MobileNav, {}, void 0, false, {
+                fileName: "src/components/Header.tsx",
+                lineNumber: 66,
+                columnNumber: 30
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderContent, {
+                $lg: lg,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Logo, {
                         src: (0, _logoGifDefault.default),
+                        $lg: lg,
                         alt: ""
                     }, void 0, false, {
                         fileName: "src/components/Header.tsx",
-                        lineNumber: 41,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Name, {
+                        $lg: lg,
                         href: "/",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: "Dylan"
                             }, void 0, false, {
                                 fileName: "src/components/Header.tsx",
-                                lineNumber: 43,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: "Harness"
                             }, void 0, false, {
                                 fileName: "src/components/Header.tsx",
-                                lineNumber: 44,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.tsx",
-                        lineNumber: 42,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PageLinks, {
+                        $lg: lg,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PageLink, {
-                                href: "/demo-reel",
+                                $lg: lg,
+                                href: "/#/demo-reel",
                                 children: "Reel"
                             }, void 0, false, {
                                 fileName: "src/components/Header.tsx",
-                                lineNumber: 47,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PageLink, {
+                                $lg: lg,
                                 href: "/",
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "src/components/Header.tsx",
-                                lineNumber: 48,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(PageLink, {
+                                $lg: lg,
                                 href: "/about",
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/components/Header.tsx",
-                                lineNumber: 49,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.tsx",
-                        lineNumber: 46,
+                        lineNumber: 73,
                         columnNumber: 9
+                    }, this),
+                    !lg && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Hamburger, {
+                        onClick: (_)=>setshowOverlay(!showOverlay),
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _hamburgerSvgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.tsx",
+                            lineNumber: 85,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.tsx",
+                        lineNumber: 84,
+                        columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.tsx",
-                lineNumber: 40,
+                lineNumber: 67,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.tsx",
-        lineNumber: 38,
+        lineNumber: 64,
         columnNumber: 10
     }, this);
 }
-_c8 = HeaderSmall;
-function Header(props) {
-    const { lg  } = props;
-    if (!lg) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderSmall, {}, void 0, false, {
-        fileName: "src/components/Header.tsx",
-        lineNumber: 59,
-        columnNumber: 12
-    }, this);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderWrapper, {
-        $lg: true,
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Name, {
-                        children: "Dylan Harness"
-                    }, void 0, false, {
-                        fileName: "src/components/Header.tsx",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Subtext, {
-                        children: "Motion Designer"
-                    }, void 0, false, {
-                        fileName: "src/components/Header.tsx",
-                        lineNumber: 64,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Header.tsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: "links"
-            }, void 0, false, {
-                fileName: "src/components/Header.tsx",
-                lineNumber: 66,
-                columnNumber: 7
-            }, this),
-            lg && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-                children: "I am large"
-            }, void 0, false),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "header-name",
-                        children: "Dylan Har"
-                    }, void 0, false, {
-                        fileName: "src/components/Header.tsx",
-                        lineNumber: 70,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: "dmkdj"
-                    }, void 0, false, {
-                        fileName: "src/components/Header.tsx",
-                        lineNumber: 71,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Header.tsx",
-                lineNumber: 69,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Header.tsx",
-        lineNumber: 61,
-        columnNumber: 10
-    }, this);
-}
+_s(Header, "Lq5KM7LldmBE/AIqV5u6LO8XNCQ=");
 _c9 = Header;
 var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
 $RefreshReg$(_c, "HeaderWrapper");
 $RefreshReg$(_c1, "HeaderContent");
 $RefreshReg$(_c2, "Name");
-$RefreshReg$(_c3, "Subtext");
-$RefreshReg$(_c4, "PageLinks");
-$RefreshReg$(_c5, "PageLink");
-$RefreshReg$(_c6, "Logo");
-$RefreshReg$(_c7, "ColorBar");
-$RefreshReg$(_c8, "HeaderSmall");
+$RefreshReg$(_c3, "PageLinks");
+$RefreshReg$(_c4, "PageLink");
+$RefreshReg$(_c5, "Logo");
+$RefreshReg$(_c6, "Hamburger");
+$RefreshReg$(_c7, "MobileNav");
+$RefreshReg$(_c8, "ColorBar");
 $RefreshReg$(_c9, "Header");
 
   $parcel$ReactRefreshHelpers$d5a6.postlude(module);
@@ -32903,7 +32896,7 @@ $RefreshReg$(_c9, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","styled-components":"1U3k6","react":"21dqq","../sharedStyles":"acyVm","./../assets/logo.gif":"2v8bm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1U3k6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","styled-components":"1U3k6","react":"21dqq","../sharedStyles":"acyVm","./../assets/logo.gif":"2v8bm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./../assets/icons/hamburger.svg":"e682u"}],"1U3k6":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ServerStyleSheet", ()=>Je);
@@ -34770,14 +34763,24 @@ module.exports = require("5195902a561b4eb6");
 },{}],"acyVm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "contentWidth", ()=>contentWidth);
+parcelHelpers.export(exports, "contentWidthStyle", ()=>contentWidthStyle);
+parcelHelpers.export(exports, "contentWidthVw", ()=>contentWidthVw);
+parcelHelpers.export(exports, "contentWidthPx", ()=>contentWidthPx);
+parcelHelpers.export(exports, "projectGridGap", ()=>projectGridGap);
 parcelHelpers.export(exports, "ORANGE_DARK", ()=>ORANGE_DARK);
+parcelHelpers.export(exports, "ORANGE_MEDIUM", ()=>ORANGE_MEDIUM);
+parcelHelpers.export(exports, "ORANGE_LIGHT", ()=>ORANGE_LIGHT);
 var _styledComponents = require("styled-components");
-const contentWidth = (0, _styledComponents.css)`
+const contentWidthStyle = (0, _styledComponents.css)`
   max-width: 1085px;
   width: 80vw;
 `;
+const contentWidthVw = "80vw";
+const contentWidthPx = "1085px";
+const projectGridGap = "22px";
 const ORANGE_DARK = "#E75D1A";
+const ORANGE_MEDIUM = "#F0783E";
+const ORANGE_LIGHT = "#FFF1EB";
 
 },{"styled-components":"1U3k6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2v8bm":[function(require,module,exports) {
 module.exports = require("527b7e02f6f0e9f7").getBundleURL("lWxpx") + "logo.cf08d005.gif" + "?" + Date.now();
@@ -34949,7 +34952,10 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"5b98a8793a0b68e2":"786KC"}],"eHp76":[function(require,module,exports) {
+},{"5b98a8793a0b68e2":"786KC"}],"e682u":[function(require,module,exports) {
+module.exports = require("bdb4ca5c6a2782e4").getBundleURL("lWxpx") + "hamburger.44305956.svg" + "?" + Date.now();
+
+},{"bdb4ca5c6a2782e4":"lgJ39"}],"eHp76":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b676 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34985,7 +34991,7 @@ _c = FooterWrapper;
 const FooterContent = (0, _styledComponentsDefault.default).div`
   display: flex;
   background: green;
-  ${(0, _sharedStyles.contentWidth)};
+  ${(0, _sharedStyles.contentWidthStyle)};
   margin: auto;
   justify-content: end;
 `;
@@ -35131,7 +35137,7 @@ const ProjectsWrapper = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Projects__ProjectsWrapper",
     componentId: "sc-63javd-0"
 })([
-    'display:flex;flex-direction:column;justify-content:center;background:red;&::before{content:" ";background:yellow;min-height:65px;}&::after{content:" ";background:yellow;min-height:100px;}'
+    'display:flex;flex-direction:column;justify-content:center;background:red;&::before{content:" ";background:yellow;min-height:55px;}&::after{content:" ";background:yellow;min-height:100px;}'
 ]);
 _c = ProjectsWrapper;
 const ProjectsContent = (0, _styledComponentsDefault.default).div.withConfig({
@@ -35140,14 +35146,15 @@ const ProjectsContent = (0, _styledComponentsDefault.default).div.withConfig({
 })([
     "display:flex;flex-direction:column;margin:auto;background:plum;",
     ";"
-], (0, _sharedStyles.contentWidth));
+], (0, _sharedStyles.contentWidthStyle));
 _c1 = ProjectsContent;
 const ProjectsGrid = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "Projects__ProjectsGrid",
     componentId: "sc-63javd-2"
 })([
-    "display:grid;grid-template-columns:1fr 1fr;gap:22px;justify-items:start;"
-]);
+    "display:grid;grid-template-columns:1fr 1fr;gap:",
+    ";justify-items:start;"
+], (0, _sharedStyles.projectGridGap));
 _c2 = ProjectsGrid;
 function Projects() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectsWrapper, {
@@ -35342,13 +35349,19 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _utils = require("../utils");
+var _sharedStyles = require("../sharedStyles");
 var _s = $RefreshSig$();
 const ProjectThumbnailWrapper = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "ProjectThumbail__ProjectThumbnailWrapper",
     componentId: "sc-5r1yk9-0"
 })([
-    "background:blue;position:relative;&:hover{cursor:pointer;}"
-]);
+    "background:",
+    ";position:relative;&:hover{cursor:pointer;}width:100%;min-height:min( calc((0.75 * ",
+    " / 2) - (",
+    " / 2)),calc((0.75 * ",
+    " / 2) - (",
+    " / 2)) );"
+], (p)=>p.$bgColor, (0, _sharedStyles.contentWidthVw), (0, _sharedStyles.projectGridGap), (0, _sharedStyles.contentWidthPx), (0, _sharedStyles.projectGridGap));
 _c = ProjectThumbnailWrapper;
 const ProjectThumbnailImg = (0, _styledComponentsDefault.default).img.withConfig({
     displayName: "ProjectThumbail__ProjectThumbnailImg",
@@ -35376,10 +35389,11 @@ const ProjectTitle = (0, _styledComponentsDefault.default).div.withConfig({
 _c3 = ProjectTitle;
 function ProjectThumbnail(props) {
     _s();
-    const { hoverColor , name , thumbnail  } = props;
+    const { hoverColor , name , thumbnail , gridGap  } = props;
     const navigate = (0, _reactRouterDom.useNavigate)();
     const onThumbnailClicked = ()=>navigate(name);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectThumbnailWrapper, {
+        $bgColor: hoverColor,
         onClick: onThumbnailClicked,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectTitle, {
@@ -35387,32 +35401,32 @@ function ProjectThumbnail(props) {
                     children: (0, _utils.kebabToTitle)(name)
                 }, void 0, false, {
                     fileName: "src/components/ProjectThumbail.tsx",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/components/ProjectThumbail.tsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectThumbnailOverlay, {
                 $hoverColor: hoverColor
             }, void 0, false, {
                 fileName: "src/components/ProjectThumbail.tsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ProjectThumbnailImg, {
                 src: thumbnail
             }, void 0, false, {
                 fileName: "src/components/ProjectThumbail.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/ProjectThumbail.tsx",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 10
     }, this);
 }
@@ -35434,7 +35448,7 @@ $RefreshReg$(_c4, "ProjectThumbnail");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","styled-components":"1U3k6","react":"21dqq","react-router-dom":"9xmpe","../utils":"izgRU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"izgRU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","styled-components":"1U3k6","react":"21dqq","react-router-dom":"9xmpe","../utils":"izgRU","../sharedStyles":"acyVm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"izgRU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "kebabToTitle", ()=>kebabToTitle);
@@ -35530,9 +35544,9 @@ const NoJump = (0, _styledComponentsDefault.default).div.withConfig({
     displayName: "VimeoVideo__NoJump",
     componentId: "sc-85a802-0"
 })([
-    "min-height:calc(",
-    " * 80vw);@media (min-width:1085px){min-height:calc(",
-    " * 1085px);}"
+    "min-height:min( calc(",
+    " * 80vw),calc(",
+    " * 900px) );"
 ], (props)=>props.$heightRatio, (props)=>props.$heightRatio);
 _c = NoJump;
 function VimeoVideo(props) {
@@ -38141,8 +38155,8 @@ const PageContentWrapper = (0, _styledComponentsDefault.default).div.withConfig(
     componentId: "sc-11xn3j3-0"
 })([
     "display:flex;flex-direction:column;",
-    ';max-width:900px;margin:0px auto 0px auto;background:aquamarine;&::before{content:" ";background:yellow;min-height:65px;}&::after{content:" ";background:yellow;min-height:100px;}& > p{font-family:"Prompt";font-style:normal;font-weight:300;font-size:18px;line-height:30px;}'
-], (0, _sharedStyles.contentWidth));
+    ';max-width:900px;margin:0px auto 0px auto;background:aquamarine;&::before{content:" ";background:yellow;min-height:65px;}&::after{content:" ";background:yellow;min-height:100px;}& > p{font-family:"Prompt";font-style:normal;font-weight:300;font-size:18px;line-height:40px;letter-spacing:0.04em;}'
+], (0, _sharedStyles.contentWidthStyle));
 
 },{"styled-components":"1U3k6","../sharedStyles":"acyVm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d8ABG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40507,6 +40521,13 @@ const Images = (0, _styledComponentsDefault.default).div.withConfig({
     "display:flex;justify-content:space-between;& > img{max-width:48%;}"
 ]);
 _c1 = Images;
+const StyledVideoDiv = (0, _styledComponentsDefault.default).div.withConfig({
+    displayName: "BroncoHenry__StyledVideoDiv",
+    componentId: "sc-1y3l856-2"
+})([
+    "max-height:330px;display:flex;"
+]);
+_c2 = StyledVideoDiv;
 function BroncoHenry() {
     const { vimeoId , name , aspectRatio  } = (0, _utils.getProjectData)("bronco-henry");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -40517,40 +40538,43 @@ function BroncoHenry() {
                     aspectRatio: aspectRatio
                 }, void 0, false, {
                     fileName: "src/pages/BroncoHenry.tsx",
-                    lineNumber: 28,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _videoTitle.VideoTitle), {
                     children: (0, _utils.kebabToTitle)(name)
                 }, void 0, false, {
                     fileName: "src/pages/BroncoHenry.tsx",
-                    lineNumber: 29,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "This cowboy was animated frame by frame in Toon Boom and cleaned up in After Effects. I tried to push his noodley appendages to the extreme, making him somewhat of a glyph."
                 }, void 0, false, {
                     fileName: "src/pages/BroncoHenry.tsx",
-                    lineNumber: 30,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MediaSection, {
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _video.Video), {
-                            style: {
-                                maxHeight: 330
-                            },
-                            src: (0, _cowboyRuffsMp4Default.default)
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledVideoDiv, {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _video.Video), {
+                                src: (0, _cowboyRuffsMp4Default.default)
+                            }, void 0, false, {
+                                fileName: "src/pages/BroncoHenry.tsx",
+                                lineNumber: 41,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "src/pages/BroncoHenry.tsx",
-                            lineNumber: 36,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _figureText.FigureText), {
                             children: "Fig 1. Rough Animation in Toonboom"
                         }, void 0, false, {
                             fileName: "src/pages/BroncoHenry.tsx",
-                            lineNumber: 39,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Images, {
@@ -40560,7 +40584,7 @@ function BroncoHenry() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "src/pages/BroncoHenry.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -40568,34 +40592,35 @@ function BroncoHenry() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "src/pages/BroncoHenry.tsx",
-                                    lineNumber: 42,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/BroncoHenry.tsx",
-                            lineNumber: 40,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/BroncoHenry.tsx",
-                    lineNumber: 35,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/BroncoHenry.tsx",
-            lineNumber: 27,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false);
 }
-_c2 = BroncoHenry;
-var _c, _c1, _c2;
+_c3 = BroncoHenry;
+var _c, _c1, _c2, _c3;
 $RefreshReg$(_c, "MediaSection");
 $RefreshReg$(_c1, "Images");
-$RefreshReg$(_c2, "BroncoHenry");
+$RefreshReg$(_c2, "StyledVideoDiv");
+$RefreshReg$(_c3, "BroncoHenry");
 
   $parcel$ReactRefreshHelpers$fe29.postlude(module);
 } finally {
@@ -40624,7 +40649,7 @@ const FigureText = (0, _styledComponentsDefault.default).div`
   font-size: 18px;
   line-height: 191.6%;
   letter-spacing: 0.04em;
-  margin: 25px auto 80px auto;
+  margin: 18px auto 65px auto;
 `;
 
 },{"styled-components":"1U3k6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bB9sr":[function(require,module,exports) {
@@ -40686,6 +40711,13 @@ const CharacterSpreadWrapper = (0, _styledComponentsDefault.default).div.withCon
     "& > img{width:110%;margin-left:-5%;}"
 ]);
 _c3 = CharacterSpreadWrapper;
+const StyledFigureText = (0, _styledComponentsDefault.default)((0, _figureText.FigureText)).withConfig({
+    displayName: "FeeRanger__StyledFigureText",
+    componentId: "sc-1ebiwb2-4"
+})([
+    "margin-top:-10px;"
+]);
+_c4 = StyledFigureText;
 function FeeRanger() {
     const { vimeoId , name , aspectRatio  } = (0, _utils.getProjectData)("fee-ranger");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -40696,21 +40728,21 @@ function FeeRanger() {
                     aspectRatio: aspectRatio
                 }, void 0, false, {
                     fileName: "src/pages/FeeRanger.tsx",
-                    lineNumber: 38,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _videoTitle.VideoTitle), {
                     children: (0, _utils.kebabToTitle)(name)
                 }, void 0, false, {
                     fileName: "src/pages/FeeRanger.tsx",
-                    lineNumber: 39,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "This project takes a character all the way from concept, through sculpting, retopo, rigging, and animating. The character was made in ZBrush and rigged and animated in C4D, and finally, rendered with Redshift."
                 }, void 0, false, {
                     fileName: "src/pages/FeeRanger.tsx",
-                    lineNumber: 40,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MediaSection, {
@@ -40720,19 +40752,19 @@ function FeeRanger() {
                                 src: (0, _turnaround4XPngAsWebpDefault.default)
                             }, void 0, false, {
                                 fileName: "src/pages/FeeRanger.tsx",
-                                lineNumber: 48,
+                                lineNumber: 52,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 47,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _figureText.FigureText), {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledFigureText, {
                             children: "Fig 1. Ranger turnaround"
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 50,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ObjectsRow, {
@@ -40742,7 +40774,7 @@ function FeeRanger() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "src/pages/FeeRanger.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -40750,34 +40782,34 @@ function FeeRanger() {
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "src/pages/FeeRanger.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 52,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _figureText.FigureText), {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StyledFigureText, {
                             children: "Fig 2. Ranger accessories"
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 56,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _video.Video), {
                             src: (0, _digWideMp4Default.default)
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 58,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _figureText.FigureText), {
                             children: "Fig 3. Scrapped dig animation"
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 59,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(CharacterSpreadWrapper, {
@@ -40786,42 +40818,43 @@ function FeeRanger() {
                                 alt: ""
                             }, void 0, false, {
                                 fileName: "src/pages/FeeRanger.tsx",
-                                lineNumber: 62,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 61,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _figureText.FigureText), {
                             children: "Fig 4. Rough sketch and color study"
                         }, void 0, false, {
                             fileName: "src/pages/FeeRanger.tsx",
-                            lineNumber: 64,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/FeeRanger.tsx",
-                    lineNumber: 46,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/FeeRanger.tsx",
-            lineNumber: 37,
+            lineNumber: 41,
             columnNumber: 7
         }, this)
     }, void 0, false);
 }
-_c4 = FeeRanger;
-var _c, _c1, _c2, _c3, _c4;
+_c5 = FeeRanger;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "MediaSection");
 $RefreshReg$(_c1, "TurnaroundWrapper");
 $RefreshReg$(_c2, "ObjectsRow");
 $RefreshReg$(_c3, "CharacterSpreadWrapper");
-$RefreshReg$(_c4, "FeeRanger");
+$RefreshReg$(_c4, "StyledFigureText");
+$RefreshReg$(_c5, "FeeRanger");
 
   $parcel$ReactRefreshHelpers$6084.postlude(module);
 } finally {

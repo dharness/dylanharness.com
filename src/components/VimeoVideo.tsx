@@ -4,11 +4,10 @@ import styled from "styled-components/macro";
 import { AspectRatio } from "../projectData";
 
 const NoJump = styled.div<{ $heightRatio: number }>`
-  min-height: calc(${(props) => props.$heightRatio} * 80vw);
-
-  @media (min-width: 1085px) {
-    min-height: calc(${(props) => props.$heightRatio} * 1085px);
-  }
+  min-height: min(
+    calc(${(props) => props.$heightRatio} * 80vw),
+    calc(${(props) => props.$heightRatio} * 900px)
+  );
 `;
 
 export function VimeoVideo(props: any) {

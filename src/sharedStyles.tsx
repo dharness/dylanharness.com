@@ -1,10 +1,13 @@
 import { css } from "styled-components";
 
-const contentWidth = css`
+export const contentWidthStyle = css`
   max-width: 1085px;
   width: 80vw;
 `;
 
-const ORANGE_DARK = "#E75D1A";
-
-export { contentWidth, ORANGE_DARK };
+export const contentWidthVw = "80vw";
+export const contentWidthPx = "1085px";
+export const projectGridGap = "22px";
+export const ORANGE_DARK = "#E75D1A";
+export const ORANGE_MEDIUM = "#F0783E";
+export const ORANGE_LIGHT = "#FFF1EB";
