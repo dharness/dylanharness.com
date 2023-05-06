@@ -15,6 +15,7 @@ const SliderDemoRow = styled.div`
   display: flex;
   background: orange;
   justify-content: space-between;
+  margin-bottom: 35px;
 `;
 
 const SliderDemoWrapper = styled.div`
@@ -27,6 +28,7 @@ const BottomGrid = styled.div<{ $height: number }>`
   background: black;
   max-height: ${(props) => props.$height};
   justify-content: space-between;
+  margin-bottom: 35px;
 `;
 
 const BottomGridCol = styled.div`
@@ -70,6 +72,7 @@ export function SkiBoots() {
             <Video
               src={shoeTiltDemo}
               style={{
+                marginLeft: "auto",
                 maxHeight: 500,
               }}
             ></Video>

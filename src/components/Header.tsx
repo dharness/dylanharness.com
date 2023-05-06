@@ -1,10 +1,11 @@
-import React, {  useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
 import { NavOVerlay } from "./NavOverlay";
+import { Link } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 
 const HeaderWrapper = styled.div<{ $lg: boolean }>`
@@ -58,12 +59,18 @@ const PageLinks = styled.div<{ $lg: boolean }>`
   @media (max-width: ${MOBILE_CUTOFF}) {
     display: ${(p) => (p.$lg ? "" : "none")};
   }
+  a {
+    margin: ${(p) => (p.$lg ? "10px 20px 0px 20px" : "")};
+  }
 `;
 
-const Logo = styled.img<{ $lg: boolean }>`
+const Logo = styled(Link)<{ $lg: boolean }>`
   height: ${(p) => (p.$lg ? "95px" : "70px")};
   margin-left: -30px;
   margin: ${(p) => (p.$lg ? "auto" : "")};
+  img {
+    height: 100%;
+  }
 `;
 
 const Hamburger = styled.button`
@@ -111,7 +118,7 @@ export function Header(props: any) {
       <ColorBar />
       {!lg && showOverlay && <NavOVerlay />}
       <HeaderContent $lg={lg}>
-        <Logo src={logo} $lg={lg} alt="" />
+        <Logo src={logo} $lg={lg} alt="" to={HeaderPaths.root}/>
         {lg && <Name $lg={lg} href="/">
           <div>Dylan</div>
           <div>Harness</div>

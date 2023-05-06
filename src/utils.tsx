@@ -20,4 +20,10 @@ function getProjectData(projectName: string) {
   return project;
 }
 
-export { kebabToTitle, getProjectData };
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
+
+export { kebabToTitle, getProjectData, isMobileDevice };

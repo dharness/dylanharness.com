@@ -11,7 +11,7 @@ import ruffs from "../assets/projects/propmaker/fanman-ruffs.mp4";
 const MediaSection = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 0px;
 `;
 
 export function Propmaker() {

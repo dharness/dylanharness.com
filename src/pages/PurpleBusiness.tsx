@@ -1,25 +1,29 @@
 import React from "react";
+import styled from "styled-components";
 import { VimeoVideo } from "../components/VimeoVideo";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import concept1 from "../assets/projects/purple-business/concept-01.png?as=webp";
-import concept2 from "../assets/projects/purple-business/concept-02.png?as=webp";
-import concept3 from "../assets/projects/purple-business/concept-03.png?as=webp";
-import concept4 from "../assets/projects/purple-business/concept-04.png?as=webp";
-import concept5 from "../assets/projects/purple-business/concept-05.png?as=webp";
-import concept6 from "../assets/projects/purple-business/concept-06.png?as=webp";
-import styled from "styled-components";
+//webp
+import concept1_webp from "../assets/projects/purple-business/concept-01.png?as=webp";
+import concept2_webp from "../assets/projects/purple-business/concept-02.png?as=webp";
+import concept3_webp from "../assets/projects/purple-business/concept-03.png?as=webp";
+import concept4_webp from "../assets/projects/purple-business/concept-04.png?as=webp";
+import concept5_webp from "../assets/projects/purple-business/concept-05.png?as=webp";
+import concept6_webp from "../assets/projects/purple-business/concept-06.png?as=webp";
+//png
+import concept1_png from "../assets/projects/purple-business/concept-01.png";
+import concept2_png from "../assets/projects/purple-business/concept-02.png";
+import concept3_png from "../assets/projects/purple-business/concept-03.png";
+import concept4_png from "../assets/projects/purple-business/concept-04.png";
+import concept5_png from "../assets/projects/purple-business/concept-05.png";
+import concept6_png from "../assets/projects/purple-business/concept-06.png";
 
 const MediaSection = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 40px;
   gap: 2%;
-  & > img {
-    max-width: 100%;
-    margin: auto;
-  }
 `;
 
 export function PurpleBusiness() {
@@ -35,12 +39,30 @@ export function PurpleBusiness() {
           some explorations for different compositions and color schemes:
         </p>
         <MediaSection>
-          <img src={concept1} alt="" />
-          <img src={concept2} alt="" />
-          <img src={concept3} alt="" />
-          <img src={concept4} alt="" />
-          <img src={concept5} alt="" />
-          <img src={concept6} alt="" />
+          <picture>
+            <source srcSet={concept1_webp} type="image/webp" />
+            <img src={concept1_png} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={concept2_webp} type="image/webp" />
+            <img src={concept2_png} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={concept3_webp} type="image/webp" />
+            <img src={concept3_png} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={concept4_webp} type="image/webp" />
+            <img src={concept4_png} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={concept5_webp} type="image/webp" />
+            <img src={concept5_png} alt="" />
+          </picture>
+          <picture>
+            <source srcSet={concept6_webp} type="image/webp" />
+            <img src={concept6_png} alt="" />
+          </picture>
         </MediaSection>
       </PageContentWrapper>
     </>
