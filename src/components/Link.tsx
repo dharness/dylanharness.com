@@ -10,9 +10,7 @@ export const enum HeaderPaths {
   reel = "/reel",
 }
 const StyledLink = styled(Link)<{ $isSelected: boolean }>`
-  margin-left: 40px;
   margin-bottom: 20px;
-  align-self: end;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-size: 20px;

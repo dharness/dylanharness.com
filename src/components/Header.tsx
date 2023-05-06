@@ -1,11 +1,10 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, {  useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
 import { NavOVerlay } from "./NavOverlay";
-import { Link, useLocation } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 
 const HeaderWrapper = styled.div<{ $lg: boolean }>`
@@ -54,6 +53,8 @@ const PageLinks = styled.div<{ $lg: boolean }>`
   margin-left: auto;
   background: white;
   margin: ${(p) => (p.$lg ? "auto" : "")};
+  gap: 36px;
+  align-items: center;
   @media (max-width: ${MOBILE_CUTOFF}) {
     display: ${(p) => (p.$lg ? "" : "none")};
   }
@@ -68,20 +69,21 @@ const Logo = styled.img<{ $lg: boolean }>`
 const Hamburger = styled.button`
   z-index: 1000;
   margin-left: auto;
-  background: red;
+  background: #FFF1EB;
   align-self: center;
-  height: 50px;
-  width: 50px;
+  height: 33px;
+  width: 33px;
   display: flex;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
   @media (min-width: ${MOBILE_CUTOFF}) {
     display: none;
   }
   & > img {
     height: 100%;
     margin: auto;
-    margin-left: -4px;
+    margin-left: -5px;
   }
 `;
 
@@ -110,10 +112,10 @@ export function Header(props: any) {
       {!lg && showOverlay && <NavOVerlay />}
       <HeaderContent $lg={lg}>
         <Logo src={logo} $lg={lg} alt="" />
-        <Name $lg={lg} href="/">
+        {lg && <Name $lg={lg} href="/">
           <div>Dylan</div>
           <div>Harness</div>
-        </Name>
+        </Name>}
         <PageLinks $lg={lg}>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />
