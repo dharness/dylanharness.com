@@ -9,13 +9,14 @@
     "assets": "^3.0.1",
     "framer-motion": "^10.12.7",
     "landing": "^0.0.1",
+    "push-dir": "^0.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-player": "^2.12.0",
     "react-router-dom": "^6.11.1",
     "src": "^1.1.2",
     "styled-components": "^5.3.10",
-    "styled-normalize": "^8.0.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
@@ -38,13 +39,14 @@
     ]
   },
   "scripts": {
-    "start": "parcel ./src/index.html --dist-dir ./docs",
-    "build": "parcel build ./src/index.html --dist-dir ./docs",
-    "clean": "rimraf docs",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "clean": "rimraf dist",
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "poststart": "cpx CNAME docs",
-    "postbuild": "cpx CNAME docs"
+    "poststart": "cpx CNAME dist",
+    "postbuild": "cpx CNAME dist",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --verbose"
   },
   "author": "",
   "license": "ISC"
