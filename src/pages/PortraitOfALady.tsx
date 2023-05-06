@@ -16,6 +16,9 @@ const MediaSection = styled.div`
   flex-direction: row;
   margin-top: 20px;
   align-items: flex-end;
+  img {
+    width: 100%;
+  }
   @media (max-width: ${MOBILE_CUTOFF}) {
     flex-direction: column;
   }
@@ -24,6 +27,7 @@ const MediaColumn = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  min-width: 50%;
   @media (max-width: ${MOBILE_CUTOFF}) {
     max-width: 100%;
   }

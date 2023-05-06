@@ -22,6 +22,9 @@ import { MOBILE_CUTOFF } from "../sharedStyles";
 const MediaSection = styled.div`
   display: flex;
   flex-direction: column;
+  img {
+    width: 100%;
+  }
 `;
 
 const TurnaroundWrapper = styled.div`

@@ -16,6 +16,9 @@ const MediaSection = styled.div`
   width: 80%;
   margin: auto;
   margin-top: 40px;
+  img {
+    width: 100%;
+  }
 `;
 
 export function GatorGum() {
