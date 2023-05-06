@@ -39,14 +39,14 @@
     ]
   },
   "scripts": {
-    "start": "parcel ./src/index.html --dist-dir ./docs",
-    "build": "parcel build ./src/index.html --dist-dir ./docs",
-    "clean": "rimraf docs",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "clean": "rimraf dist",
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "poststart": "cpx CNAME docs",
-    "postbuild": "cpx CNAME docs",
-    "deploy": "push-dir --dir=docs --branch=gh-pages --verbose"
+    "poststart": "cpx CNAME dist",
+    "postbuild": "cpx CNAME dist",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --verbose"
   },
   "author": "",
   "license": "ISC"
