@@ -8,21 +8,21 @@ import { NavOVerlay } from "./NavOverlay";
 import { Link } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 
-const HeaderWrapper = styled.div<{ $lg: boolean }>`
-  height: ${(props) => (props.$lg ? 200 : 100)}px;
-  max-height: ${(props) => (props.$lg ? 200 : 100)}px;
-  min-height: ${(props) => (props.$lg ? 200 : 100)}px;
+const HeaderWrapper = styled.div<{ $isLandingPage: boolean }>`
+  height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
+  max-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
+  min-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
   background: green;
 `;
 
-const HeaderContent = styled.div<{ $lg: boolean }>`
+const HeaderContent = styled.div<{ $isLandingPage: boolean }>`
   ${contentWidthStyle};
   margin: 0px auto 0px auto;
   display: flex;
-  flex-direction: ${(p) => (p.$lg ? "column" : "row")};
+  flex-direction: ${(p) => (p.$isLandingPage ? "column" : "row")};
 `;
 
-const Name = styled.a<{ $lg: boolean }>`
+const Name = styled.a<{ $isLandingPage: boolean }>`
   font-size: 32px;
   align-self: end;
   font-family: "Rubik Mono One", sans-serif;
@@ -31,43 +31,43 @@ const Name = styled.a<{ $lg: boolean }>`
   text-decoration: none;
   color: ${ORANGE_DARK};
   display: flex;
-  flex-direction: ${(p) => (p.$lg ? "row" : "column")};
-  align-self: ${(p) => (p.$lg ? "center" : "end")};
+  flex-direction: ${(p) => (p.$isLandingPage ? "row" : "column")};
+  align-self: ${(p) => (p.$isLandingPage ? "center" : "end")};
   > * {
     &:first-child {
-      font-size: ${(p) => (p.$lg ? 35 : 32)}px;
+      font-size: ${(p) => (p.$isLandingPage ? 35 : 32)}px;
       margin-bottom: -6px;
-      ${({ $lg }) =>
-        $lg &&
+      ${({ $isLandingPage }) =>
+        $isLandingPage &&
         `&::after {
           content: ".";
         }`}
     }
   }
   &:nth-child(2) {
-    font-size: ${(p) => (p.$lg ? 35 : 23)}px;
+    font-size: ${(p) => (p.$isLandingPage ? 35 : 23)}px;
   }
 `;
 
-const PageLinks = styled.div<{ $lg: boolean }>`
+const PageLinks = styled.div<{ $isLandingPage: boolean }>`
   display: flex;
   margin-left: auto;
   background: white;
-  margin: ${(p) => (p.$lg ? "auto" : "")};
+  margin: ${(p) => (p.$isLandingPage ? "auto" : "")};
   gap: 36px;
   align-items: center;
   @media (max-width: ${MOBILE_CUTOFF}) {
-    display: ${(p) => (p.$lg ? "" : "none")};
+    display: ${(p) => (p.$isLandingPage ? "" : "none")};
   }
   a {
-    margin: ${(p) => (p.$lg ? "10px 20px 0px 20px" : "")};
+    margin: ${(p) => (p.$isLandingPage ? "10px 20px 0px 20px" : "")};
   }
 `;
 
-const Logo = styled(Link)<{ $lg: boolean }>`
-  height: ${(p) => (p.$lg ? "95px" : "70px")};
+const Logo = styled(Link)<{ $isLandingPage: boolean }>`
+  height: ${(p) => (p.$isLandingPage ? "95px" : "70px")};
   margin-left: -30px;
-  margin: ${(p) => (p.$lg ? "auto" : "")};
+  margin: ${(p) => (p.$isLandingPage ? "auto" : "")};
   img {
     height: 100%;
   }
@@ -112,27 +112,27 @@ export function Header(props: any) {
     };
   }, []);
 
-  const { lg } = props;
+  const { lg: isLandingPage } = props;
   return (
-    <HeaderWrapper $lg={lg}>
+    <HeaderWrapper $isLandingPage={isLandingPage}>
       <ColorBar />
-      {!lg && showOverlay && <NavOVerlay />}
-      <HeaderContent $lg={lg}>
-        <Logo $lg={lg} to={HeaderPaths.root}>
+      {!isLandingPage && showOverlay && <NavOVerlay />}
+      <HeaderContent $isLandingPage={isLandingPage}>
+        <Logo $isLandingPage={isLandingPage} to={HeaderPaths.root}>
           <img src={logo} alt="" />
         </Logo>
-        {lg && (
-          <Name $lg={lg} href="/">
+        {isLandingPage && (
+          <Name $isLandingPage={isLandingPage} href="/">
             <div>Dylan</div>
             <div>Harness</div>
           </Name>
         )}
-        <PageLinks $lg={lg}>
+        <PageLinks $isLandingPage={isLandingPage}>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />
           <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
-        {!lg && (
+        {!isLandingPage && (
           <Hamburger onClick={(_) => setshowOverlay(!showOverlay)}>
             {showOverlay ? (
               <img src={close}></img>
