@@ -76,7 +76,7 @@ const Logo = styled(Link)<{ $lg: boolean }>`
 const Hamburger = styled.button`
   z-index: 1000;
   margin-left: auto;
-  background: #FFF1EB;
+  background: #fff1eb;
   align-self: center;
   height: 33px;
   width: 33px;
@@ -118,11 +118,15 @@ export function Header(props: any) {
       <ColorBar />
       {!lg && showOverlay && <NavOVerlay />}
       <HeaderContent $lg={lg}>
-        <Logo src={logo} $lg={lg} alt="" to={HeaderPaths.root}/>
-        {lg && <Name $lg={lg} href="/">
-          <div>Dylan</div>
-          <div>Harness</div>
-        </Name>}
+        <Logo $lg={lg} to={HeaderPaths.root}>
+          <img src={logo} alt="" />
+        </Logo>
+        {lg && (
+          <Name $lg={lg} href="/">
+            <div>Dylan</div>
+            <div>Harness</div>
+          </Name>
+        )}
         <PageLinks $lg={lg}>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />
