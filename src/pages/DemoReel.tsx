@@ -5,7 +5,7 @@ import { getProjectData } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
 
 export function DemoReel() {
-  const { vimeoId, aspectRatio } = getProjectData("demo-reel");
+  const { vimeoId, aspectRatio } = getProjectData("reel");
   return (
     <>
       <PageContentWrapper>

@@ -63,10 +63,7 @@ const ProjectTitle = styled.div`
 `;
 
 export function ProjectThumbnail(props: any) {
-  const { hoverColor, name, thumbnail, gridGap } = props;
-  // const navigate = useNavigate();
-  // const onThumbnailClicked = () => navigate(name);
-  console.log("name", name);
+  const { hoverColor, name, thumbnail } = props;
   return (
     <Link to={"/" + name}>
       <ProjectThumbnailWrapper $bgColor={hoverColor}>
