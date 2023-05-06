@@ -25,11 +25,12 @@ const FooterContent = styled.div`
 
 const Links = styled.div`
   display: flex;
-  gap: 20px;
+  column-gap: 20px;
+  flex-wrap: wrap;
   align-items: flex-end;
   background: orange;
-  & > img {
-    max-width: 30px;
+  img {
+    max-width: 25px;
   }
 `;
 

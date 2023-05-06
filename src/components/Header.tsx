@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
-import { contentWidthStyle, ORANGE_DARK } from "../sharedStyles";
+import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
+import close from "./../assets/icons/close.svg";
+import { NavOVerlay } from "./NavOverlay";
+import { Link, useLocation } from "react-router-dom";
+import PageLink, { HeaderPaths } from "./Link";
 
 const HeaderWrapper = styled.div<{ $lg: boolean }>`
   height: ${(props) => (props.$lg ? 200 : 100)}px;
@@ -50,27 +54,8 @@ const PageLinks = styled.div<{ $lg: boolean }>`
   margin-left: auto;
   background: white;
   margin: ${(p) => (p.$lg ? "auto" : "")};
-  @media (max-width: 660px) {
-    display: none;
-  }
-`;
-
-const PageLink = styled.a<{ $lg: boolean }>`
-  margin-left: 40px;
-  margin-bottom: 20px;
-  margin: ${(p) => (p.$lg ? "10px 30px 0px 30px" : "")};
-  align-self: end;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  font-style: normal;
-  color: black;
-  text-decoration: none;
-  &:first-of-type {
-    color: ${ORANGE_DARK};
-  }
-  &:hover {
-    color: ${ORANGE_DARK};
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    display: ${(p) => (p.$lg ? "" : "none")};
   }
 `;
 
@@ -90,27 +75,13 @@ const Hamburger = styled.button`
   display: flex;
   cursor: pointer;
   border: none;
-  @media (min-width: 660px) {
+  @media (min-width: ${MOBILE_CUTOFF}) {
     display: none;
   }
   & > img {
     height: 100%;
     margin: auto;
     margin-left: -4px;
-  }
-`;
-
-const MobileNav = styled.div`
-  opacity: 1;
-  background-color: #ccc;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 999;
-  @media (min-width: 660px) {
-    display: none;
   }
 `;
 
@@ -121,25 +92,22 @@ const ColorBar = styled.div`
 
 export function Header(props: any) {
   const [showOverlay, setshowOverlay] = useState(false);
-  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const delta = window.innerWidth - windowWidth;
-      console.log(windowWidth);
-      setwindowWidth(window.innerWidth);
+  useLayoutEffect(() => {
+    const handleResize: any = () => {
+      setshowOverlay(false);
     };
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  // console.log(windowWidth);
+
   const { lg } = props;
   return (
     <HeaderWrapper $lg={lg}>
       <ColorBar />
-      {!lg && showOverlay && <MobileNav />}
+      {!lg && showOverlay && <NavOVerlay />}
       <HeaderContent $lg={lg}>
         <Logo src={logo} $lg={lg} alt="" />
         <Name $lg={lg} href="/">
@@ -147,19 +115,17 @@ export function Header(props: any) {
           <div>Harness</div>
         </Name>
         <PageLinks $lg={lg}>
-          <PageLink $lg={lg} href="/#/demo-reel">
-            Reel
-          </PageLink>
-          <PageLink $lg={lg} href="/">
-            Projects
-          </PageLink>
-          <PageLink $lg={lg} href="/about">
-            About
-          </PageLink>
+          <PageLink name="Projects" to={HeaderPaths.projects} />
+          <PageLink name="Reel" to={HeaderPaths.reel} />
+          <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
         {!lg && (
           <Hamburger onClick={(_) => setshowOverlay(!showOverlay)}>
-            <img src={hamburger}></img>
+            {showOverlay ? (
+              <img src={close}></img>
+            ) : (
+              <img src={hamburger}></img>
+            )}
           </Hamburger>
         )}
       </HeaderContent>

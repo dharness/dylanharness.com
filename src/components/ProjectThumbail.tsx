@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { kebabToTitle } from "../utils";
 import {
   contentWidthPx,
@@ -64,15 +64,18 @@ const ProjectTitle = styled.div`
 
 export function ProjectThumbnail(props: any) {
   const { hoverColor, name, thumbnail, gridGap } = props;
-  const navigate = useNavigate();
-  const onThumbnailClicked = () => navigate(name);
+  // const navigate = useNavigate();
+  // const onThumbnailClicked = () => navigate(name);
+  console.log("name", name);
   return (
-    <ProjectThumbnailWrapper $bgColor={hoverColor} onClick={onThumbnailClicked}>
-      <ProjectTitle>
-        <p>{kebabToTitle(name)}</p>
-      </ProjectTitle>
-      <ProjectThumbnailOverlay $hoverColor={hoverColor} />
-      <ProjectThumbnailImg src={thumbnail} />
-    </ProjectThumbnailWrapper>
+    <Link to={"/" + name}>
+      <ProjectThumbnailWrapper $bgColor={hoverColor}>
+        <ProjectTitle>
+          <p>{kebabToTitle(name)}</p>
+        </ProjectTitle>
+        <ProjectThumbnailOverlay $hoverColor={hoverColor} />
+        <ProjectThumbnailImg src={thumbnail} />
+      </ProjectThumbnailWrapper>
+    </Link>
   );
 }
