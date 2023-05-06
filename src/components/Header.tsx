@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
-import { contentWidth, ORANGE_DARK } from "../sharedStyles";
+import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
+import hamburger from "./../assets/icons/hamburger.svg";
+import close from "./../assets/icons/close.svg";
+import { NavOVerlay } from "./NavOverlay";
+import { Link, useLocation } from "react-router-dom";
+import PageLink, { HeaderPaths } from "./Link";
 
 const HeaderWrapper = styled.div<{ $lg: boolean }>`
-  height: ${(props) => (props.$lg ? "260px" : "100px")};
-  max-height: ${(props) => (props.$lg ? "260px" : "100px")};
-  min-height: ${(props) => (props.$lg ? "260px" : "100px")};
+  height: ${(props) => (props.$lg ? 200 : 100)}px;
+  max-height: ${(props) => (props.$lg ? 200 : 100)}px;
+  min-height: ${(props) => (props.$lg ? 200 : 100)}px;
   background: green;
 `;
 
-const HeaderContent = styled.div`
-  ${contentWidth};
+const HeaderContent = styled.div<{ $lg: boolean }>`
+  ${contentWidthStyle};
   margin: 0px auto 0px auto;
   display: flex;
+  flex-direction: ${(p) => (p.$lg ? "column" : "row")};
 `;
 
-const Name = styled.a`
+const Name = styled.a<{ $lg: boolean }>`
   font-size: 32px;
   align-self: end;
   font-family: "Rubik Mono One", sans-serif;
@@ -25,49 +31,58 @@ const Name = styled.a`
   text-decoration: none;
   color: ${ORANGE_DARK};
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(p) => (p.$lg ? "row" : "column")};
+  align-self: ${(p) => (p.$lg ? "center" : "end")};
   > * {
     &:first-child {
-      font-size: 32px;
+      font-size: ${(p) => (p.$lg ? 35 : 32)}px;
       margin-bottom: -6px;
+      ${({ $lg }) =>
+        $lg &&
+        `&::after {
+          content: ".";
+        }`}
     }
   }
   &:nth-child(2) {
-    font-size: 23px;
+    font-size: ${(p) => (p.$lg ? 35 : 23)}px;
   }
 `;
 
-const Subtext = styled.div`
-  font-size: 16px;
-`;
-
-const PageLinks = styled.div`
+const PageLinks = styled.div<{ $lg: boolean }>`
   display: flex;
   margin-left: auto;
   background: white;
-`;
-
-const PageLink = styled.a`
-  margin-left: 40px;
-  margin-bottom: 20px;
-  align-self: end;
-  font-family: futura-pt, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  font-style: normal;
-  color: black;
-  text-decoration: none;
-  &:first-of-type {
-    color: ${ORANGE_DARK};
-  }
-  &:hover {
-    color: ${ORANGE_DARK};
+  margin: ${(p) => (p.$lg ? "auto" : "")};
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    display: ${(p) => (p.$lg ? "" : "none")};
   }
 `;
 
-const Logo = styled.img`
-  height: 70px;
+const Logo = styled.img<{ $lg: boolean }>`
+  height: ${(p) => (p.$lg ? "95px" : "70px")};
   margin-left: -30px;
+  margin: ${(p) => (p.$lg ? "auto" : "")};
+`;
+
+const Hamburger = styled.button`
+  z-index: 1000;
+  margin-left: auto;
+  background: red;
+  align-self: center;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  @media (min-width: ${MOBILE_CUTOFF}) {
+    display: none;
+  }
+  & > img {
+    height: 100%;
+    margin: auto;
+    margin-left: -4px;
+  }
 `;
 
 const ColorBar = styled.div`
@@ -75,45 +90,45 @@ const ColorBar = styled.div`
   background: plum;
 `;
 
-function HeaderSmall() {
+export function Header(props: any) {
+  const [showOverlay, setshowOverlay] = useState(false);
+
+  useLayoutEffect(() => {
+    const handleResize: any = () => {
+      setshowOverlay(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const { lg } = props;
   return (
-    <HeaderWrapper $lg={false}>
+    <HeaderWrapper $lg={lg}>
       <ColorBar />
-      <HeaderContent>
-        <Logo src={logo} alt="" />
-        <Name href="/">
+      {!lg && showOverlay && <NavOVerlay />}
+      <HeaderContent $lg={lg}>
+        <Logo src={logo} $lg={lg} alt="" />
+        <Name $lg={lg} href="/">
           <div>Dylan</div>
           <div>Harness</div>
         </Name>
-        <PageLinks>
-          <PageLink href="/demo-reel">Reel</PageLink>
-          <PageLink href="/">Projects</PageLink>
-          <PageLink href="/about">About</PageLink>
+        <PageLinks $lg={lg}>
+          <PageLink name="Projects" to={HeaderPaths.projects} />
+          <PageLink name="Reel" to={HeaderPaths.reel} />
+          <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
+        {!lg && (
+          <Hamburger onClick={(_) => setshowOverlay(!showOverlay)}>
+            {showOverlay ? (
+              <img src={close}></img>
+            ) : (
+              <img src={hamburger}></img>
+            )}
+          </Hamburger>
+        )}
       </HeaderContent>
-    </HeaderWrapper>
-  );
-}
-
-export function Header(props: any) {
-  const { lg } = props;
-  if (!lg) {
-    return <HeaderSmall />;
-  }
-
-  return (
-    <HeaderWrapper $lg={true}>
-      <div>
-        <Name>Dylan Harness</Name>
-        <Subtext>Motion Designer</Subtext>
-      </div>
-      <div>links</div>
-      {lg && <>I am large</>}
-
-      <div>
-        <div className="header-name">Dylan Har</div>
-        <div>dmkdj</div>
-      </div>
     </HeaderWrapper>
   );
 }

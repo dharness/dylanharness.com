@@ -58,6 +58,7 @@ Page.defaultProps = {
 const GlobalStyle = createGlobalStyle`
   html {
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
   }
 `;
 
@@ -81,7 +82,8 @@ export function Router() {
           <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Page content={<Projects />} lg={true} />} />
-            <Route path="/demo-reel" element={<Page content={<DemoReel />} />} />
+            <Route path="/projects" element={<Page content={<Projects />} lg={true} />} />
+            <Route path="/reel" element={<Page content={<DemoReel />} />} />
             <Route path="/ski-boots" element={<Page content={<SkiBoots />} />} />
             <Route path="/bronco-henry" element={<Page content={<BroncoHenry />} />} />
             <Route path="/fee-ranger" element={<Page content={<FeeRanger />} />} />

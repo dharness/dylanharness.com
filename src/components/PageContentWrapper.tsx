@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
-import { contentWidth } from "../sharedStyles";
+import { contentWidthStyle } from "../sharedStyles";
 
 const PageContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  ${contentWidth};
+  ${contentWidthStyle};
   max-width: 900px;
   margin: 0px auto 0px auto;
   background: aquamarine;
@@ -23,7 +23,8 @@ const PageContentWrapper = styled.div`
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
   }
 `;
 

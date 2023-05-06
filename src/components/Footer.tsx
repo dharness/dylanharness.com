@@ -4,7 +4,7 @@ import linkedin from "./../assets/icons/linkedin.svg";
 import email from "./../assets/icons/email.svg";
 import instagram from "./../assets/icons/instagram.svg";
 import vimeo from "./../assets/icons/vimeo.svg";
-import { contentWidth } from "../sharedStyles";
+import { contentWidthStyle } from "../sharedStyles";
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -18,18 +18,19 @@ const FooterWrapper = styled.div`
 const FooterContent = styled.div`
   display: flex;
   background: green;
-  ${contentWidth};
+  ${contentWidthStyle};
   margin: auto;
   justify-content: end;
 `;
 
 const Links = styled.div`
   display: flex;
-  gap: 20px;
+  column-gap: 20px;
+  flex-wrap: wrap;
   align-items: flex-end;
   background: orange;
-  & > img {
-    max-width: 30px;
+  img {
+    max-width: 25px;
   }
 `;
 

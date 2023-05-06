@@ -7,5 +7,5 @@ export const FigureText = styled.div`
   font-size: 18px;
   line-height: 191.6%;
   letter-spacing: 0.04em;
-  margin: 25px auto 80px auto;
+  margin: 18px auto 65px auto;
 `;

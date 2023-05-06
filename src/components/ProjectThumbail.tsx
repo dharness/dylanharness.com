@@ -1,15 +1,24 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { useNavigate } from "react-router-dom";
-import thumbnails from "../assets/projects/*/thumbnail.png";
+import { Link, useNavigate } from "react-router-dom";
 import { kebabToTitle } from "../utils";
+import {
+  contentWidthPx,
+  contentWidthVw,
+  projectGridGap,
+} from "../sharedStyles";
 
-const ProjectThumbnailWrapper = styled.div`
-  background: blue;
+const ProjectThumbnailWrapper = styled.div<{ $bgColor: string }>`
+  background: ${(p) => p.$bgColor};
   position: relative;
   &:hover {
     cursor: pointer;
   }
+  width: 100%;
+  min-height: min(
+    calc((0.75 * ${contentWidthVw} / 2) - (${projectGridGap} / 2)),
+    calc((0.75 * ${contentWidthPx} / 2) - (${projectGridGap} / 2))
+  );
 `;
 
 const ProjectThumbnailImg = styled.img`
@@ -54,16 +63,19 @@ const ProjectTitle = styled.div`
 `;
 
 export function ProjectThumbnail(props: any) {
-  const { hoverColor, name, thumbnail } = props;
-  const navigate = useNavigate();
-  const onThumbnailClicked = () => navigate(name);
+  const { hoverColor, name, thumbnail, gridGap } = props;
+  // const navigate = useNavigate();
+  // const onThumbnailClicked = () => navigate(name);
+  console.log("name", name);
   return (
-    <ProjectThumbnailWrapper onClick={onThumbnailClicked}>
-      <ProjectTitle>
-        <p>{kebabToTitle(name)}</p>
-      </ProjectTitle>
-      <ProjectThumbnailOverlay $hoverColor={hoverColor} />
-      <ProjectThumbnailImg src={thumbnail} />
-    </ProjectThumbnailWrapper>
+    <Link to={"/" + name}>
+      <ProjectThumbnailWrapper $bgColor={hoverColor}>
+        <ProjectTitle>
+          <p>{kebabToTitle(name)}</p>
+        </ProjectTitle>
+        <ProjectThumbnailOverlay $hoverColor={hoverColor} />
+        <ProjectThumbnailImg src={thumbnail} />
+      </ProjectThumbnailWrapper>
+    </Link>
   );
 }
