@@ -24,7 +24,7 @@ export enum AspectRatio {
 
 const projectData: Project[] = [
   {
-    name: "demo-reel",
+    name: "reel",
     hoverColor: "#F0783E",
     vimeoId: "823151596",
     aspectRatio: AspectRatio.$4x3,
