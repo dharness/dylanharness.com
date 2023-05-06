@@ -101,6 +101,17 @@ const ColorBar = styled.div`
 
 export function Header(props: any) {
   const [showOverlay, setshowOverlay] = useState(false);
+  const mediaQuery = `(min-width: ${MOBILE_CUTOFF})`
+
+  const [isMediaQueryMatched, setisMediaQueryMatched] = useState(
+    window.matchMedia(mediaQuery).matches
+  )
+
+  useLayoutEffect(() => {
+    window
+    .matchMedia(mediaQuery)
+    .addEventListener('change', e => setisMediaQueryMatched( e.matches ));
+  }, []);
 
   useLayoutEffect(() => {
     const handleResize: any = () => {
@@ -121,12 +132,12 @@ export function Header(props: any) {
         <Logo $isLandingPage={isLandingPage} to={HeaderPaths.root}>
           <img src={logo} alt="" />
         </Logo>
-        {isLandingPage && (
-          <Name $isLandingPage={isLandingPage} href="/">
+        {
+          isMediaQueryMatched && <Name $isLandingPage={isLandingPage} href="/">
             <div>Dylan</div>
             <div>Harness</div>
           </Name>
-        )}
+        }
         <PageLinks $isLandingPage={isLandingPage}>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />
