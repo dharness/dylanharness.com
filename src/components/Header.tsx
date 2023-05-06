@@ -54,6 +54,8 @@ const PageLinks = styled.div<{ $lg: boolean }>`
   margin-left: auto;
   background: white;
   margin: ${(p) => (p.$lg ? "auto" : "")};
+  gap: 36px;
+  align-items: center;
   @media (max-width: ${MOBILE_CUTOFF}) {
     display: ${(p) => (p.$lg ? "" : "none")};
   }
@@ -74,20 +76,21 @@ const Logo = styled(Link)<{ $lg: boolean }>`
 const Hamburger = styled.button`
   z-index: 1000;
   margin-left: auto;
-  background: red;
+  background: #FFF1EB;
   align-self: center;
-  height: 50px;
-  width: 50px;
+  height: 33px;
+  width: 33px;
   display: flex;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
   @media (min-width: ${MOBILE_CUTOFF}) {
     display: none;
   }
   & > img {
     height: 100%;
     margin: auto;
-    margin-left: -4px;
+    margin-left: -5px;
   }
 `;
 
@@ -115,13 +118,11 @@ export function Header(props: any) {
       <ColorBar />
       {!lg && showOverlay && <NavOVerlay />}
       <HeaderContent $lg={lg}>
-        <Logo $lg={lg} to={HeaderPaths.root}>
-          <img src={logo} alt="a cute kettle" />
-        </Logo>
-        <Name $lg={lg} href="/">
+        <Logo src={logo} $lg={lg} alt="" to={HeaderPaths.root}/>
+        {lg && <Name $lg={lg} href="/">
           <div>Dylan</div>
           <div>Harness</div>
-        </Name>
+        </Name>}
         <PageLinks $lg={lg}>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />

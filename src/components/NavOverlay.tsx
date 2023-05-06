@@ -1,9 +1,12 @@
 import styled from "styled-components/macro";
 import { MOBILE_CUTOFF } from "../sharedStyles";
+import PageLink, { HeaderPaths } from "./Link";
+import React from "react";
+import logo from "./../assets/logo.gif";
 
-export const NavOVerlay = styled.div`
+const NavOverlayDiv = styled.div`
   opacity: 1;
-  background-color: #ccc;
+  background-color: white;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -14,3 +17,41 @@ export const NavOVerlay = styled.div`
     display: none;
   }
 `;
+
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+`;
+
+
+const Logo = styled.img`
+  height:70px;
+  margin-bottom: 40px;
+  margin-top: auto;
+`;
+
+const StyledFooter = styled.div`
+  height: 14px;
+  background: #FFF1EB;
+  width: 100%;
+  margin-top: auto;
+
+`;
+
+
+export function NavOVerlay(props: any) {
+
+  return <NavOverlayDiv>
+    <StyledWrapper>
+      <Logo src={logo} alt="" />
+      <PageLink name="Projects" to={HeaderPaths.projects} />
+      <PageLink name="Reel" to={HeaderPaths.reel} />
+      <PageLink name="About" to={HeaderPaths.about} />
+      <StyledFooter/>
+    </StyledWrapper>
+  </NavOverlayDiv>
+}
