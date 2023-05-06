@@ -5,9 +5,10 @@ import { FigureText } from "../components/FigureText";
 import { VideoTitle } from "../components/VideoTitle";
 import { getProjectData, kebabToTitle } from "../utils";
 import { PageContentWrapper } from "../components/PageContentWrapper";
-import packageDesign from "./../assets/projects/gator-gum/package-design.png?as=webp";
 import blender from "./../assets/projects/gator-gum/blender_package_wide.webm";
 import styled from "styled-components";
+import packageDesign_webp from "./../assets/projects/gator-gum/package-design.png?as=webp";
+import packageDesign_png from "./../assets/projects/gator-gum/package-design.png";
 
 const MediaSection = styled.div`
   display: flex;
@@ -31,7 +32,10 @@ export function GatorGum() {
           blender and composited for a seamless loop.
         </p>
         <MediaSection>
-          <img src={packageDesign} alt="" />
+          <picture>
+            <source srcSet={packageDesign_webp} type="image/webp" />
+            <img src={packageDesign_png} alt="" />
+          </picture>
           <FigureText>Fig 1. Gum package illustration</FigureText>
           <Video src={blender}></Video>
           <FigureText>Fig 2. Gum package in Blender</FigureText>

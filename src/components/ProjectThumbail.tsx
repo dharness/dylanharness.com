@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Link, useNavigate } from "react-router-dom";
-import { kebabToTitle } from "../utils";
+import { isMobileDevice, kebabToTitle } from "../utils";
 import {
   contentWidthPx,
   contentWidthVw,
@@ -30,23 +30,27 @@ const ProjectThumbnailImg = styled.img`
   background: tan;
 `;
 
-const ProjectThumbnailOverlay = styled.div<{ $hoverColor: string }>`
+const ProjectThumbnailOverlay = styled.div<{
+  $hoverColor: string;
+  $doHover: boolean;
+}>`
   position: absolute;
   z-index: 1;
   background: ${(props) => props.$hoverColor};
   width: 100%;
   height: 100%;
-  opacity: 0%;
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
+
   ${ProjectThumbnailWrapper}:hover & {
-    opacity: 100%;
+    opacity: ${(p) => (p.$doHover ? 1 : 0)};
   }
 `;
 
-const ProjectTitle = styled.div`
+const ProjectTitle = styled.div<{ $doHover: boolean }>`
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -57,26 +61,31 @@ const ProjectTitle = styled.div`
   align-items: center;
   user-select: none;
   color: white;
-  font-family: Futura PT;
+  font-family: futura-pt, sans-serif;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
 
   ${ProjectThumbnailWrapper}:hover & {
-    opacity: 100%;
+    opacity: ${(p) => (p.$doHover ? 1 : 0)};
   }
 `;
 
+const isMobile = isMobileDevice();
+const doHover = !isMobile;
 export function ProjectThumbnail(props: any) {
-  const { hoverColor, name, thumbnail } = props;
+  const { hoverColor, name, thumbnailSet } = props;
   return (
     <Link to={"/" + name}>
       <ProjectThumbnailWrapper $bgColor={hoverColor}>
-        <ProjectTitle>
+        <ProjectTitle $doHover={doHover}>
           <p>{kebabToTitle(name)}</p>
         </ProjectTitle>
-        <ProjectThumbnailOverlay $hoverColor={hoverColor} />
-        <ProjectThumbnailImg src={thumbnail} />
+        <ProjectThumbnailOverlay $hoverColor={hoverColor} $doHover={doHover} />
+        <picture>
+          <source srcSet={thumbnailSet.webp} type="image/webp" />
+          <ProjectThumbnailImg src={thumbnailSet.png} alt="" />
+        </picture>
       </ProjectThumbnailWrapper>
     </Link>
   );

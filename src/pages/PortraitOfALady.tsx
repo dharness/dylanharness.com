@@ -7,20 +7,25 @@ import { VideoTitle } from "../components/VideoTitle";
 import { FigureText } from "../components/FigureText";
 import { Video } from "../components/Video";
 import ruffs from "../assets/projects/portrait-of-a-lady/ruffs.webm";
-import colors from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
+import colors_webp from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
+import colors_png from "../assets/projects/portrait-of-a-lady/color-study.png";
+import { MOBILE_CUTOFF } from "../sharedStyles";
 
 const MediaSection = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   align-items: flex-end;
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    flex-direction: column;
+  }
 `;
 const MediaColumn = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 50%;
-  & > img {
-    margin-bottom: 7.9%;
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    max-width: 100%;
   }
 `;
 
@@ -42,7 +47,10 @@ export function PortraitOfALady() {
             <FigureText>Fig 1. Rough animation</FigureText>
           </MediaColumn>
           <MediaColumn>
-            <img src={colors} alt="" />
+            <picture>
+              <source srcSet={colors_webp} type="image/webp" />
+              <img src={colors_png} alt="" />
+            </picture>
             <FigureText>Fig 2. Thumbnails and color study </FigureText>
           </MediaColumn>
         </MediaSection>

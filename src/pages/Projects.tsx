@@ -50,10 +50,10 @@ export function Projects() {
     <ProjectsWrapper>
       <ProjectsContent>
         <ProjectsGrid>
-          {projectData.map(({ name, hoverColor, thumbnail }) => {
+          {projectData.map(({ name, hoverColor, thumbnailSet }) => {
             return (
               <ProjectThumbnail
-                thumbnail={thumbnail}
+                thumbnailSet={thumbnailSet}
                 name={name}
                 hoverColor={hoverColor}
                 key={name}

@@ -60,6 +60,9 @@ const GlobalStyle = createGlobalStyle`
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
   }
+  img {
+    width: 100%;
+  }
 `;
 
 function ScrollToTop() {

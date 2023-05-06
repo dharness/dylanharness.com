@@ -6,11 +6,18 @@ import { FigureText } from "../components/FigureText";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
-import turnaround from "./../assets/projects/fee-ranger/turnaround_4x.png?as=webp";
-import objectsLeft from "./../assets/projects/fee-ranger/objects_left.png?as=webp";
-import objectsRight from "./../assets/projects/fee-ranger/objects_right.png?as=webp";
 import digWide from "./../assets/projects/fee-ranger/dig-wide.mp4";
-import characterSpread from "./../assets/projects/fee-ranger/characte-concept-spread.png?as=webp";
+// webp
+import turnaround_webp from "./../assets/projects/fee-ranger/turnaround_4x.png?as=webp";
+import objectsLeft_webp from "./../assets/projects/fee-ranger/objects_left.png?as=webp";
+import objectsRight_webp from "./../assets/projects/fee-ranger/objects_right.png?as=webp";
+import characterSpread_webp from "./../assets/projects/fee-ranger/characte-concept-spread.png?as=webp";
+//png
+import turnaround_png from "./../assets/projects/fee-ranger/turnaround_4x.png";
+import objectsLeft_png from "./../assets/projects/fee-ranger/objects_left.png";
+import objectsRight_png from "./../assets/projects/fee-ranger/objects_right.png";
+import characterSpread_png from "./../assets/projects/fee-ranger/characte-concept-spread.png";
+import { MOBILE_CUTOFF } from "../sharedStyles";
 
 const MediaSection = styled.div`
   display: flex;
@@ -18,20 +25,35 @@ const MediaSection = styled.div`
 `;
 
 const TurnaroundWrapper = styled.div`
-  & > img {
+  picture {
+    display: flex;
     width: 120%;
     margin-left: -10%;
   }
 `;
 const ObjectsRow = styled.div`
   display: flex;
-  & > img {
-    width: 59.5%;
-    margin-left: -6.3%;
+  picture {
+    display: flex;
+    position: relative;
+    min-width: 59%;
+    right: 11.5%;
+    &:first-of-type {
+      left: -6.3%;
+      right: "";
+    }
+  }
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    background: red;
+    flex-direction: column;
+    picture {
+      position: static;
+    }
   }
 `;
 const CharacterSpreadWrapper = styled.div`
-  & > img {
+  picture {
+    display: flex;
     width: 110%;
     margin-left: -5%;
   }
@@ -56,7 +78,10 @@ export function FeeRanger() {
         </p>
         <MediaSection>
           <TurnaroundWrapper>
-            <img src={turnaround} />
+            <picture>
+              <source srcSet={turnaround_webp} type="image/webp" />
+              <img src={turnaround_png} />
+            </picture>
           </TurnaroundWrapper>
           <StyledFigureText>Fig 1. Ranger turnaround</StyledFigureText>
           <p>
@@ -70,8 +95,14 @@ export function FeeRanger() {
             particulate matter to give it that sprightly forest feel!
           </p>
           <ObjectsRow>
-            <img src={objectsLeft} alt="" />
-            <img src={objectsRight} alt="" />
+            <picture>
+              <source srcSet={objectsLeft_webp} type="image/webp" />
+              <img src={objectsLeft_png} alt="" />
+            </picture>
+            <picture>
+              <source srcSet={objectsRight_webp} type="image/webp" />
+              <img src={objectsRight_png} alt="" />
+            </picture>
           </ObjectsRow>
           <StyledFigureText>Fig 2. Ranger accessories</StyledFigureText>
 
@@ -84,7 +115,10 @@ export function FeeRanger() {
           </p>
 
           <CharacterSpreadWrapper>
-            <img src={characterSpread} alt="" />
+            <picture>
+              <source srcSet={characterSpread_webp} type="image/webp" />
+              <img src={characterSpread_png} alt="" />
+            </picture>
           </CharacterSpreadWrapper>
           <FigureText>Fig 4. Rough sketch and color study</FigureText>
         </MediaSection>

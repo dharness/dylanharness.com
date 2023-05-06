@@ -6,8 +6,10 @@ import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
 import { Video } from "../components/Video";
 import ruffs from "./../assets/projects/bronco-henry/cowboy-ruffs.mp4";
-import cowboyLeft from "./../assets/projects/bronco-henry/cowboy_L_alpha.png?as=webp";
-import cowboyRight from "./../assets/projects/bronco-henry/cowboy_R_alpha.png?as=webp";
+import cowboyLeft_png from "./../assets/projects/bronco-henry/cowboy_L_alpha.png";
+import cowboyRight_png from "./../assets/projects/bronco-henry/cowboy_R_alpha.png";
+import cowboyLeft_webp from "./../assets/projects/bronco-henry/cowboy_L_alpha.png?as=webp";
+import cowboyRight_webp from "./../assets/projects/bronco-henry/cowboy_R_alpha.png?as=webp";
 import { FigureText } from "../components/FigureText";
 
 const MediaSection = styled.div`
@@ -18,10 +20,12 @@ const MediaSection = styled.div`
 const Images = styled.div`
   display: flex;
   justify-content: space-between;
-  /* max-height: 385px; */
 
-  & > img {
+  picture {
     max-width: 48%;
+  }
+  img {
+    width: 100%;
   }
 `;
 
@@ -48,8 +52,14 @@ export function BroncoHenry() {
           </StyledVideoDiv>
           <FigureText>Fig 1. Rough Animation in Toonboom</FigureText>
           <Images>
-            <img src={cowboyLeft} alt="" />
-            <img src={cowboyRight} alt="" />
+            <picture>
+              <source srcSet={cowboyLeft_webp} type="image/webp" />
+              <img src={cowboyLeft_png} alt="" />
+            </picture>
+            <picture>
+              <source srcSet={cowboyRight_webp} type="image/webp" />
+              <img src={cowboyRight_png} alt="" />
+            </picture>
           </Images>
         </MediaSection>
       </PageContentWrapper>
