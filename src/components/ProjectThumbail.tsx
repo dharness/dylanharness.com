@@ -42,7 +42,7 @@ const ProjectThumbnailOverlay = styled.div<{ $hoverColor: string }>`
   align-items: center;
   user-select: none;
   ${ProjectThumbnailWrapper}:hover & {
-    opacity: 70%;
+    opacity: 100%;
   }
 `;
 
@@ -57,6 +57,11 @@ const ProjectTitle = styled.div`
   align-items: center;
   user-select: none;
   color: white;
+  font-family: Futura PT;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+
   ${ProjectThumbnailWrapper}:hover & {
     opacity: 100%;
   }
