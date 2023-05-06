@@ -12,7 +12,7 @@ import colors from "../assets/projects/portrait-of-a-lady/color-study.png?as=web
 const MediaSection = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 80px;
+  margin-top: 20px;
   align-items: flex-end;
 `;
 const MediaColumn = styled.div`

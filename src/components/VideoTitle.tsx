@@ -7,6 +7,7 @@ export const VideoTitle = styled.div`
   font-size: 35px;
   margin: auto;
   margin-top: 40px;
+  margin-bottom: 27px;
 
   color: black;
 `;

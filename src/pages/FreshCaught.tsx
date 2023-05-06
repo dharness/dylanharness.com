@@ -8,13 +8,13 @@ import { VideoTitle } from "../components/VideoTitle";
 import endCard from "../assets/projects/fresh-caught/end-card.png?as=webp";
 import featherDemo from "../assets/projects/fresh-caught/feather-demo-02.mp4";
 import poses from "../assets/projects/fresh-caught/fish-poses-combined.png?as=webp";
-import fishRig from "../assets/projects/fresh-caught/fish-rig-demo.mp4";
+import fishRig from "../assets/projects/fresh-caught/fish-demo.mp4";
 import { FigureText } from "../components/FigureText";
 
 const MediaSection = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 30px;
 `;
 
 const PosesWrapper = styled.div`
@@ -55,6 +55,14 @@ export function FreshCaught() {
         <MediaSection>
           <Video src={fishRig}></Video>
           <FigureText>Fig 1. Fish controls</FigureText>
+          <p>
+            I like to wrap up little elements when I can into rigged pre-comps
+            that can be controlled and re-used from parent comps. The feathers
+            were made by rotating the feather back and forth around a null,
+            offset by some radius. If we scale down our offset radius as we move
+            the feather downward it looks like it's rocking in the wind.
+            Duplicate, and enjoy!
+          </p>
           <FeathersWrapper>
             <Video src={featherDemo}></Video>
           </FeathersWrapper>
@@ -63,6 +71,12 @@ export function FreshCaught() {
             <img src={poses} alt="" />
           </PosesWrapper>
           <FigureText>Fig 3. Fish shapes during transformation</FigureText>
+          <p>
+            I was inspired by the genie in Aladdin to give the fish a rapid,
+            dramatic transformation into a variety of shapes. I coupled this
+            with some magical yet vaguely nautical sound design by layering in a
+            cork popping, and some water bubbling.
+          </p>
           <EndCardWrapper>
             <img src={endCard} alt="" />
           </EndCardWrapper>

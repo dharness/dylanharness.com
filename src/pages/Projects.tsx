@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components/macro";
 import { projectData } from "../projectData";
 import { ProjectThumbnail } from "../components/ProjectThumbail";
-import { contentWidthStyle, projectGridGap } from "../sharedStyles";
+import {
+  MOBILE_CUTOFF,
+  contentWidthStyle,
+  projectGridGap,
+} from "../sharedStyles";
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -32,8 +36,13 @@ const ProjectsContent = styled.div`
 const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: ${projectGridGap};
+  column-gap: 1.5%;
+  row-gap: calc(80vw * 0.015);
   justify-items: start;
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    grid-template-columns: 1fr;
+    row-gap: 0.7%;
+  }
 `;
 
 export function Projects() {

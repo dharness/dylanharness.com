@@ -18,13 +18,15 @@ const PageContentWrapper = styled.div`
     background: yellow;
     min-height: 100px;
   }
-  & > p {
+  p {
     font-family: "Prompt";
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 40px;
     letter-spacing: 0.04em;
+    margin-top: 0px;
+    margin-bottom: 35px;
   }
 `;
 
