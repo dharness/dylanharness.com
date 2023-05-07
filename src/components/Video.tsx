@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Video(props: any) {
-  const { width, height, style, src } = props;
+  const { width, height, style, src, img } = props;
   const defaultStyle = { width: "100%", height: "100%" };
 
   const videoSettings = {
@@ -20,6 +20,7 @@ export function Video(props: any) {
           {src.map((s: string) => (
             <source src={s} />
           ))}
+          {img && <img src={img} alt="" />}
         </video>
       </div>
     </>
