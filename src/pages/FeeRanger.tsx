@@ -62,10 +62,6 @@ const CharacterSpreadWrapper = styled.div`
   }
 `;
 
-const StyledFigureText = styled(FigureText)`
-  margin-top: -10px;
-`;
-
 export function FeeRanger() {
   const { vimeoId, name, aspectRatio } = getProjectData("fee-ranger");
   return (
@@ -86,7 +82,7 @@ export function FeeRanger() {
               <img src={turnaround_png} />
             </picture>
           </TurnaroundWrapper>
-          <StyledFigureText>Fig 1. Ranger turnaround</StyledFigureText>
+          <FigureText>Fig 1. Ranger turnaround</FigureText>
           <p>
             The ranger character was rigged using the C4D character object, with
             a few additional controls added with constraints for the eyes. The
@@ -107,7 +103,7 @@ export function FeeRanger() {
               <img src={objectsRight_png} alt="" />
             </picture>
           </ObjectsRow>
-          <StyledFigureText>Fig 2. Ranger accessories</StyledFigureText>
+          <FigureText>Fig 2. Ranger accessories</FigureText>
 
           <Video src={[digWide]}></Video>
           <FigureText>Fig 3. Scrapped dig animation</FigureText>

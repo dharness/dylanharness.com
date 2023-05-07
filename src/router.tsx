@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HashRouter,
   Route,
@@ -22,11 +22,13 @@ import { Propmaker } from "./pages/Propmaker";
 import { PurpleBusiness } from "./pages/PurpleBusiness";
 import { Normalize } from "styled-normalize";
 
-const PageWrapper = styled.div`
+const PageWrapper = styled.div<{ $scrollable: boolean }>`
   display: flex;
   min-height: 100%;
   flex-direction: column;
   background: tan;
+  overflow: ${(p) => (p.$scrollable ? "" : "clip")};
+  height: ${(p) => (p.$scrollable ? "" : "100%")};
 `;
 
 function Err() {
@@ -42,9 +44,14 @@ function Err() {
 }
 
 function Page(props: any) {
+  const [isScrollable, setIsScrollable] = useState(true);
+
+  const onToggleOverlay = (isShowingOverlay: boolean) => {
+    setIsScrollable(!isShowingOverlay);
+  };
   return (
-    <PageWrapper>
-      <Header lg={props.lg} />
+    <PageWrapper $scrollable={isScrollable}>
+      <Header lg={props.lg} onToggleOverlay={onToggleOverlay} />
       {props.content}
       <Footer />
     </PageWrapper>
