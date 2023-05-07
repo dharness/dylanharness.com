@@ -1,6 +1,11 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
-import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
+import {
+  contentWidthStyle,
+  MOBILE_CUTOFF,
+  ORANGE_DARK,
+  ORANGE_MEDIUM,
+} from "../sharedStyles";
 import logo from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
@@ -29,7 +34,7 @@ const Name = styled.a<{ $isLandingPage: boolean }>`
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
-  color: ${ORANGE_DARK};
+  color: ${ORANGE_MEDIUM};
   display: flex;
   flex-direction: ${(p) => (p.$isLandingPage ? "row" : "column")};
   align-self: ${(p) => (p.$isLandingPage ? "center" : "end")};
