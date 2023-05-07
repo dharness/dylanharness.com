@@ -16,6 +16,9 @@ const MediaSection = styled.div`
   width: 80%;
   margin: auto;
   margin-top: 40px;
+  img {
+    width: 100%;
+  }
 `;
 
 export function GatorGum() {
@@ -37,7 +40,7 @@ export function GatorGum() {
             <img src={packageDesign_png} alt="" />
           </picture>
           <FigureText>Fig 1. Gum package illustration</FigureText>
-          <Video src={blender}></Video>
+          <Video src={[blender]}></Video>
           <FigureText>Fig 2. Gum package in Blender</FigureText>
         </MediaSection>
       </PageContentWrapper>

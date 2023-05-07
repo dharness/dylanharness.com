@@ -68,9 +68,9 @@ export function OverEats() {
                 paddingRight: 30,
               }}
               width=""
-              src={longHands}
+              src={[longHands]}
             ></Video>
-            <Video src={handRig}></Video>
+            <Video src={[handRig]}></Video>
           </C4dVideos>
           <FigureText>Fig 2. Behind the scenes in C4D</FigureText>
         </MediaSection>

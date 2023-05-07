@@ -62,7 +62,7 @@ export function SkiBoots() {
         <SliderDemoRow>
           <SliderDemoWrapper>
             <Video
-              src={characterTurnDemo}
+              src={[characterTurnDemo]}
               style={{
                 maxHeight: 500,
               }}
@@ -70,7 +70,7 @@ export function SkiBoots() {
           </SliderDemoWrapper>
           <SliderDemoWrapper>
             <Video
-              src={shoeTiltDemo}
+              src={[shoeTiltDemo]}
               style={{
                 marginLeft: "auto",
                 maxHeight: 500,
@@ -89,7 +89,7 @@ export function SkiBoots() {
             style={{
               background: "red",
             }}
-            src={ruffs}
+            src={[ruffs]}
           />
           <BottomGridCol>
             <Video
@@ -102,7 +102,7 @@ export function SkiBoots() {
                 borderRadius: 10,
                 overflow: "clip",
               }}
-              src={uiReceipt}
+              src={[uiReceipt]}
             />
             <Video
               style={{
@@ -112,7 +112,7 @@ export function SkiBoots() {
                 marginLeft: "auto",
               }}
               width=""
-              src={creditCard}
+              src={[creditCard]}
             />
           </BottomGridCol>
         </BottomGrid>

@@ -48,7 +48,7 @@ export function BroncoHenry() {
         </p>
         <MediaSection>
           <StyledVideoDiv>
-            <Video src={ruffs}></Video>
+            <Video src={[ruffs]}></Video>
           </StyledVideoDiv>
           <FigureText>Fig 1. Rough Animation in Toonboom</FigureText>
           <Images>

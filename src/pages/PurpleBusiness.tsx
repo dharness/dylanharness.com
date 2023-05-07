@@ -24,6 +24,9 @@ const MediaSection = styled.div`
   grid-template-columns: 1fr 1fr;
   margin-top: 40px;
   gap: 2%;
+  img {
+    width: 100%;
+  }
 `;
 
 export function PurpleBusiness() {

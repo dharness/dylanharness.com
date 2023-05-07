@@ -6,7 +6,8 @@ import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
 import { FigureText } from "../components/FigureText";
 import { Video } from "../components/Video";
-import ruffs from "../assets/projects/portrait-of-a-lady/ruffs.webm";
+import ruffs_webm from "../assets/projects/portrait-of-a-lady/ruffs.webm";
+import ruffs_mp4 from "../assets/projects/portrait-of-a-lady/ruffs.mp4";
 import colors_webp from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
 import colors_png from "../assets/projects/portrait-of-a-lady/color-study.png";
 import { MOBILE_CUTOFF } from "../sharedStyles";
@@ -16,6 +17,9 @@ const MediaSection = styled.div`
   flex-direction: row;
   margin-top: 20px;
   align-items: flex-end;
+  img {
+    width: 100%;
+  }
   @media (max-width: ${MOBILE_CUTOFF}) {
     flex-direction: column;
   }
@@ -24,6 +28,7 @@ const MediaColumn = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  min-width: 50%;
   @media (max-width: ${MOBILE_CUTOFF}) {
     max-width: 100%;
   }
@@ -43,7 +48,7 @@ export function PortraitOfALady() {
         </p>
         <MediaSection>
           <MediaColumn>
-            <Video src={ruffs}></Video>
+            <Video src={[ruffs_webm, ruffs_mp4]}></Video>
             <FigureText>Fig 1. Rough animation</FigureText>
           </MediaColumn>
           <MediaColumn>
