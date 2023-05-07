@@ -109,7 +109,7 @@ export function FeeRanger() {
           </ObjectsRow>
           <StyledFigureText>Fig 2. Ranger accessories</StyledFigureText>
 
-          <Video src={digWide}></Video>
+          <Video src={[digWide]}></Video>
           <FigureText>Fig 3. Scrapped dig animation</FigureText>
           <p>
             Early versions of the project had the ranger digging in the forest

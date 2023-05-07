@@ -19,6 +19,9 @@ const MediaSection = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  img {
+    width: 100%;
+  }
 `;
 
 const PosesWrapper = styled.div`
@@ -51,7 +54,7 @@ export function FreshCaught() {
           to control animation.
         </p>
         <MediaSection>
-          <Video src={fishRig}></Video>
+          <Video src={[fishRig]}></Video>
           <FigureText>Fig 1. Fish controls</FigureText>
           <p>
             I like to wrap up little elements when I can into rigged pre-comps
@@ -62,7 +65,7 @@ export function FreshCaught() {
             Duplicate, and enjoy!
           </p>
           <FeathersWrapper>
-            <Video src={featherDemo}></Video>
+            <Video src={[featherDemo]}></Video>
           </FeathersWrapper>
           <FigureText>Fig 2. Feather controls</FigureText>
           <PosesWrapper>

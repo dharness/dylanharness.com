@@ -6,7 +6,8 @@ import { getProjectData, kebabToTitle } from "../utils";
 import { VideoTitle } from "../components/VideoTitle";
 import { FigureText } from "../components/FigureText";
 import { Video } from "../components/Video";
-import ruffs from "../assets/projects/portrait-of-a-lady/ruffs.webm";
+import ruffs_webm from "../assets/projects/portrait-of-a-lady/ruffs.webm";
+import ruffs_mp4 from "../assets/projects/portrait-of-a-lady/ruffs.mp4";
 import colors_webp from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
 import colors_png from "../assets/projects/portrait-of-a-lady/color-study.png";
 import { MOBILE_CUTOFF } from "../sharedStyles";
@@ -47,7 +48,7 @@ export function PortraitOfALady() {
         </p>
         <MediaSection>
           <MediaColumn>
-            <Video src={ruffs}></Video>
+            <Video src={[ruffs_webm, ruffs_mp4]}></Video>
             <FigureText>Fig 1. Rough animation</FigureText>
           </MediaColumn>
           <MediaColumn>
