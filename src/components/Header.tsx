@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import {
   contentWidthStyle,
   MOBILE_CUTOFF,
-  ORANGE_DARK,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
