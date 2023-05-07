@@ -22,9 +22,9 @@ const PageContentWrapper = styled.div`
     font-family: "Prompt";
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 40px;
-    letter-spacing: 0.04em;
+    font-size: 17px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
     margin-top: 0px;
     margin-bottom: 35px;
   }

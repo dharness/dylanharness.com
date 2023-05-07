@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div<{ $isLandingPage: boolean }>`
   height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
   max-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
   min-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
-  background: green;
+  background: white;
 `;
 
 const HeaderContent = styled.div<{ $isLandingPage: boolean }>`
@@ -35,7 +35,7 @@ const Name = styled.a<{ $isLandingPage: boolean }>`
   align-self: ${(p) => (p.$isLandingPage ? "center" : "end")};
   > * {
     &:first-child {
-      font-size: ${(p) => (p.$isLandingPage ? 35 : 32)}px;
+      font-size: ${(p) => (p.$isLandingPage ? 30 : 32)}px;
       margin-bottom: -6px;
       ${({ $isLandingPage }) =>
         $isLandingPage &&
@@ -45,7 +45,7 @@ const Name = styled.a<{ $isLandingPage: boolean }>`
     }
   }
   &:nth-child(2) {
-    font-size: ${(p) => (p.$isLandingPage ? 35 : 23)}px;
+    font-size: ${(p) => (p.$isLandingPage ? 30 : 23)}px;
   }
 `;
 
