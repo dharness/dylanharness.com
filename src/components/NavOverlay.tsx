@@ -6,6 +6,7 @@ import logo from "./../assets/logo.gif";
 
 const NavOverlayDiv = styled.div`
   opacity: 1;
+  overflow: clip;
   background-color: white;
   position: fixed;
   width: 100%;
