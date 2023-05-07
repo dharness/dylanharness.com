@@ -41,7 +41,7 @@ const ProjectsGrid = styled.div`
   justify-items: start;
   @media (max-width: ${MOBILE_CUTOFF}) {
     grid-template-columns: 1fr;
-    row-gap: 0.7%;
+    /* row-gap: 0.7%; */
   }
 `;
 

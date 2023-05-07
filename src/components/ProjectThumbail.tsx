@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import { Link, useNavigate } from "react-router-dom";
 import { isMobileDevice, kebabToTitle } from "../utils";
 import {
+  MOBILE_CUTOFF,
   contentWidthPx,
   contentWidthVw,
   projectGridGap,
@@ -71,12 +72,21 @@ const ProjectTitle = styled.div<{ $doHover: boolean }>`
   }
 `;
 
+const StyledLink = styled(Link)`
+  @media (max-width: ${MOBILE_CUTOFF}) {
+    padding-top: 4%;
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+`;
+
 const isMobile = isMobileDevice();
 const doHover = !isMobile;
 export function ProjectThumbnail(props: any) {
   const { hoverColor, name, thumbnailSet } = props;
   return (
-    <Link to={"/" + name}>
+    <StyledLink to={"/" + name}>
       <ProjectThumbnailWrapper $bgColor={hoverColor}>
         <ProjectTitle $doHover={doHover}>
           <p>{kebabToTitle(name)}</p>
@@ -87,6 +97,6 @@ export function ProjectThumbnail(props: any) {
           <ProjectThumbnailImg src={thumbnailSet.png} alt="" />
         </picture>
       </ProjectThumbnailWrapper>
-    </Link>
+    </StyledLink>
   );
 }

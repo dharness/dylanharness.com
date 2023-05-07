@@ -29,6 +29,7 @@ const Links = styled.div`
   flex-wrap: wrap;
   align-items: flex-end;
   background: orange;
+  margin-left: auto;
   img {
     max-width: 25px;
   }
