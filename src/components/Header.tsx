@@ -5,12 +5,15 @@ import {
   MOBILE_CUTOFF,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
-import logo from "./../assets/logo.gif";
+import logo_webm from "./../assets/logo.webm";
+import logo_mov from "./../assets/logo.mov";
+import logo_gif from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
 import { NavOVerlay } from "./NavOverlay";
 import { Link, useLocation } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
+import { Video } from "./Video";
 
 const HeaderWrapper = styled.div<{ $isLandingPage: boolean }>`
   height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
@@ -139,7 +142,7 @@ export function Header(props: any) {
       {!isLandingPage && showOverlay && <NavOVerlay />}
       <HeaderContent $isLandingPage={isLandingPage}>
         <Logo $isLandingPage={isLandingPage} to={HeaderPaths.root}>
-          <img src={logo} alt="" />
+          <Video src={[logo_webm, logo_mov]} img={logo_gif}></Video>
         </Logo>
         {isMediaQueryMatched && (
           <Name $isLandingPage={isLandingPage} href="/">
