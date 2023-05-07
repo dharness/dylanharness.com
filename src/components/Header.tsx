@@ -1,11 +1,11 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { contentWidthStyle, MOBILE_CUTOFF, ORANGE_DARK } from "../sharedStyles";
 import logo from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
 import { NavOVerlay } from "./NavOverlay";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 
 const HeaderWrapper = styled.div<{ $isLandingPage: boolean }>`
@@ -53,6 +53,7 @@ const PageLinks = styled.div<{ $isLandingPage: boolean }>`
   display: flex;
   margin-left: auto;
   background: white;
+  font-size: 20px;
   margin: ${(p) => (p.$isLandingPage ? "auto" : "")};
   gap: 36px;
   align-items: center;
@@ -84,13 +85,12 @@ const Hamburger = styled.button`
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  justify-content: center;
   @media (min-width: ${MOBILE_CUTOFF}) {
     display: none;
   }
   & > img {
     height: 100%;
-    margin: auto;
-    margin-left: -5px;
   }
 `;
 
@@ -100,21 +100,35 @@ const ColorBar = styled.div`
 `;
 
 export function Header(props: any) {
+  const { lg: isLandingPage, onToggleOverlay } = props;
+
   const [showOverlay, setshowOverlay] = useState(false);
   const mediaQuery = `(min-width: ${MOBILE_CUTOFF})`;
 
+  const location = useLocation();
   const [isMediaQueryMatched, setisMediaQueryMatched] = useState(
     window.matchMedia(mediaQuery).matches
   );
 
+  const toggleOverlay = (isShowing: boolean) => {
+    console.log(onToggleOverlay);
+    onToggleOverlay(isShowing);
+    setshowOverlay(isShowing);
+  };
+
+  useEffect(() => {
+    toggleOverlay(false);
+  }, [location]);
+
   useLayoutEffect(() => {
     window.matchMedia(mediaQuery).addEventListener("change", (e) => {
-      setshowOverlay(false);
+      if (e.matches) {
+        toggleOverlay(false);
+      }
       setisMediaQueryMatched(e.matches);
     });
   }, []);
 
-  const { lg: isLandingPage } = props;
   return (
     <HeaderWrapper $isLandingPage={isLandingPage}>
       <ColorBar />
@@ -135,7 +149,11 @@ export function Header(props: any) {
           <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
         {!isLandingPage && (
-          <Hamburger onClick={(_) => setshowOverlay(!showOverlay)}>
+          <Hamburger
+            onClick={(_) => {
+              toggleOverlay(!showOverlay);
+            }}
+          >
             {showOverlay ? (
               <img src={close}></img>
             ) : (

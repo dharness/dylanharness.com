@@ -13,7 +13,6 @@ const StyledLink = styled(Link)<{ $isSelected: boolean }>`
   margin-bottom: 20px;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
-  font-size: 20px;
   font-style: normal;
   color: black;
   text-decoration: none;

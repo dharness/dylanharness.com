@@ -26,33 +26,32 @@ const StyledWrapper = styled.div`
   justify-content: center;
   height: 100%;
   gap: 20px;
+  font-size: 24px;
 `;
 
-
 const Logo = styled.img`
-  height:70px;
+  height: 100px;
   margin-bottom: 40px;
   margin-top: auto;
 `;
 
 const StyledFooter = styled.div`
   height: 14px;
-  background: #FFF1EB;
+  background: #fff1eb;
   width: 100%;
   margin-top: auto;
-
 `;
 
-
 export function NavOVerlay(props: any) {
-
-  return <NavOverlayDiv>
-    <StyledWrapper>
-      <Logo src={logo} alt="" />
-      <PageLink name="Projects" to={HeaderPaths.projects} />
-      <PageLink name="Reel" to={HeaderPaths.reel} />
-      <PageLink name="About" to={HeaderPaths.about} />
-      <StyledFooter/>
-    </StyledWrapper>
-  </NavOverlayDiv>
+  return (
+    <NavOverlayDiv>
+      <StyledWrapper>
+        <Logo src={logo} alt="" />
+        <PageLink name="Projects" to={HeaderPaths.projects} />
+        <PageLink name="Reel" to={HeaderPaths.reel} />
+        <PageLink name="About" to={HeaderPaths.about} />
+        <StyledFooter />
+      </StyledWrapper>
+    </NavOverlayDiv>
+  );
 }
