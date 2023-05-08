@@ -1,8 +1,18 @@
 import React from "react";
+import styled from "styled-components/macro";
+
+const StyledVideo = styled.video`
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  clip-path: inset(1px 1px);
+  &:focus {
+    outline: none;
+  }
+`;
 
 export function Video(props: any) {
   const { width, height, style, src, img } = props;
-  const defaultStyle = { width: "100%", maxHeight: "100%" };
 
   const videoSettings = {
     muted: true,
@@ -11,17 +21,16 @@ export function Video(props: any) {
     loop: true,
     playsInline: true,
     preload: "auto",
-    style: { ...defaultStyle },
   };
   return (
     <>
       <div style={{ width, height, ...style }}>
-        <video {...videoSettings}>
+        <StyledVideo {...videoSettings}>
           {src.map((s: string) => (
-            <source src={s} />
+            <source src={s} key={s} />
           ))}
           {img && <img src={img} alt="" />}
-        </video>
+        </StyledVideo>
       </div>
     </>
   );

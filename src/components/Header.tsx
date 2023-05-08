@@ -1,12 +1,13 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components/macro";
 import {
   contentWidthStyle,
   MOBILE_CUTOFF,
+  ORANGE_LIGHT,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo.webm";
-import logo_mov from "./../assets/logo.mov";
+import logo_mp4 from "./../assets/logo.mp4";
 import logo_gif from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
@@ -15,67 +16,60 @@ import { Link, useLocation } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 import { Video } from "./Video";
 
-const HeaderWrapper = styled.div<{ $isLandingPage: boolean }>`
-  height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
-  max-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
-  min-height: ${(props) => (props.$isLandingPage ? 200 : 100)}px;
-  background: white;
+const HeaderWrapper = styled.div`
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
 `;
 
-const HeaderContent = styled.div<{ $isLandingPage: boolean }>`
+const HeaderContent = styled.div`
   ${contentWidthStyle};
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   display: flex;
-  flex-direction: ${(p) => (p.$isLandingPage ? "column" : "row")};
+  flex-direction: row;
 `;
 
-const Name = styled.a<{ $isLandingPage: boolean }>`
+const Name = styled.a`
   font-size: 32px;
-  align-self: end;
   font-family: "Rubik Mono One", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-decoration: none;
   color: ${ORANGE_MEDIUM};
   display: flex;
-  flex-direction: ${(p) => (p.$isLandingPage ? "row" : "column")};
-  align-self: ${(p) => (p.$isLandingPage ? "center" : "end")};
+  flex-direction: column;
+  align-self: end;
+  -webkit-align-self: flex-end; /* add prefixed version */
+  -ms-flex-item-align: end; /* add prefixed version */
   > * {
     &:first-child {
-      font-size: ${(p) => (p.$isLandingPage ? 30 : 32)}px;
+      font-size: 32px;
       margin-bottom: -6px;
-      ${({ $isLandingPage }) =>
-        $isLandingPage &&
-        `&::after {
-          content: ".";
-        }`}
     }
   }
   &:nth-child(2) {
-    font-size: ${(p) => (p.$isLandingPage ? 30 : 23)}px;
+    font-size: 23px;
   }
 `;
 
-const PageLinks = styled.div<{ $isLandingPage: boolean }>`
+const PageLinks = styled.div`
   display: flex;
   margin-left: auto;
-  background: white;
   font-size: 20px;
-  margin: ${(p) => (p.$isLandingPage ? "auto" : "")};
   gap: 36px;
   align-items: center;
   @media (max-width: ${MOBILE_CUTOFF}) {
-    display: ${(p) => (p.$isLandingPage ? "" : "none")};
+    display: none;
   }
   a {
-    margin: ${(p) => (p.$isLandingPage ? "10px 20px 0px 20px" : "")};
+    margin: unset;
   }
 `;
 
-const Logo = styled(Link)<{ $isLandingPage: boolean }>`
-  height: ${(p) => (p.$isLandingPage ? "95px" : "70px")};
+const Logo = styled(Link)`
+  height: 70px;
   margin-left: -30px;
-  margin: ${(p) => (p.$isLandingPage ? "auto" : "")};
+  margin: unset;
   img {
     height: 100%;
   }
@@ -102,72 +96,57 @@ const Hamburger = styled.button`
 `;
 
 const ColorBar = styled.div`
-  height: 30px;
-  background: plum;
+  height: 15px;
+  background: ${ORANGE_LIGHT};
 `;
 
 export function Header(props: any) {
-  const { lg: isLandingPage, onToggleOverlay } = props;
-
-  const [showOverlay, setshowOverlay] = useState(false);
-  const mediaQuery = `(min-width: ${MOBILE_CUTOFF})`;
+  const { onToggleOverlay, showOverlay, isMediaQueryMatched } = props;
 
   const location = useLocation();
-  const [isMediaQueryMatched, setisMediaQueryMatched] = useState(
-    window.matchMedia(mediaQuery).matches
-  );
 
   const toggleOverlay = (isShowing: boolean) => {
-    console.log(onToggleOverlay);
     onToggleOverlay(isShowing);
-    setshowOverlay(isShowing);
   };
+
+  if (isMediaQueryMatched) {
+    toggleOverlay(false);
+  }
 
   useEffect(() => {
     toggleOverlay(false);
   }, [location]);
 
-  useLayoutEffect(() => {
-    window.matchMedia(mediaQuery).addEventListener("change", (e) => {
-      if (e.matches) {
-        toggleOverlay(false);
-      }
-      setisMediaQueryMatched(e.matches);
-    });
-  }, []);
-
   return (
-    <HeaderWrapper $isLandingPage={isLandingPage}>
+    <HeaderWrapper>
       <ColorBar />
-      {!isLandingPage && showOverlay && <NavOVerlay />}
-      <HeaderContent $isLandingPage={isLandingPage}>
-        <Logo $isLandingPage={isLandingPage} to={HeaderPaths.root}>
-          <Video src={[logo_webm, logo_mov]} img={logo_gif}></Video>
+      {showOverlay && <NavOVerlay />}
+      <HeaderContent>
+        <Logo to={HeaderPaths.root}>
+          <Video
+            src={[logo_webm, logo_mp4]}
+            img={logo_gif}
+            style={{
+              minWidth: "160px",
+              height: "100%",
+              display: "flex",
+            }}
+          ></Video>
         </Logo>
         {isMediaQueryMatched && (
-          <Name $isLandingPage={isLandingPage} href="/">
+          <Name href="/">
             <div>Dylan</div>
             <div>Harness</div>
           </Name>
         )}
-        <PageLinks $isLandingPage={isLandingPage}>
+        <PageLinks>
           <PageLink name="Projects" to={HeaderPaths.projects} />
           <PageLink name="Reel" to={HeaderPaths.reel} />
           <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
-        {!isLandingPage && (
-          <Hamburger
-            onClick={(_) => {
-              toggleOverlay(!showOverlay);
-            }}
-          >
-            {showOverlay ? (
-              <img src={close}></img>
-            ) : (
-              <img src={hamburger}></img>
-            )}
-          </Hamburger>
-        )}
+        <Hamburger onClick={(_) => toggleOverlay(!showOverlay)}>
+          {showOverlay ? <img src={close}></img> : <img src={hamburger}></img>}
+        </Hamburger>
       </HeaderContent>
     </HeaderWrapper>
   );

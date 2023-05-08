@@ -12,15 +12,12 @@ const ProjectsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: red;
   &::before {
     content: " ";
-    background: yellow;
     min-height: 55px;
   }
   &::after {
     content: " ";
-    background: yellow;
     min-height: 100px;
   }
 `;
@@ -29,7 +26,6 @@ const ProjectsContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  background: plum;
   ${contentWidthStyle};
 `;
 

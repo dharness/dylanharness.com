@@ -47,7 +47,6 @@ const ObjectsRow = styled.div`
     }
   }
   @media (max-width: ${MOBILE_CUTOFF}) {
-    background: red;
     flex-direction: column;
     picture {
       position: static;

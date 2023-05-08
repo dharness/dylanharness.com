@@ -2,12 +2,14 @@ import styled from "styled-components/macro";
 import { MOBILE_CUTOFF } from "../sharedStyles";
 import PageLink, { HeaderPaths } from "./Link";
 import React from "react";
-import logo from "./../assets/logo.gif";
+import logo_webm from "./../assets/logo.webm";
+import logo_mp4 from "./../assets/logo.mp4";
+import logo_gif from "./../assets/logo.gif";
+import { Video } from "./Video";
 
 const NavOverlayDiv = styled.div`
   opacity: 1;
   overflow: clip;
-  background-color: white;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -29,12 +31,6 @@ const StyledWrapper = styled.div`
   font-size: 24px;
 `;
 
-const Logo = styled.img`
-  height: 100px;
-  margin-bottom: 40px;
-  margin-top: auto;
-`;
-
 const StyledFooter = styled.div`
   height: 14px;
   background: #fff1eb;
@@ -42,11 +38,19 @@ const StyledFooter = styled.div`
   margin-top: auto;
 `;
 
-export function NavOVerlay(props: any) {
+export function NavOVerlay() {
   return (
     <NavOverlayDiv>
       <StyledWrapper>
-        <Logo src={logo} alt="" />
+        <Video
+          src={[logo_webm, logo_mp4]}
+          img={logo_gif}
+          style={{
+            height: "100px",
+            marginBottom: "40px",
+            marginTop: "auto",
+          }}
+        ></Video>
         <PageLink name="Projects" to={HeaderPaths.projects} />
         <PageLink name="Reel" to={HeaderPaths.reel} />
         <PageLink name="About" to={HeaderPaths.about} />
