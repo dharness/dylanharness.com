@@ -10,7 +10,7 @@ const PageWrapper = styled.div<{ $scrollable: boolean }>`
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  background: tan;
+
   overflow: ${(p) => (p.$scrollable ? "" : "clip")};
   height: ${(p) => (p.$scrollable ? "" : "100%")};
 `;

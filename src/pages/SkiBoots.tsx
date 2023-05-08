@@ -13,19 +13,16 @@ import ruffs from "../assets/projects/ski-boots/spin-drop-demo.mp4";
 
 const SliderDemoRow = styled.div`
   display: flex;
-  background: orange;
   justify-content: space-between;
   margin-bottom: 35px;
 `;
 
 const SliderDemoWrapper = styled.div`
   display: flex;
-  background: grey;
 `;
 
 const BottomGrid = styled.div<{ $height: number }>`
   display: flex;
-  background: black;
   max-height: ${(props) => props.$height};
   justify-content: space-between;
   margin-bottom: 35px;
@@ -85,19 +82,14 @@ export function SkiBoots() {
           referenced it in After Effects.
         </p>
         <BottomGrid $height={bottomGridHeight}>
-          <Video
-            style={{
-              background: "red",
-            }}
-            src={[ruffs]}
-          />
+          <Video src={[ruffs]} />
           <BottomGridCol>
             <Video
               style={{
-                background: "blue",
                 maxHeight: "calc(58% - 10px)",
                 display: "inline-block",
                 marginLeft: "auto",
+                zIndex: 100,
                 boxShadow: "0px 0px 10px 2px rgba(0, 0, 0, 0.05)",
                 borderRadius: 10,
                 overflow: "clip",
@@ -106,7 +98,6 @@ export function SkiBoots() {
             />
             <Video
               style={{
-                background: "green",
                 maxHeight: "calc(42% - 10px)",
                 display: "inline-block",
                 marginLeft: "auto",

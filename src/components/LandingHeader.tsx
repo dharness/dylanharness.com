@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import {
   contentWidthStyle,
   MOBILE_CUTOFF,
+  ORANGE_LIGHT,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo.webm";
@@ -17,12 +18,11 @@ const HeaderWrapper = styled.div`
   height: 200px;
   max-height: 200px;
   min-height: 200px;
-  background: white;
 `;
 
 const HeaderContent = styled.div`
   ${contentWidthStyle};
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   display: flex;
   flex-direction: column;
 `;
@@ -65,7 +65,6 @@ const PageLinks = styled.div`
   a {
     margin: 10px 20px 0px 20px;
   }
-  background: white;
 `;
 
 const Logo = styled(Link)`
@@ -78,15 +77,15 @@ const Logo = styled(Link)`
 `;
 
 const ColorBar = styled.div`
-  height: 30px;
-  background: plum;
+  height: 15px;
+  background: ${ORANGE_LIGHT};
 `;
 
 export function LandingHeader(props: any) {
   return (
     <HeaderWrapper>
       <ColorBar />
-      <HeaderContent className="dh-landing-header">
+      <HeaderContent>
         <Logo to={HeaderPaths.root}>
           <Video
             src={[logo_webm, logo_mov]}

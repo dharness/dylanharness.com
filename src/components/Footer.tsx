@@ -4,20 +4,24 @@ import linkedin from "./../assets/icons/linkedin.svg";
 import email from "./../assets/icons/email.svg";
 import instagram from "./../assets/icons/instagram.svg";
 import vimeo from "./../assets/icons/vimeo.svg";
-import { contentWidthStyle } from "../sharedStyles";
+import {
+  ORANGE_DARK,
+  ORANGE_MEDIUM,
+  ORANGE_MEDIUM_2,
+  contentWidthStyle,
+} from "../sharedStyles";
 
 const FooterWrapper = styled.div`
   display: flex;
   height: 80px;
   min-height: 80px;
-  background: blueviolet;
   width: 100%;
   margin-top: auto;
+  background: ${ORANGE_MEDIUM_2};
 `;
 
 const FooterContent = styled.div`
   display: flex;
-  background: green;
   ${contentWidthStyle};
   margin: auto;
   justify-content: end;
@@ -28,7 +32,6 @@ const Links = styled.div`
   column-gap: 20px;
   flex-wrap: wrap;
   align-items: flex-end;
-  background: orange;
   margin-left: auto;
   img {
     max-width: 25px;

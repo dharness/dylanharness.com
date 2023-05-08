@@ -14,6 +14,7 @@ import { Propmaker } from "./pages/Propmaker";
 import { PurpleBusiness } from "./pages/PurpleBusiness";
 import { Normalize } from "styled-normalize";
 import { Page } from "./components/Page";
+import { About } from "./pages/About";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -43,6 +44,7 @@ export function Router() {
           <Routes>
             <Route path="/" element={<Page content={<Projects />} isLandingPage={true} />} />
             <Route path="/projects" element={<Page content={<Projects />} isLandingPage={true} />} />
+            <Route path="/about" element={<Page content={<About />} />} />
             <Route path="/reel" element={<Page content={<DemoReel />} />} />
             <Route path="/ski-boots" element={<Page content={<SkiBoots />} />} />
             <Route path="/bronco-henry" element={<Page content={<BroncoHenry />} />} />

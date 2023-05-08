@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import {
   contentWidthStyle,
   MOBILE_CUTOFF,
+  ORANGE_LIGHT,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo.webm";
@@ -19,12 +20,11 @@ const HeaderWrapper = styled.div`
   height: 100px;
   max-height: 100px;
   min-height: 100px;
-  background: white;
 `;
 
 const HeaderContent = styled.div`
   ${contentWidthStyle};
-  margin: 0px auto 0px auto;
+  margin: 30px auto 0px auto;
   display: flex;
   flex-direction: row;
 `;
@@ -64,7 +64,6 @@ const PageLinks = styled.div`
   a {
     margin: unset;
   }
-  background: white;
 `;
 
 const Logo = styled(Link)`
@@ -97,8 +96,8 @@ const Hamburger = styled.button`
 `;
 
 const ColorBar = styled.div`
-  height: 30px;
-  background: plum;
+  height: 15px;
+  background: ${ORANGE_LIGHT};
 `;
 
 export function Header(props: any) {
@@ -131,7 +130,6 @@ export function Header(props: any) {
               minWidth: "160px",
               height: "100%",
               display: "flex",
-              background: "orange",
             }}
           ></Video>
         </Logo>

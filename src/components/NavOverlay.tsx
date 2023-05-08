@@ -10,7 +10,6 @@ import { Video } from "./Video";
 const NavOverlayDiv = styled.div`
   opacity: 1;
   overflow: clip;
-  background-color: white;
   position: fixed;
   width: 100%;
   height: 100%;

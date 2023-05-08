@@ -3,11 +3,12 @@ import Vimeo from "@u-wave/react-vimeo";
 import styled from "styled-components/macro";
 import { AspectRatio } from "../projectData";
 
-const NoJump = styled.div<{ $heightRatio: number }>`
+const NoJump = styled.div<{ $heightRatio: number; $background: string }>`
   min-height: min(
     calc(${(props) => props.$heightRatio} * 80vw),
     calc(${(props) => props.$heightRatio} * 900px)
   );
+  background: ${(p) => p.$background};
 `;
 
 export function VimeoVideo(props: any) {
@@ -24,7 +25,7 @@ export function VimeoVideo(props: any) {
     loop: true,
   };
   return (
-    <NoJump $heightRatio={heightRatio}>
+    <NoJump $heightRatio={heightRatio} $background={""}>
       <Vimeo {...vimeoSettings} />
     </NoJump>
   );

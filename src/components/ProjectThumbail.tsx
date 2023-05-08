@@ -28,7 +28,6 @@ const ProjectThumbnailImg = styled.img`
     justify-self: end;
   }
   max-width: 100%;
-  background: tan;
 `;
 
 const ProjectThumbnailOverlay = styled.div<{
