@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components/macro";
 import {
   contentWidthStyle,
@@ -31,7 +31,6 @@ const HeaderContent = styled.div`
 
 const Name = styled.a`
   font-size: 32px;
-  align-self: end;
   font-family: "Rubik Mono One", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -40,6 +39,8 @@ const Name = styled.a`
   display: flex;
   flex-direction: column;
   align-self: end;
+  -webkit-align-self: flex-end; /* add prefixed version */
+  -ms-flex-item-align: end; /* add prefixed version */
   > * {
     &:first-child {
       font-size: 32px;
@@ -101,16 +102,17 @@ const ColorBar = styled.div`
 `;
 
 export function Header(props: any) {
-  const { onToggleOverlay, isMediaQueryMatched } = props;
-  const [showOverlay, setShowOverlay] = useState(false);
+  const { onToggleOverlay, showOverlay, isMediaQueryMatched } = props;
+
   const location = useLocation();
 
   const toggleOverlay = (isShowing: boolean) => {
     onToggleOverlay(isShowing);
-    setShowOverlay(isShowing);
   };
 
-  if (isMediaQueryMatched) toggleOverlay(false);
+  if (isMediaQueryMatched) {
+    toggleOverlay(false);
+  }
 
   useEffect(() => {
     toggleOverlay(false);

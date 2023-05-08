@@ -18,7 +18,7 @@ const PageWrapper = styled.div<{ $scrollable: boolean }>`
 export function Page(props: any) {
   const { isLandingPage } = props;
   const mediaQuery = `(min-width: ${MOBILE_CUTOFF})`;
-
+  const [showOverlay, setShowOverlay] = useState(false);
   const [isScrollable, setIsScrollable] = useState(true);
   const [isMediaQueryMatched, setIsMediaQueryMatched] = useState(
     window.matchMedia(mediaQuery).matches
@@ -32,6 +32,7 @@ export function Page(props: any) {
 
   const onToggleOverlay = (isShowingOverlay: boolean) => {
     setIsScrollable(!isShowingOverlay);
+    setShowOverlay(isShowingOverlay);
   };
 
   const CurrentHeader =
@@ -41,6 +42,7 @@ export function Page(props: any) {
       <CurrentHeader
         onToggleOverlay={onToggleOverlay}
         isMediaQueryMatched={isMediaQueryMatched}
+        showOverlay={showOverlay}
       />
       {props.content}
       <Footer />

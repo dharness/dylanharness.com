@@ -6,6 +6,8 @@ import { VideoTitle } from "../components/VideoTitle";
 import { getProjectData, kebabToTitle } from "../utils";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import blender from "./../assets/projects/gator-gum/blender_package_wide.webm";
+import blender_mp4 from "./../assets/projects/gator-gum/blender_package_wide.mp4";
+
 import styled from "styled-components";
 import packageDesign_webp from "./../assets/projects/gator-gum/package-design.png?as=webp";
 import packageDesign_png from "./../assets/projects/gator-gum/package-design.png";
@@ -40,7 +42,7 @@ export function GatorGum() {
             <img src={packageDesign_png} alt="" />
           </picture>
           <FigureText>Fig 1. Gum package illustration</FigureText>
-          <Video src={[blender]}></Video>
+          <Video src={[blender, blender_mp4]} width={"100%"}></Video>
           <FigureText>Fig 2. Gum package in Blender</FigureText>
         </MediaSection>
       </PageContentWrapper>
