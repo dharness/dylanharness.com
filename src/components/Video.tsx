@@ -5,6 +5,10 @@ const StyledVideo = styled.video`
   width: 100%;
   min-width: 100%;
   max-height: 100%;
+  clip-path: inset(1px 1px);
+  &:focus {
+    outline: none;
+  }
 `;
 
 export function Video(props: any) {

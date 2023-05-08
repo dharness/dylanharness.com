@@ -6,7 +6,7 @@ import {
   ORANGE_MEDIUM,
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo.webm";
-import logo_mov from "./../assets/logo.mov";
+import logo_mp4 from "./../assets/logo.mp4";
 import logo_gif from "./../assets/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
@@ -123,7 +123,7 @@ export function Header(props: any) {
       <HeaderContent>
         <Logo to={HeaderPaths.root}>
           <Video
-            src={[logo_webm, logo_mov]}
+            src={[logo_webm, logo_mp4]}
             img={logo_gif}
             style={{
               minWidth: "160px",
