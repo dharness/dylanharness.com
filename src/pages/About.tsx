@@ -1,7 +1,6 @@
 import React from "react";
 import { PageContentWrapper } from "../components/PageContentWrapper";
 import styled from "styled-components";
-import { ORANGE_DARK } from "../sharedStyles";
 
 const StyledP = styled.p`
   max-width: 700px;
