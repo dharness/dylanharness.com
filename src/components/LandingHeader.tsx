@@ -86,11 +86,7 @@ export function LandingHeader(props: any) {
       <ColorBar />
       <HeaderContent>
         <Logo to={HeaderPaths.root}>
-          <Video
-            src={[logo_webm, logo_mov]}
-            img={logo_gif}
-            style={{ height: "100%" }}
-          ></Video>
+          <Video src={[logo_webm, logo_mov]} style={{ height: "100%" }}></Video>
         </Logo>
 
         <Name href="/">

@@ -4,7 +4,6 @@ import PageLink, { HeaderPaths } from "./Link";
 import React from "react";
 import logo_webm from "./../assets/logo/logo.webm";
 import logo_mp4 from "./../assets/logo/logo.mp4";
-import logo_gif from "./../assets/logo/logo.gif";
 import { Video } from "./Video";
 
 const NavOverlayDiv = styled.div`
@@ -16,6 +15,7 @@ const NavOverlayDiv = styled.div`
   top: 0px;
   left: 0px;
   z-index: 999;
+  background: white;
   @media (min-width: ${MOBILE_CUTOFF}) {
     display: none;
   }
@@ -44,7 +44,6 @@ export function NavOVerlay() {
       <StyledWrapper>
         <Video
           src={[logo_webm, logo_mp4]}
-          img={logo_gif}
           style={{
             height: "100px",
             marginBottom: "40px",
