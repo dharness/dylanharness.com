@@ -8,7 +8,6 @@ import {
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo/logo.webm";
 import logo_mov from "./../assets/logo/logo.mov";
-import logo_gif from "./../assets/logo/logo.gif";
 
 import { Link } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";

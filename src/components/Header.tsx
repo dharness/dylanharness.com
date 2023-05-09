@@ -125,7 +125,6 @@ export function Header(props: any) {
         <Logo to={HeaderPaths.root}>
           <Video
             src={[logo_webm, logo_mp4]}
-            img={logo_gif}
             style={{
               minWidth: "160px",
               height: "100%",
