@@ -43,14 +43,14 @@ export function BroncoHenry() {
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This cowboy was animated frame by frame in Toon Boom and cleaned up in
-          After Effects. I tried to push his noodley appendages to the extreme,
+          After Effects. I tried to push his noodly appendages to the extreme,
           making him somewhat of a glyph.
         </p>
         <MediaSection>
           <StyledVideoDiv>
             <Video src={[ruffs]}></Video>
           </StyledVideoDiv>
-          <FigureText>Fig 1. Rough Animation in Toonboom</FigureText>
+          <FigureText>Fig 1. Rough Animation in Toon Boom</FigureText>
           <Images>
             <picture>
               <source srcSet={cowboyLeft_webp} type="image/webp" />

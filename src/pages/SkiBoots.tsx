@@ -108,7 +108,7 @@ export function SkiBoots() {
           </BottomGridCol>
         </BottomGrid>
         <p>
-          The credit card was a another simple DUIK rig to give it some
+          The credit card was another simple DUIK rig to give it some
           perspective as it scales around its ethereal plane.
         </p>
       </PageContentWrapper>

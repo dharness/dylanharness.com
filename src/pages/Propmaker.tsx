@@ -28,7 +28,7 @@ export function Propmaker() {
         </p>
         <MediaSection>
           <Video src={[ruffs]} width={"65%"} style={{ margin: "auto" }}></Video>
-          <FigureText>Fig 1. Frame by frame animation in Toonboom</FigureText>
+          <FigureText>Fig 1. Frame by frame animation in Toon Boom</FigureText>
         </MediaSection>
       </PageContentWrapper>
     </>

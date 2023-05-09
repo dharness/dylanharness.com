@@ -50,18 +50,18 @@ export function FreshCaught() {
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This speculative ad spot was made mostly in After Effects. The
-          character and leaf systems were rigged with DUIK for a smooth and easy
-          to control animation.
+          character and leaf systems were rigged with DUIK for an animation
+          that's smooth and easy to control.
         </p>
         <MediaSection>
           <Video src={[fishRig]}></Video>
           <FigureText>Fig 1. Fish controls</FigureText>
           <p>
             I like to wrap up little elements when I can into rigged pre-comps
-            that can be controlled and re-used from parent comps. The feathers
+            that can be controlled and reused from parent comps. The feathers
             were made by rotating the feather back and forth around a null,
             offset by some radius. If we scale down our offset radius as we move
-            the feather downward it looks like it's rocking in the wind.
+            the feather downward, it looks like it's rocking in the wind.
             Duplicate, and enjoy!
           </p>
           <FeathersWrapper>

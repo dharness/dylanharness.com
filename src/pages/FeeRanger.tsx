@@ -70,8 +70,8 @@ export function FeeRanger() {
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
           This project takes a character all the way from concept, through
-          sculpting, retopology, rigging, and animating. The character was made
-          in ZBrush and rigged and animated in C4D, and finally, rendered with
+          sculpting, retopology, rigging, and animation. The character was made
+          in ZBrush, rigged and animated in C4D, and finally, rendered with
           Redshift.
         </p>
         <MediaSection>
@@ -86,8 +86,8 @@ export function FeeRanger() {
             The ranger character was rigged using the C4D character object, with
             a few additional controls added with constraints for the eyes. The
             bird is a much simpler design, so he's composed of just a few bones,
-            some deformers and user data controls. Both characters, as well as
-            all their accessories were textured in Substance Painter. I added a
+            some deformers, and user data controls. Both characters, as well as
+            all their accessories, were textured in Substance Painter. I added a
             little flair to the lighting with some blockers to simulate tree
             leaves in the distance. Finally, I composited in a bit of
             particulate matter to give it that sprightly forest feel!

@@ -37,7 +37,7 @@ export function PurpleBusiness() {
         <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
-          A small project in After Effects focused on delivering an animation on
+          A small project in After Effects focused on delivering an animation in
           a short time frame, and with a minimal shape-centric design. Below are
           some explorations for different compositions and color schemes:
         </p>
