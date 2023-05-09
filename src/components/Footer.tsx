@@ -4,12 +4,9 @@ import linkedin from "./../assets/icons/linkedin.svg";
 import email from "./../assets/icons/email.svg";
 import instagram from "./../assets/icons/instagram.svg";
 import vimeo from "./../assets/icons/vimeo.svg";
-import {
-  ORANGE_DARK,
-  ORANGE_MEDIUM,
-  ORANGE_MEDIUM_2,
-  contentWidthStyle,
-} from "../sharedStyles";
+import { ORANGE_MEDIUM_2, contentWidthStyle } from "../sharedStyles";
+import { EmailLink } from "./EmailLink";
+import { INSTAGRAM, LINKEDIN, VIMEO } from "../utils";
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -45,16 +42,16 @@ export function Footer() {
     <FooterWrapper>
       <FooterContent>
         <Links>
-          <Link href="https://www.instagram.com/dylanharness/" target="_blank">
+          <Link href={INSTAGRAM} target="_blank">
             <img src={instagram} />
           </Link>
-          <Link href="https://vimeo.com/user126295858" target="_blank">
+          <Link href={VIMEO} target="_blank">
             <img src={vimeo} />
           </Link>
-          <Link href="mailto:dharness.engineer@gmail.com" target="_blank">
+          <EmailLink>
             <img src={email} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/dhsoftware/" target="_blank">
+          </EmailLink>
+          <Link href={LINKEDIN} target="_blank">
             <img src={linkedin} />
           </Link>
         </Links>

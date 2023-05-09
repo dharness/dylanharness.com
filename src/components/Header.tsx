@@ -6,9 +6,9 @@ import {
   ORANGE_LIGHT,
   ORANGE_MEDIUM,
 } from "../sharedStyles";
-import logo_webm from "./../assets/logo.webm";
-import logo_mp4 from "./../assets/logo.mp4";
-import logo_gif from "./../assets/logo.gif";
+import logo_webm from "./../assets/logo/logo.webm";
+import logo_mp4 from "./../assets/logo/logo.mp4";
+import logo_gif from "./../assets/logo/logo.gif";
 import hamburger from "./../assets/icons/hamburger.svg";
 import close from "./../assets/icons/close.svg";
 import { NavOVerlay } from "./NavOverlay";

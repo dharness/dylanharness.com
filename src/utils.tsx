@@ -26,4 +26,10 @@ function isMobileDevice() {
   );
 }
 
+export const EMAIL_ADDRESS = "dharness.work@gmail.com";
+export const GAMES_WEBSITE = "https://dharness.github.io/games/";
+export const LINKEDIN = "https://www.linkedin.com/in/dhsoftware/";
+export const VIMEO = "https://vimeo.com/user126295858";
+export const INSTAGRAM = "https://www.instagram.com/dylanharness/";
+
 export { kebabToTitle, getProjectData, isMobileDevice };
