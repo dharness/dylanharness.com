@@ -47,7 +47,7 @@ export function OverEats() {
         <p>
           This speculative ad spot would be part of a social media awareness
           campaign for a food delivery app. It was made in C4D and rendered with
-          Redshift. The fire is a a few planes with some extrusion applied -
+          Redshift. The fire is a a few planes with some extrusion applied,
           animated in a choppy, stop motion way!
         </p>
         <MediaSection>

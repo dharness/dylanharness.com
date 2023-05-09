@@ -31,7 +31,7 @@ export function GatorGum() {
         <VimeoVideo vimeoId={vimeoId} aspectRatio={aspectRatio}></VimeoVideo>
         <VideoTitle>{kebabToTitle(name)}</VideoTitle>
         <p>
-          Gator gum is inspired by fun, bold color palettes and vintage
+          Gator gum is inspired by fun, bold, color palettes and vintage
           packaging design. The frame by frame animation was done in Toon Boom
           Harmony, and cleaned up in After Effects. The gum package was made in
           blender and composited for a seamless loop.
