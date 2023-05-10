@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HashRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import { Projects } from "./pages/Projects";
 import { DemoReel } from "./pages/DemoReel";
@@ -39,7 +39,7 @@ export function Router() {
     <>
       <Normalize />
       <GlobalStyle />
-      <HashRouter>
+      <BrowserRouter>
           <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Page content={<Projects />} isLandingPage={true} />} />
@@ -56,7 +56,7 @@ export function Router() {
             <Route path="/propmaker" element={<Page content={<Propmaker />} />} />
             <Route path="/purple-business" element={<Page content={<PurpleBusiness />} />} />
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
