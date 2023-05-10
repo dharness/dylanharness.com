@@ -55,6 +55,7 @@ export function Router() {
             <Route path="/portrait-of-a-lady" element={<Page content={<PortraitOfALady />} />} />
             <Route path="/propmaker" element={<Page content={<Propmaker />} />} />
             <Route path="/purple-business" element={<Page content={<PurpleBusiness />} />} />
+            <Route path="*" element={<Page content={<Projects />} isLandingPage={true} />} />
           </Routes>
       </BrowserRouter>
     </>

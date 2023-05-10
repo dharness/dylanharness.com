@@ -19,11 +19,13 @@ const MediaSection = styled.div`
     img {
       width: 100%;
       min-width: 100%;
+      border-radius: 10px;
     }
   }
 
   @media (max-width: ${MOBILE_CUTOFF}) {
     flex-direction: column;
+    margin-top: 30px;
     picture {
       margin: auto;
       max-width: 100%;
@@ -49,7 +51,7 @@ const TextSection = styled.div`
   }
   a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     color: #32c3f0;
     :hover {
       color: #20a1c8;
@@ -71,14 +73,15 @@ export function About() {
             <img src={profile_png} />
           </picture>
           <TextSection>
-            <h5>Dylan Harness</h5>
             <StyledP>
-              Is a motion designer from Canada. He used to be a software
-              engineer but changed his mind about it. He lives with his wife and
-              a beagle named Ketchup. In his spare time he likes to cook and
-              make{" "}
+              <b>Dylan Harness</b> is a motion designer from Canada. He used to
+              be a software engineer but has now devoted himself to animation. A
+              decade of 90s TV has left him especially interested in
+              advertising. He works in 2D and 3D with After Effects, C4D and
+              Toon Boom. He lives with his wife and a beagle named Ketchup. In
+              his spare time he likes to cook and make{" "}
               <a target="_blank" href={GAMES_WEBSITE}>
-                games!
+                games.
               </a>
             </StyledP>
             <h5>Work with me!</h5>
