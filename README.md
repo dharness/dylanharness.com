@@ -7,3 +7,10 @@ github repo for Dylan's portfolio website, [dylanharness.com](https://dylanharne
 ```
 npm start
 ```
+
+### Deploy:
+
+```
+npm run build
+npm run deploy
+```
