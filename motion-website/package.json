@@ -49,10 +49,7 @@
     "build": "parcel build ./src/*.html",
     "clean": "rimraf dist",
     "prestart": "npm run clean",
-    "prebuild": "npm run clean && rimraf .parcel-cache",
-    "poststart": "cpx CNAME dist",
-    "postbuild": "cpx CNAME dist",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --verbose"
+    "prebuild": "npm run clean && rimraf .parcel-cache"
   },
   "author": "",
   "license": "ISC"
