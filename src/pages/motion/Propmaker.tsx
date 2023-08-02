@@ -1,12 +1,12 @@
 import React from "react";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import styled from "styled-components";
-import { FigureText } from "../components/FigureText";
-import { Video } from "../components/Video";
-import ruffs from "../assets/projects/propmaker/fanman-ruffs.mp4";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import styled from "styled-components/macro";
+import { FigureText } from "../../components/FigureText";
+import { Video } from "../../components/Video";
+import ruffs from "../../assets/projects/propmaker/fanman-ruffs.mp4";
 
 const MediaSection = styled.div`
   display: flex;

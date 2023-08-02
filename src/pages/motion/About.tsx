@@ -1,11 +1,11 @@
 import React from "react";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import profile_png from "../assets/profile.png";
-import profile_webp from "../assets/profile.png?as=webp";
-import styled from "styled-components";
-import { EMAIL_ADDRESS, GAMES_WEBSITE } from "../utils";
-import { EmailLink } from "../components/EmailLink";
-import { MOBILE_CUTOFF } from "../sharedStyles";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import profile_png from "../../assets/profile.png";
+import profile_webp from "../../assets/profile.png?as=webp";
+import styled from "styled-components/macro";
+import { EMAIL_ADDRESS, GAMES_WEBSITE } from "../../utils";
+import { EmailLink } from "../../components/EmailLink";
+import { MOBILE_CUTOFF } from "../../sharedStyles";
 
 const MediaSection = styled.div`
   display: flex;

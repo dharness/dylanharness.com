@@ -1,16 +1,16 @@
 import React from "react";
-import styled from "styled-components";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import { FigureText } from "../components/FigureText";
-import { Video } from "../components/Video";
-import ruffs_webm from "../assets/projects/portrait-of-a-lady/ruffs.webm";
-import ruffs_mp4 from "../assets/projects/portrait-of-a-lady/ruffs.mp4";
-import colors_webp from "../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
-import colors_png from "../assets/projects/portrait-of-a-lady/color-study.png";
-import { MOBILE_CUTOFF } from "../sharedStyles";
+import styled from "styled-components/macro";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import { FigureText } from "../../components/FigureText";
+import { Video } from "../../components/Video";
+import ruffs_webm from "../../assets/projects/portrait-of-a-lady/ruffs.webm";
+import ruffs_mp4 from "../../assets/projects/portrait-of-a-lady/ruffs.mp4";
+import colors_webp from "../../assets/projects/portrait-of-a-lady/color-study.png?as=webp";
+import colors_png from "../../assets/projects/portrait-of-a-lady/color-study.png";
+import { MOBILE_CUTOFF } from "../../sharedStyles";
 
 const MediaSection = styled.div`
   display: flex;

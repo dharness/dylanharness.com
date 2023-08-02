@@ -1,23 +1,23 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { Video } from "../components/Video";
-import { FigureText } from "../components/FigureText";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import digWide from "./../assets/projects/fee-ranger/dig-wide.mp4";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { Video } from "../../components/Video";
+import { FigureText } from "../../components/FigureText";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import digWide from "./../../assets/projects/fee-ranger/dig-wide.mp4";
 // webp
-import turnaround_webp from "./../assets/projects/fee-ranger/turnaround_4x.png?as=webp";
-import objectsLeft_webp from "./../assets/projects/fee-ranger/objects_left.png?as=webp";
-import objectsRight_webp from "./../assets/projects/fee-ranger/objects_right.png?as=webp";
-import characterSpread_webp from "./../assets/projects/fee-ranger/characte-concept-spread.png?as=webp";
+import turnaround_webp from "./../../assets/projects/fee-ranger/turnaround_4x.png?as=webp";
+import objectsLeft_webp from "./../../assets/projects/fee-ranger/objects_left.png?as=webp";
+import objectsRight_webp from "./../../assets/projects/fee-ranger/objects_right.png?as=webp";
+import characterSpread_webp from "./../../assets/projects/fee-ranger/characte-concept-spread.png?as=webp";
 //png
-import turnaround_png from "./../assets/projects/fee-ranger/turnaround_4x.png";
-import objectsLeft_png from "./../assets/projects/fee-ranger/objects_left.png";
-import objectsRight_png from "./../assets/projects/fee-ranger/objects_right.png";
-import characterSpread_png from "./../assets/projects/fee-ranger/characte-concept-spread.png";
-import { MOBILE_CUTOFF } from "../sharedStyles";
+import turnaround_png from "./../../assets/projects/fee-ranger/turnaround_4x.png";
+import objectsLeft_png from "./../../assets/projects/fee-ranger/objects_left.png";
+import objectsRight_png from "./../../assets/projects/fee-ranger/objects_right.png";
+import characterSpread_png from "./../../assets/projects/fee-ranger/characte-concept-spread.png";
+import { MOBILE_CUTOFF } from "../../sharedStyles";
 
 const MediaSection = styled.div`
   display: flex;

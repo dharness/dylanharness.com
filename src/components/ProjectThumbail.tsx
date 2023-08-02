@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { isMobileDevice, kebabToTitle } from "../utils";
 import {
   MOBILE_CUTOFF,
@@ -85,7 +85,7 @@ const doHover = !isMobile;
 export function ProjectThumbnail(props: any) {
   const { hoverColor, name, thumbnailSet } = props;
   return (
-    <StyledLink to={"/" + name}>
+    <StyledLink to={"/motion/" + name}>
       <ProjectThumbnailWrapper $bgColor={hoverColor}>
         <ProjectTitle $doHover={doHover}>
           <p>{kebabToTitle(name)}</p>

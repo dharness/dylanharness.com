@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { FC } from "react";
+import styled from "styled-components/macro";
 import linkedin from "./../assets/icons/linkedin.svg";
 import email from "./../assets/icons/email.svg";
 import instagram from "./../assets/icons/instagram.svg";
@@ -8,13 +8,19 @@ import { ORANGE_MEDIUM_2, contentWidthStyle } from "../sharedStyles";
 import { EmailLink } from "./EmailLink";
 import { INSTAGRAM, LINKEDIN, VIMEO } from "../utils";
 
-const FooterWrapper = styled.div`
+export enum FooterVariantEnum {
+  Orange = "Orange",
+  Blue = "Blue",
+}
+
+const FooterWrapper = styled.div<{ $variant: FooterVariantEnum }>`
   display: flex;
   height: 80px;
   min-height: 80px;
   width: 100%;
   margin-top: auto;
-  background: ${ORANGE_MEDIUM_2};
+  background: ${({ $variant }) =>
+    $variant === FooterVariantEnum.Orange ? ORANGE_MEDIUM_2 : "blue"};
 `;
 
 const FooterContent = styled.div`
@@ -37,9 +43,15 @@ const Links = styled.div`
 
 const Link = styled.a``;
 
-export function Footer() {
+interface FooterProps {
+  variant?: FooterVariantEnum;
+}
+
+export const Footer: FC<FooterProps> = ({
+  variant = FooterVariantEnum.Orange,
+}) => {
   return (
-    <FooterWrapper>
+    <FooterWrapper $variant={variant}>
       <FooterContent>
         <Links>
           <Link href={INSTAGRAM} target="_blank">
@@ -58,4 +70,4 @@ export function Footer() {
       </FooterContent>
     </FooterWrapper>
   );
-}
+};

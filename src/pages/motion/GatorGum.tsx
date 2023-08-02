@@ -1,16 +1,16 @@
 import React from "react";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { Video } from "../components/Video";
-import { FigureText } from "../components/FigureText";
-import { VideoTitle } from "../components/VideoTitle";
-import { getProjectData, kebabToTitle } from "../utils";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import blender from "./../assets/projects/gator-gum/blender_package_wide.webm";
-import blender_mp4 from "./../assets/projects/gator-gum/blender_package_wide.mp4";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { Video } from "../../components/Video";
+import { FigureText } from "../../components/FigureText";
+import { VideoTitle } from "../../components/VideoTitle";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import blender from "./../../assets/projects/gator-gum/blender_package_wide.webm";
+import blender_mp4 from "./../../assets/projects/gator-gum/blender_package_wide.mp4";
 
-import styled from "styled-components";
-import packageDesign_webp from "./../assets/projects/gator-gum/package-design.png?as=webp";
-import packageDesign_png from "./../assets/projects/gator-gum/package-design.png";
+import styled from "styled-components/macro";
+import packageDesign_webp from "./../../assets/projects/gator-gum/package-design.png?as=webp";
+import packageDesign_png from "./../../assets/projects/gator-gum/package-design.png";
 
 const MediaSection = styled.div`
   display: flex;

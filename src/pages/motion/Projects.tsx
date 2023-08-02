@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { projectData } from "../projectData";
-import { ProjectThumbnail } from "../components/ProjectThumbail";
-import {
-  MOBILE_CUTOFF,
-  contentWidthStyle,
-  projectGridGap,
-} from "../sharedStyles";
+import { projectData } from "../../projectData";
+import { ProjectThumbnail } from "../../components/ProjectThumbail";
+import { MOBILE_CUTOFF, contentWidthStyle } from "../../sharedStyles";
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -37,7 +33,6 @@ const ProjectsGrid = styled.div`
   justify-items: start;
   @media (max-width: ${MOBILE_CUTOFF}) {
     grid-template-columns: 1fr;
-    /* row-gap: 0.7%; */
   }
 `;
 

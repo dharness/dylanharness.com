@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { Video } from "../components/Video";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import styleframe1_png from "../assets/projects/over-eats/overEats_sf_01.png";
-import styleframe2_png from "./../assets/projects/over-eats/overEats_sf_02.png";
-import styleframe1_webp from "../assets/projects/over-eats/overEats_sf_01.png?as=webp";
-import styleframe2_webp from "./../assets/projects/over-eats/overEats_sf_02.png?as=webp";
-import longHands from "./../assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4";
-import handRig from "./../assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4";
-import { FigureText } from "../components/FigureText";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { Video } from "../../components/Video";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import styleframe1_png from "../../assets/projects/over-eats/overEats_sf_01.png";
+import styleframe2_png from "./../../assets/projects/over-eats/overEats_sf_02.png";
+import styleframe1_webp from "../../assets/projects/over-eats/overEats_sf_01.png?as=webp";
+import styleframe2_webp from "./../../assets/projects/over-eats/overEats_sf_02.png?as=webp";
+import longHands from "./../../assets/projects/over-eats/overEats_zoomed-out-hands_wide.mp4";
+import handRig from "./../../assets/projects/over-eats/overEats_hand-rig-demo_tall.mp4";
+import { FigureText } from "../../components/FigureText";
 
 const MediaSection = styled.div`
   display: flex;
