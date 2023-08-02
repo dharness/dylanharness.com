@@ -46,10 +46,9 @@
   },
   "scripts": {
     "start": "parcel ./src/*.html",
-    "build": "parcel build ./src/*.html",
-    "clean": "rimraf dist",
-    "prestart": "npm run clean",
-    "prebuild": "npm run clean && rimraf .parcel-cache"
+    "build": "parcel build ./src/*.html --public-url /motion/",
+    "clean": "rimraf dist && rimraf .parcel-cache",
+    "prestart": "npm run clean"
   },
   "author": "",
   "license": "ISC"

@@ -1,9 +1,9 @@
 .PHONY: build deploy
 
 build:
-	cd software-website && npm run build; \
-	cd ../mobile-website && npm run build; \
-	cp ./dist ./../public/motion
+	cd motion-website && npm run build; \
+	cp -R ./dist/* ./../software-website/static/motion; \
+	cd ../software-website && npm run build; \
 
 deploy:
 	npx push-dir --dir=software-website/public --branch=gh-pages --verbose

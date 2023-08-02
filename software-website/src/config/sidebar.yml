@@ -20,5 +20,7 @@
   items:
     - label: FAQ
       link: /faq
+    - label: "Motion Design"
+      link: /motion
     - label: "Github"
       link: https://github.com/jpedroschmitz/rocketdocs
