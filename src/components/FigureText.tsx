@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const FigureText = styled.div`
   font-family: futura-pt, sans-serif;

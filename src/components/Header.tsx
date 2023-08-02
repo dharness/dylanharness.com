@@ -8,12 +8,11 @@ import {
 } from "../sharedStyles";
 import logo_webm from "./../assets/logo/logo.webm";
 import logo_mp4 from "./../assets/logo/logo.mp4";
-import hamburger from "./../assets/icons/hamburger.svg";
-import close from "./../assets/icons/close.svg";
-import { NavOVerlay } from "./NavOverlay";
+import { NavOverlay } from "./NavOverlay";
 import { Link, useLocation } from "react-router-dom";
 import PageLink, { HeaderPaths } from "./Link";
 import { Video } from "./Video";
+import Hamburger from "./Hamburger";
 
 const HeaderWrapper = styled.div`
   height: 100px;
@@ -74,26 +73,6 @@ const Logo = styled(Link)`
   }
 `;
 
-const Hamburger = styled.button`
-  z-index: 1000;
-  margin-left: auto;
-  background: #fff1eb;
-  align-self: center;
-  height: 33px;
-  width: 33px;
-  display: flex;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  justify-content: center;
-  @media (min-width: ${MOBILE_CUTOFF}) {
-    display: none;
-  }
-  & > img {
-    height: 100%;
-  }
-`;
-
 const ColorBar = styled.div`
   height: 15px;
   background: ${ORANGE_LIGHT};
@@ -119,7 +98,7 @@ export function Header(props: any) {
   return (
     <HeaderWrapper>
       <ColorBar />
-      {showOverlay && <NavOVerlay />}
+      {showOverlay && <NavOverlay />}
       <HeaderContent>
         <Logo to={HeaderPaths.root}>
           <Video
@@ -142,9 +121,10 @@ export function Header(props: any) {
           <PageLink name="Reel" to={HeaderPaths.reel} />
           <PageLink name="About" to={HeaderPaths.about} />
         </PageLinks>
-        <Hamburger onClick={(_) => toggleOverlay(!showOverlay)}>
-          {showOverlay ? <img src={close}></img> : <img src={hamburger}></img>}
-        </Hamburger>
+        <Hamburger
+          showCloseIcon={showOverlay}
+          onClick={() => toggleOverlay(!showOverlay)}
+        ></Hamburger>
       </HeaderContent>
     </HeaderWrapper>
   );

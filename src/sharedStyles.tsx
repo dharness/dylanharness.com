@@ -13,3 +13,12 @@ export const ORANGE_MEDIUM = "#F0783E";
 export const ORANGE_MEDIUM_2 = "#FFA87D";
 export const ORANGE_LIGHT = "#FFF1EB";
 export const MOBILE_CUTOFF = "670px";
+
+// Software Section
+export const fontColors = {
+  software: {
+    primary900: "#3D3D4D",
+    primary800: "#6C6C80",
+    accent700: "#8257E6",
+  },
+};

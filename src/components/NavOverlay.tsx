@@ -38,7 +38,7 @@ const StyledFooter = styled.div`
   margin-top: auto;
 `;
 
-export function NavOVerlay() {
+export function NavOverlay() {
   return (
     <NavOverlayDiv>
       <StyledWrapper>

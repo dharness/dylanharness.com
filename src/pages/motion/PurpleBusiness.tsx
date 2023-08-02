@@ -1,23 +1,23 @@
 import React from "react";
-import styled from "styled-components";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
+import styled from "styled-components/macro";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
 //webp
-import concept1_webp from "../assets/projects/purple-business/concept-01.png?as=webp";
-import concept2_webp from "../assets/projects/purple-business/concept-02.png?as=webp";
-import concept3_webp from "../assets/projects/purple-business/concept-03.png?as=webp";
-import concept4_webp from "../assets/projects/purple-business/concept-04.png?as=webp";
-import concept5_webp from "../assets/projects/purple-business/concept-05.png?as=webp";
-import concept6_webp from "../assets/projects/purple-business/concept-06.png?as=webp";
+import concept1_webp from "../../assets/projects/purple-business/concept-01.png?as=webp";
+import concept2_webp from "../../assets/projects/purple-business/concept-02.png?as=webp";
+import concept3_webp from "../../assets/projects/purple-business/concept-03.png?as=webp";
+import concept4_webp from "../../assets/projects/purple-business/concept-04.png?as=webp";
+import concept5_webp from "../../assets/projects/purple-business/concept-05.png?as=webp";
+import concept6_webp from "../../assets/projects/purple-business/concept-06.png?as=webp";
 //png
-import concept1_png from "../assets/projects/purple-business/concept-01.png";
-import concept2_png from "../assets/projects/purple-business/concept-02.png";
-import concept3_png from "../assets/projects/purple-business/concept-03.png";
-import concept4_png from "../assets/projects/purple-business/concept-04.png";
-import concept5_png from "../assets/projects/purple-business/concept-05.png";
-import concept6_png from "../assets/projects/purple-business/concept-06.png";
+import concept1_png from "../../assets/projects/purple-business/concept-01.png";
+import concept2_png from "../../assets/projects/purple-business/concept-02.png";
+import concept3_png from "../../assets/projects/purple-business/concept-03.png";
+import concept4_png from "../../assets/projects/purple-business/concept-04.png";
+import concept5_png from "../../assets/projects/purple-business/concept-05.png";
+import concept6_png from "../../assets/projects/purple-business/concept-06.png";
 
 const MediaSection = styled.div`
   display: grid;

@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { FigureText } from "../components/FigureText";
-import { Video } from "../components/Video";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import featherDemo from "../assets/projects/fresh-caught/feather-demo-02.mp4";
-import fishRig from "../assets/projects/fresh-caught/fish-demo.mp4";
+import { FigureText } from "../../components/FigureText";
+import { Video } from "../../components/Video";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import featherDemo from "../../assets/projects/fresh-caught/feather-demo-02.mp4";
+import fishRig from "../../assets/projects/fresh-caught/fish-demo.mp4";
 //webp
-import endCard_webp from "../assets/projects/fresh-caught/end-card.png?as=webp";
-import poses_webp from "../assets/projects/fresh-caught/fish-poses-combined.png?as=webp";
+import endCard_webp from "../../assets/projects/fresh-caught/end-card.png?as=webp";
+import poses_webp from "../../assets/projects/fresh-caught/fish-poses-combined.png?as=webp";
 //png
-import endCard_png from "../assets/projects/fresh-caught/end-card.png";
-import poses_png from "../assets/projects/fresh-caught/fish-poses-combined.png";
+import endCard_png from "../../assets/projects/fresh-caught/end-card.png";
+import poses_png from "../../assets/projects/fresh-caught/fish-poses-combined.png";
 
 const MediaSection = styled.div`
   display: flex;

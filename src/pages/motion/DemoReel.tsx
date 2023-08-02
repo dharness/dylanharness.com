@@ -1,8 +1,8 @@
 import React from "react";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
 
 export function DemoReel() {
   const { vimeoId, aspectRatio, hoverColor } = getProjectData("reel");

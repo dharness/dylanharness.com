@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react";
+import { FC, useLayoutEffect, useState } from "react";
 import styled from "styled-components/macro";
 import { LandingHeader } from "./LandingHeader";
 import { Header } from "./Header";
@@ -15,8 +15,20 @@ const PageWrapper = styled.div<{ $scrollable: boolean }>`
   height: ${(p) => (p.$scrollable ? "" : "100%")};
 `;
 
-export function Page(props: any) {
-  const { isLandingPage } = props;
+enum PageTypeEnum {
+  Landing = "Landing",
+  Project = "Project",
+}
+
+interface PageProps {
+  pageType?: PageTypeEnum;
+  content: React.ReactNode;
+}
+
+export const Page: FC<PageProps> = ({
+  pageType = PageTypeEnum.Project,
+  content,
+}) => {
   const mediaQuery = `(min-width: ${MOBILE_CUTOFF})`;
   const [showOverlay, setShowOverlay] = useState(false);
   const [isScrollable, setIsScrollable] = useState(true);
@@ -35,21 +47,30 @@ export function Page(props: any) {
     setShowOverlay(isShowingOverlay);
   };
 
-  const CurrentHeader =
-    isLandingPage && isMediaQueryMatched ? LandingHeader : Header;
-  return (
-    <PageWrapper $scrollable={isScrollable}>
-      <CurrentHeader
+  const renderHeader = () => {
+    if (pageType === PageTypeEnum.Landing && isMediaQueryMatched) {
+      return (
+        <LandingHeader
+          onToggleOverlay={onToggleOverlay}
+          isMediaQueryMatched={isMediaQueryMatched}
+          showOverlay={showOverlay}
+        />
+      );
+    }
+    return (
+      <Header
         onToggleOverlay={onToggleOverlay}
         isMediaQueryMatched={isMediaQueryMatched}
         showOverlay={showOverlay}
       />
-      {props.content}
+    );
+  };
+
+  return (
+    <PageWrapper $scrollable={isScrollable}>
+      {renderHeader()}
+      {content}
       <Footer />
     </PageWrapper>
   );
-}
-
-Page.defaultProps = {
-  isLandingPage: false,
 };

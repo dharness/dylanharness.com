@@ -1,13 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { ORANGE_DARK } from "../sharedStyles";
 import { Link, useLocation } from "react-router-dom";
 
 export const enum HeaderPaths {
   root = "/",
-  projects = "/projects",
-  about = "/about",
-  reel = "/reel",
+  projects = "/motion/projects",
+  about = "/motion/about",
+  reel = "/motion/reel",
 }
 const StyledLink = styled(Link)<{ $isSelected: boolean }>`
   margin-bottom: 20px;

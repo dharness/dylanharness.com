@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import { Video } from "../components/Video";
-import ruffs from "./../assets/projects/bronco-henry/cowboy-ruffs.mp4";
-import cowboyLeft_png from "./../assets/projects/bronco-henry/cowboy_L_alpha.png";
-import cowboyRight_png from "./../assets/projects/bronco-henry/cowboy_R_alpha.png";
-import cowboyLeft_webp from "./../assets/projects/bronco-henry/cowboy_L_alpha.png?as=webp";
-import cowboyRight_webp from "./../assets/projects/bronco-henry/cowboy_R_alpha.png?as=webp";
-import { FigureText } from "../components/FigureText";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import { Video } from "../../components/Video";
+import ruffs from "./../../assets/projects/bronco-henry/cowboy-ruffs.mp4";
+import cowboyLeft_png from "./../../assets/projects/bronco-henry/cowboy_L_alpha.png";
+import cowboyRight_png from "./../../assets/projects/bronco-henry/cowboy_R_alpha.png";
+import cowboyLeft_webp from "./../../assets/projects/bronco-henry/cowboy_L_alpha.png?as=webp";
+import cowboyRight_webp from "./../../assets/projects/bronco-henry/cowboy_R_alpha.png?as=webp";
+import { FigureText } from "../../components/FigureText";
 
 const MediaSection = styled.div`
   display: flex;

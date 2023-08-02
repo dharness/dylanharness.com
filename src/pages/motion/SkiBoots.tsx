@@ -1,15 +1,15 @@
 import React from "react";
-import { VimeoVideo } from "../components/VimeoVideo";
-import { PageContentWrapper } from "../components/PageContentWrapper";
-import { getProjectData, kebabToTitle } from "../utils";
-import { VideoTitle } from "../components/VideoTitle";
-import { Video } from "../components/Video";
+import { VimeoVideo } from "../../components/VimeoVideo";
+import { PageContentWrapper } from "../../components/PageContentWrapper";
+import { getProjectData, kebabToTitle } from "../../utils";
+import { VideoTitle } from "../../components/VideoTitle";
+import { Video } from "../../components/Video";
 import styled from "styled-components/macro";
-import shoeTiltDemo from "../assets/projects/ski-boots/shoe-tilt-slider.mp4";
-import characterTurnDemo from "../assets/projects/ski-boots/character-turn-slider.mp4";
-import uiReceipt from "../assets/projects/ski-boots/UI-receipt-demo.mp4";
-import creditCard from "../assets/projects/ski-boots/card-with-reflections.mp4";
-import ruffs from "../assets/projects/ski-boots/spin-drop-demo.mp4";
+import shoeTiltDemo from "../../assets/projects/ski-boots/shoe-tilt-slider.mp4";
+import characterTurnDemo from "../../assets/projects/ski-boots/character-turn-slider.mp4";
+import uiReceipt from "../../assets/projects/ski-boots/UI-receipt-demo.mp4";
+import creditCard from "../../assets/projects/ski-boots/card-with-reflections.mp4";
+import ruffs from "../../assets/projects/ski-boots/spin-drop-demo.mp4";
 
 const SliderDemoRow = styled.div`
   display: flex;
