@@ -26,6 +26,10 @@ const TitleRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 10px;
 `;
 
 export default function Layout({
@@ -43,41 +47,21 @@ export default function Layout({
   const handleMenuOpen = () => {
     setMenuOpen(!isMenuOpen);
   };
-
+  const containerStyle = isMenuOpen
+    ? { overflow: "hidden", maxHeight: "80vh" }
+    : {};
   return (
     <Fragment>
       <Overlay isMenuOpen={isMenuOpen} onClick={handleMenuOpen} />
-      <Container>
+      <Container style={containerStyle}>
         <Sidebar isMenuOpen={isMenuOpen} />
         <Main>
           <Header handleMenuOpen={handleMenuOpen} />
 
-          {title && (
-            <h1
-              css={css`
-                display: none;
-
-                @media (max-width: 1200px) {
-                  display: block;
-                }
-              `}
-            >
-              {title}
-            </h1>
-          )}
-
           <Children ref={contentRef}>
             <TitleRow>
               {title && (
-                <h1
-                  css={css`
-                    @media (max-width: 1200px) {
-                      display: none;
-                    }
-                  `}
-                >
-                  {title}
-                </h1>
+                <h1 style={{ marginBottom: 0, marginRight: 20 }}>{title}</h1>
               )}
               <LinksSection>
                 {links.map((link) => (

@@ -1,98 +1,99 @@
 ---
 title: "Mr.Makes-A-Word"
 description: "A fun and colorful word-game for iOS. |https://apps.apple.com/us/app/mr-makes-a-word/id1496556261"
+disableTableOfContents: true
 ---
 
+import MrMakesVideo from "../components/MrMakesVideo";
+import AutoplayVideo from "../components/AutoplayVideo";
+
 <div className="mr-grid">
-  <div className="mr-title section-title">Mr. Makes-A-Word</div>
-  <div className="mr-subtitle section-subtitle">
-    <a href="https://apps.apple.com/us/app/mr-makes-a-word/id1496556261">
-      <img src="software/shared/AppStoreDownloadBadge.svg" alt="" />
-    </a>
+  <div className="mr-description">
+    <MrMakesVideo />
   </div>
-  <div className="mr-description section-description">
-    Mr. Makes-A-Word is a fun and colorful word game for iOS. In addition to 13
-    cooky characters to unlock, the game features over 100 levels that increase
-    in difficulty with the player&rsquo;s skill.
-  </div>
-  <div className="mr-trailer">
-    <div className="mr-trailer-frame">
-      <video
-        width="100%"
-        controls="controls"
-        preload="none"
-        poster="software/mr-makes/video-thumbnail.png"
-      >
-        <source src="software/videos/portrait_v1.mp4" type="video/mp4" />
-        Sorry, your browser doesn&apos;t support embedded videos.
-      </video>
-    </div>
-  </div>
-  <div className="mr-cards">
-    <picture>
-      <source
-        srcSet="./software/mr-makes/cards/bobmeat.webp"
-        type="image/webp"
-        id="mr-cards-webp"
-      />
-      <source
-        srcSet="./software/mr-makes/cards/bobmeat.png"
-        type="image/png"
-        id="mr-cards-png"
-      />
-      <img src="./software/mr-makes/cards/bobmeat.png" id="mr-cards-img" />
-    </picture>
-  </div>
-  <div className="mr-cereal">
-    <video
-      className="gif-fallback__video"
-      autoPlay={true}
-      loop="loop"
-      muted="muted"
-      playsInline={true}
-      id="gif_./software/mr-makes/cereal__video"
-    >
-      <source src="./software/mr-makes/cereal.webm" type="video/webm" />
-      <source src="./software/mr-makes/cereal.mp4" type="video/mp4" />
-    </video>
-    <img
-      className="gif-fallback__gif"
-      src="./software/mr-makes/cereal.gif"
-      id="gif_./software/mr-makes/cereal"
-      style={{ display: "none" }}
+
+<div className="mr-cards">
+  <picture>
+    <source
+      srcSet="./software/mr-makes/cards/bobmeat.webp"
+      type="image/webp"
+      id="mr-cards-webp"
     />
-  </div>
-  <div className="mr-gift">
-    <video
-      autoPlay={true}
-      loop="loop"
-      muted="muted"
-      playsInline={true}
-      id="gif_./software/mr-makes/gift__video"
-    >
-      <source src="./software/mr-makes/gift.webm" type="video/webm" />
-      <source src="./software/mr-makes/gift.mp4" type="video/mp4" />
-    </video>
-  </div>
-  <div className="mr-milk-bag">
-    <video
-      className="gif-fallback__video"
-      autoPlay={true}
-      loop="loop"
-      muted="muted"
-      playsInline={true}
-      id="gif_./software/mr-makes/milkbag__video"
-    >
-      <source src="./software/mr-makes/milkbag.webm" type="video/webm" />
-      <source src="./software/mr-makes/milkbag.mp4" type="video/mp4" />
-    </video>
-    <img
-      className="gif-fallback__gif"
-      src="./software/mr-makes/milkbag.gif"
-      id="gif_./software/mr-makes/milkbag"
-      style={{ display: "none" }}
+    <source
+      srcSet="./software/mr-makes/cards/bobmeat.png"
+      type="image/png"
+      id="mr-cards-png"
     />
-  </div>
+    <img src="./software/mr-makes/cards/bobmeat.png" id="mr-cards-img" />
+  </picture>
+</div>
+<div className="mr-cards-2">
+  <picture>
+    <source
+      srcSet="./software/mr-makes/cards/fish.webp"
+      type="image/webp"
+      id="mr-cards-webp"
+    />
+    <source
+      srcSet="./software/mr-makes/cards/fish.png"
+      type="image/png"
+      id="mr-cards-png"
+    />
+    <img src="./software/mr-makes/cards/fish.png" id="mr-cards-img" />
+  </picture>
+</div>
+
+<div className="mr-cereal">
+  <video
+    className="gif-fallback__video"
+    autoPlay={true}
+    loop="loop"
+    muted="muted"
+    playsInline={true}
+    id="gif_./software/mr-makes/cereal__video"
+  >
+    <source src="./software/mr-makes/cereal.webm" type="video/webm" />
+    <source src="./software/mr-makes/cereal.mp4" type="video/mp4" />
+  </video>
+  <img
+    className="gif-fallback__gif"
+    src="./software/mr-makes/cereal.gif"
+    id="gif_./software/mr-makes/cereal"
+    style={{ display: "none" }}
+  />
+</div>
+<div className="mr-gift">
+  <video
+    autoPlay={true}
+    loop="loop"
+    muted="muted"
+    playsInline={true}
+    id="gif_./software/mr-makes/gift__video"
+  >
+    <source src="./software/mr-makes/gift.webm" type="video/webm" />
+    <source src="./software/mr-makes/gift.mp4" type="video/mp4" />
+  </video>
+</div>
+<div className="mr-milk-bag">
+  <video
+    autoPlay={true}
+    loop="loop"
+    muted="muted"
+    playsInline={true}
+    id="gif_./software/mr-makes/milkbag__video"
+  >
+    <source src="./software/mr-makes/milkbag.webm" type="video/webm" />
+    <source src="./software/mr-makes/milkbag.mp4" type="video/mp4" />
+  </video>
+  <img
+    className="gif-fallback__gif"
+    src="./software/mr-makes/milkbag.gif"
+    id="gif_./software/mr-makes/milkbag"
+    style={{ display: "none" }}
+  />
+</div>
+<AutoplayVideo />
+
   <div className="mr-tiles-gif">
     <video
       autoPlay={true}

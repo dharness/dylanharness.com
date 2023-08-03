@@ -8,6 +8,7 @@
   "starter-name": "gatsby-starter-rocketdocs",
   "dependencies": {
     "@rocketseat/gatsby-theme-docs": "^4.0.0",
+    "@u-wave/react-vimeo": "^0.9.10",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.9.0",
     "gatsby-plugin-canonical-urls": "^5.9.0",
@@ -27,7 +28,7 @@
   ],
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "start": "gatsby develop",
+    "start": "gatsby develop -H 0.0.0.0",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   }

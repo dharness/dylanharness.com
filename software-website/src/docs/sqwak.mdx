@@ -1,19 +1,34 @@
 ---
 title: "Sqwak"
-description: "Build and deploy audio classifiers with a few clicks | https://sqwak.dev, https://github.com/dharness/sqwak-app"
+description: "Build and deploy audio classifiers with a few clicks | https://github.com/dharness/sqwak-app"
+disableTableOfContents: true
 ---
+
+import VimeoVideo from "../components/VimeoVideo";
 
 Build and deploy audio classifiers with a few clicks
 
-<div style={{ borderRadius: "100px" }}>
-  <iframe
-    title="vimeo-player"
-    src="https://player.vimeo.com/video/850298237?h=aa289faf1c"
-    width="640"
-    height="360"
-    frameBorder="0"
-    allowFullScreen
-  ></iframe>
-</div>
+<VimeoVideo vimeoId="850298237" />
 
-Sqwak lets you create an audio classifier without writing any code! To train your classifier, create some bins (such as 'clanking' 'quacking' and 'rock music') and upload your music into the appropriate bin. After that, click the train button and voila, your classifier is now available at an api endpoint. You can now POST to that endpoint with completely new sounds your classifier has never seen before, and it'll attempt to label it.
+<br />
+<br />
+Sqwak lets you create an audio classifier without writing any code! To train
+your classifier, create some bins (such as 'clanking' 'quacking' and 'rock
+music') and upload your music into the appropriate bin. After that, click the
+train button and voila, your classifier is now available at an api endpoint. You
+can now POST to that endpoint with completely new sounds your classifier has
+never seen before, and it'll attempt to label it.
+
+### How it Works
+
+1. Create a class you want to detect (example: a dog barking)
+2. Upload audio files of that sound
+3. Click "Train" and Sqwak handles all the audio parsing and training for you.
+4. Publish your model to an API endpoint with 1 click.
+5. Access your personal endpoint from your product to classify new audio files!
+
+<img src="./software/sqwak-screenshots.png" alt="Yogoflow" />
+<br />
+<br />
+<br />
+<br />

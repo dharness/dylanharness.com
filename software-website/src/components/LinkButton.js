@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import githubIcon from "./../../static/images/github-icon.svg";
+import npmIcon from "./../../static/images/npm-icon-black.png";
+import codepenIcon from "./../../static/images/codepen-icon-hollow.png";
+import appleIcon from "./../../static/images/apple-icon.png";
 import externalLinkIcon from "./../../static/images/external-link-icon.svg";
 
 const StyledLinkButton = styled.a`
@@ -25,7 +28,8 @@ const StyledLinkButton = styled.a`
     background: #f6f6f6;
   }
   img {
-    width: 20px;
+    max-height: 20px;
+    max-width: 40px;
   }
 `;
 
@@ -46,7 +50,9 @@ const getButtonContent = (urlString) => {
     case "github":
       return [githubIcon, "Github"];
     case "apple":
-      return [githubIcon, "App Store"];
+      return [appleIcon, "App Store"];
+    case "npmjs":
+      return ["", "npm"];
     default:
       return [externalLinkIcon, "Website"];
   }

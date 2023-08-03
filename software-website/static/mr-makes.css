@@ -20,14 +20,42 @@ svg {
 .mr-grid {
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(12, 5vw);
-  grid-template-rows: repeat(3, auto) repeat(9, 5vw);
-  -moz-column-gap: 20px;
-  grid-column-gap: 20px;
-  column-gap: 20px;
-  grid-row-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto) repeat(9, 2.9vw);
+  -moz-column-gap: 10px;
+  grid-column-gap: 10px;
+  column-gap: 10px;
+  grid-row-gap: 10px;
+  row-gap: 10px;
 }
+@media (min-width: 1200px) {
+  .mr-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto) repeat(9, 2.1vw);
+    -moz-column-gap: 13px;
+    grid-column-gap: 13px;
+    column-gap: 13px;
+    grid-row-gap: 13px;
+    row-gap: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .mr-grid {
+    justify-content: center;
+    grid-template-rows: repeat(39, 3.8vw) repeat(12, auto) repeat(77, 3.8vw);
+    grid-template-columns: repeat(22, 1fr);
+    -moz-column-gap: unset;
+    grid-column-gap: unset;
+    column-gap: unset;
+    grid-row-gap: unset;
+    row-gap: unset;
+    margin: auto;
+  }
+  .mr-cards-2 {
+    display: none;
+  }
+}
+
 .mr-title {
   grid-column: 1/9;
   grid-row: 1/2;
@@ -51,18 +79,23 @@ svg {
   }
 }
 .mr-description {
-  grid-column: 1/9;
-  grid-row: 3/4;
+  grid-column: 1/13;
+  grid-row: 1/4;
+  color: #6c6c80;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  width: 100%;
 }
 .mr-trailer {
   grid-column: 9/13;
-  grid-row: 1/8;
+  grid-row: 1/4;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .mr-trailer-frame {
-  border-radius: 7px;
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
   height: 100%;
@@ -92,6 +125,17 @@ svg {
 .mr-cards picture {
   width: 100%;
   margin-top: -10px;
+}
+.mr-cards-2 {
+  grid-column: 9/13;
+  grid-row: 4/8;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.mr-cards-2 img,
+.mr-cards-2 picture {
+  width: 100%;
+  margin-top: -20px;
 }
 .mr-cereal {
   background: #fee090;
@@ -206,7 +250,6 @@ svg {
 .sticker-poof-wrapper {
   width: 100%;
   height: 100%;
-  background: plum;
   position: relative;
 }
 .sticker-poof {
@@ -245,6 +288,10 @@ svg {
   border-radius: 7px;
   grid-column: 6/9;
   grid-row: 4/8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mr-milk-bag img,
 .mr-milk-bag video {
@@ -268,6 +315,7 @@ svg {
 }
 .mr-powerups-1 {
   border-radius: 7px;
+  background: #a0ebfe;
 }
 .mr-powerups-1,
 .mr-powerups-2 {
@@ -337,26 +385,10 @@ svg {
   overflow: hidden;
   width: 120%;
 }
-@media (min-width: 1200px) {
-  .mr-grid {
-    grid-template-columns: repeat(12, 4.5vw);
-    grid-template-rows: repeat(3, auto) repeat(9, 4.5vw);
-  }
-}
 @media (max-width: 767px) {
-  .mr-grid {
-    grid-template-rows: repeat(128, 4vw);
-    grid-template-columns: repeat(22, 4vw);
-    -moz-column-gap: unset;
-    grid-column-gap: unset;
-    column-gap: unset;
-    grid-row-gap: unset;
-    row-gap: unset;
-    margin-top: 50px;
-  }
   .mr-trailer {
-    grid-column: 2/22;
-    grid-row: 15/51;
+    grid-column: 1/22;
+    grid-row: 1/39;
     padding-top: unset;
     overflow: hidden;
   }
@@ -383,7 +415,7 @@ svg {
   }
   .mr-description {
     grid-column: 1/23;
-    grid-row: 8/14;
+    grid-row: 1/44;
     height: 100%;
   }
   .mr-milk-bag {
