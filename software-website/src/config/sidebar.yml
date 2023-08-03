@@ -1,26 +1,26 @@
 # Sidebar navigation
 
-- label: "Dylan Harrrrr"
+- label: "About"
   link: "/"
-- label: "Getting started"
-  link: "/getting-started"
-- label: Usage
+- label: Projects
   items:
     - label: "Sqwak"
       link: "/sqwak"
-    - label: "Navigation"
-      link: "/usage/navigation"
-    - label: "Customizing"
-      link: "/usage/customizing"
-    - label: "Using YAML files"
-      link: "/usage/using-yaml-files"
-    - label: "Remark Plugins"
-      link: "/usage/remark-plugins"
+    - label: "Yogoflow"
+      link: "/yogoflow"
+    - label: "react-chat-window"
+      link: "/react-chat-window"
+    - label: "seam-carving"
+      link: "/seam-carving"
+    - label: "Mr. Makes a Word"
+      link: "/mr-makes-a-word"
+    - label: "Projection Mapping"
+      link: "/projection-mapping"
 - label: More
   items:
-    - label: FAQ
-      link: /faq
+    - label: LinkedIn
+      link: https://www.linkedin.com/in/dhsoftware/
     - label: "Motion Design"
-      link: /motion
+      link: https://vimeo.com/823151596
     - label: "Github"
       link: https://github.com/jpedroschmitz/rocketdocs

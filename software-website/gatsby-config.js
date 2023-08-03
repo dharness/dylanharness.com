@@ -1,12 +1,13 @@
 module.exports = {
   pathPrefix: "/",
+  trailingSlash: "never",
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.app`,
-    siteAuthor: `@jpedroschmitz`,
+    siteTitle: `Dylan Harness`,
+    defaultTitle: `Dylan Harness`,
+    siteTitleShort: `Dylan Harness`,
+    siteDescription: `Dylan Harness is a Software Engineer.`,
+    siteUrl: `https://dylanharness.com`,
+    siteAuthor: `Dylan Harness`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
@@ -22,14 +23,18 @@ module.exports = {
         yamlFilesPath: `src/yamlFiles`,
         repositoryUrl: `https://github.com/jpedroschmitz/rocketdocs`,
         baseDir: `examples/gatsby-theme-docs`,
-        gatsbyRemarkPlugins: [],
+        gatsbyRemarkPlugins: [
+          // {
+          //   resolve: require.resolve("./gatsby-remark-custom-attributes.js"),
+          // },
+        ],
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocket Docs`,
-        short_name: `Rocket Docs`,
+        name: `Dylan Harness`,
+        short_name: `Dylan Harness`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
@@ -37,17 +42,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
     //     trackingId: `YOUR_ANALYTICS_ID`,
     //   },
     // },
-    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rocketdocs.netlify.app`,
+        siteUrl: `https://dylanharness.com`,
       },
     },
     `gatsby-plugin-offline`,
