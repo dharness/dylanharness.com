@@ -1,4 +1,8 @@
-.PHONY: build deploy
+.PHONY: build deploy install
+
+install:
+	cd motion-website && npm install; \
+	cd ../software-website && npm install; \
 
 build:
 	cd motion-website && npm run build; \
