@@ -28,8 +28,9 @@ const StyledLinkButton = styled.a`
     background: #f6f6f6;
   }
   img {
-    max-height: 20px;
-    max-width: 40px;
+    height: 17px;
+    align-self: flex-end;
+    margin-bottom: -3px;
   }
 `;
 
@@ -62,7 +63,7 @@ const LinkButton = ({ link }) => {
   const [icon, label] = getButtonContent(link);
   return (
     <StyledLinkButton href={link} target="_blank">
-      <img src={icon} />
+      {icon && <img src={icon} />}
       {label}
     </StyledLinkButton>
   );
