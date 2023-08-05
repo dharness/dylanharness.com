@@ -12,6 +12,9 @@ Build and deploy audio classifiers with a few clicks
 
 <br />
 <br />
+
+Sqwak uses the fast fourier transform and other features from the uploaded audio files to train a neural network to classify audio files. The neural network is trained using Tensorflow. The model is pickled and stored in a database. When an inference request is made, the model is loaded from the database and used to predict the class of the audio file.
+
 Sqwak lets you create an audio classifier without writing any code! To train
 your classifier, create some bins (such as 'clanking' 'quacking' and 'rock
 music') and upload your music into the appropriate bin. After that, click the
