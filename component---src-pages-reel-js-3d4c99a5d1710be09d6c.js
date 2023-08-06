@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_rocketdocs=self.webpackChunkgatsby_starter_rocketdocs||[]).push([[234],{6932:function(t,e,o){o.r(e);var s=o(7294),c=o(917);e.default=()=>((0,s.useEffect)((()=>{"object"==typeof window&&(window.location.href="https://vimeo.com/823151596")}),[]),(0,c.tZ)(s.Fragment,null))}}]);
+//# sourceMappingURL=component---src-pages-reel-js-3d4c99a5d1710be09d6c.js.map
