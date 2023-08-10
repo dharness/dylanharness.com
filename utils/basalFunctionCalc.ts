@@ -22,19 +22,3 @@ class BesselFunctionCalculator {
     return result;
   }
 }
-
-// Example usage:
-const xValue = 2.5;
-const besselOrder = 3;
-
-try {
-  const besselValue = BesselFunctionCalculator.calculateBesselFunction(
-    xValue,
-    besselOrder
-  );
-  console.log(
-    `The Bessel function value of order ${besselOrder} at x = ${xValue} is: ${besselValue}`
-  );
-} catch (error) {
-  console.error(error.message);
-}
